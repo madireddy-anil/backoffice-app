@@ -1,0 +1,47 @@
+@import 'assets/styles/mixins.scss';
+
+.headerBlock {
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  float: left;
+  color: #fff;
+}
+
+.subHeaderBlock {
+  letter-spacing: 1px;
+  float: left;
+  color: #fff;
+}
+.listBlock {
+  color: #fff;
+  float: right;
+}
+
+.closeBtn {
+  float: right;
+  margin-top: -8px;
+  // margin-right: -6px;
+  font-size: 19px;
+  color: #fff;
+}
+
+.activeCard {
+  color: #fff;
+  background-color: #313343;
+  border-color: #313343;
+  border-radius: inherit !important;
+}
+
+.imageBlock {
+  clip: rect(-10px, 100px, 45px, -13px);
+}
+
+@media (max-width: $md-max-width) {
+  .activeCard {
+    margin-top: 10px;
+  }
+  .cardBlock {
+    margin-top: 10px;
+  }
+}

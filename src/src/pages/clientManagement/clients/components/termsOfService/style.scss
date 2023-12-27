@@ -1,0 +1,35 @@
+.terms__header {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.terms__versionId {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+.terms__header [class*='ant-tag-green'] {
+  border-radius: 10px;
+  margin-left: 15px;
+}
+.terms__authorized__person {
+  font-weight: 600;
+  margin-right: 7px;
+}
+.terms__percentage {
+  background: #f4f5f8;
+  border-radius: 100px;
+  padding: 1px 9px;
+  font-weight: 500;
+  color: #313343;
+  font-size: 13px;
+}
+.terms__authorized__service {
+  color: #000;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+.terms__authorized__service span {
+  margin-left: 10px;
+}

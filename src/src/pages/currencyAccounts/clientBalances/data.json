@@ -1,0 +1,98 @@
+{
+    "currencyList" : [
+        {
+            "title" : "CNY",
+            "subTitle" : "Chinese",
+            "logo" : "resources/images/Flag_of_China.png",
+            "width" : "40px",
+            "height" : "40px"
+        },
+        {
+            "title" : "IDR",
+            "subTitle" : "Indonesian Rupiah",
+            "logo" : "resources/images/Flag_of_Indonesia.jpeg",
+            "width" : "40px",
+            "height" : "40px"
+        },
+        {
+            "title" : "MYR",
+            "subTitle" : "Malaysian Ringgit",
+            "logo" : "resources/images/Flag-of-malaysia.jpg",
+            "width" : "40px",
+            "height" : "40px"
+        },
+        {
+            "title" : "THB",
+            "subTitle" : "Thailand",
+            "logo" : "resources/images/Flag_of_Thailand.jpg",
+            "width" : "40px",
+            "height" : "40px"
+        },
+        {
+            "title" : "VND",
+            "subTitle" : "Vietnam",
+            "logo" : "resources/images/Flag_of_VND.jpeg",
+            "width" : "40px",
+            "height" : "40px"
+        },
+        {
+            "title" : "USD",
+            "subTitle" : "US Dollar",
+            "logo" : "resources/images/Flag_of_US.png",
+            "width" : "40px",
+            "height" : "40px"
+        },
+        {
+            "title" : "EUR",
+            "subTitle" : "Euro",
+            "logo" : "resources/images/Flag_of_Europe.png",
+            "width" : "40px",
+            "height" : "40px"
+        },
+        {
+            "title" : "GBP",
+            "subTitle" : "Great British Pound",
+            "logo" : "resources/images/Flag_of_London.png",
+            "width" : "40px",
+            "height" : "40px"
+        },
+        {
+            "title" : "USDT",
+            "subTitle" : "Tether USDT",
+            "logo" : "resources/images/usdt.png",
+            "width" : "50px",
+            "height" : "50px"
+        },
+        {
+            "title" : "BTC",
+            "subTitle" : "Bitcoin",
+            "logo" : "resources/images/Bitcoin.png",
+            "width" : "50px",
+            "height" : "50px"
+        },
+        {
+            "title" : "TST",
+            "subTitle" : "Tether",
+            "logo" : "resources/images/usdt.png",
+            "width" : "50px",
+            "height" : "50px"
+        },
+        {
+            "title" : "USDC",
+            "subTitle" : "USDC",
+            "logo" : "resources/images/usdc.png",
+            "width" : "50px",
+            "height" : "50px"
+        }
+    ],
+    "products": [
+        {
+            "title" : "Currency Account",
+            "value" : "currency_accounts"
+        },
+        {
+            "title" : "Restricted Currency Account",
+            "value" : "restricted_currencies"
+        }
+    ]
+}

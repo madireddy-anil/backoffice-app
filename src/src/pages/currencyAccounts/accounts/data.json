@@ -1,0 +1,29 @@
+{
+    "accountTypes": [
+        {
+            "id": "1",
+            "value": "client",
+            "label": "Client"
+        },
+        {
+            "id": "2",
+            "value": "pl",
+            "label": "PL"
+        },
+        {
+            "id": "3",
+            "value": "suspense",
+            "label": "Suspense"
+        },
+        {
+            "id": "4",
+            "value": "vendor_client",
+            "label": "Vendor Client"
+        },
+        {
+            "id": "5",
+            "value": "vendor_pl",
+            "label": "Vendor PL"
+        }
+    ]
+}

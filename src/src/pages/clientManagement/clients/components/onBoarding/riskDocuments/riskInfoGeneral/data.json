@@ -1,0 +1,29 @@
+{
+    "regulatoryQuestions": [
+      {
+        "id": 0,
+        "title": "Able to share license copy / copies",
+        "key": "regulatoryLicenseShared"
+      },
+      {
+        "id": 1,
+        "title": "Able to share AML polices",
+        "key": "amlPolicyShared"
+      },
+      {
+        "id": 2,
+        "title": "Operations in prohibited countries",
+        "key": "isOperatingInRiskCountries"
+      },
+      {
+        "id": 3,
+        "title": "Subject to any regulatory enforcement in the last 3 years?",
+        "key": "subjectToRegulatoryEnforcement"
+      },
+      {
+        "id": 4,
+        "title": "Do you have an automated system in order to monitor transactions?",
+        "key": "transactionMonitor"
+      }
+    ]
+  }

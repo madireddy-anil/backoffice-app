@@ -1,0 +1,50 @@
+@import 'assets/styles/mixins.scss';
+
+.main-modal {
+  border-radius: 7px;
+  .ant-modal-content {
+    border-radius: 16px;
+  }
+}
+.modal-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.modal-desc {
+  font-size: 16px;
+}
+.btn-close {
+  text-decoration: underline !important;
+  color: #323232;
+}
+.gl-circle-close {
+  cursor: pointer;
+  font-size: 35px;
+  color: #a21e41;
+}
+.gl-circle-close:hover {
+  cursor: pointer;
+  font-size: 35px;
+  color: #323213;
+  transition: 0.9s;
+  transform: rotate(180deg);
+}
+.cc-btn-save {
+  background: #a21e41;
+  color: #fff;
+}
+.btnCancel {
+  color: #313343;
+  font-weight: 600;
+  font-size: 13px;
+}
+.btnSubmit {
+  color: #fff;
+  font-weight: 600;
+  font-size: 13px;
+}
+.cc-btn-save:focus,
+.cc-btn-save:hover {
+  background: #a21e41;
+  border: 1px solid #a21e41;
+}

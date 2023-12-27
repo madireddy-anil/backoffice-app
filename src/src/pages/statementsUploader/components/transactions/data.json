@@ -1,0 +1,57 @@
+{
+    "headerData" : [
+        {
+          "header":"Banking Vendor" ,
+          "key": "bankingVendor",
+          "width": 32
+        },
+        {
+            "header":"Account Number" ,
+            "key": "accountNumber",
+            "width": 32
+          },
+          {
+            "header":"Currency" ,
+            "key": "currency",
+            "width": 32
+          },
+        
+          {
+            "header":"Amount" ,
+            "key": "amount",
+            "width": 32
+          },{
+            "header":"Credit Debit Indicator" ,
+            "key": "creditDebitIndicator",
+            "width": 32
+          }
+          ,{
+            "header":"Value Date" ,
+            "key": "valueDate",
+            "width": 32
+          }
+          ,{
+            "header":"Remittance Information" ,
+            "key": "remittanceInformation",
+            "width": 32
+          }
+          ,{
+            "header":"Transaction Type" ,
+            "key": "transactionType",
+            "width": 32
+          }
+          ,{
+            "header":"Transaction Reference" ,
+            "key": "transactionReference",
+            "width": 32
+          }
+      ],
+      "txnType" :[
+        "Domestic Credit Transfer", 
+        "Cross Border Credit Transfer",
+         "Closing Balance",
+         "Internal Book Transfer",
+         "Charges",
+         "Fees"
+      ]
+}

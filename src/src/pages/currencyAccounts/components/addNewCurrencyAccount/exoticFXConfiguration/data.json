@@ -1,0 +1,27 @@
+{
+    "depositAccountType" : [
+        {
+            "id" : 0,
+            "label" : "Personal",
+            "value" : "personal"
+        },
+        {
+            "id" : 1,
+            "label" : "Corporate",
+            "value" : "corporate"
+        }
+    ],
+    "accountUsage" : [
+        {
+            "id" : 1,
+            "label" : "Overnight",
+            "value" : "overnight"
+        },
+        {
+            "id" : 2,
+            "label" : "Day",
+            "value" : "day"
+        }
+    ]
+
+}

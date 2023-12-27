@@ -1,0 +1,98 @@
+{
+
+  "beneBankDetails": [
+    {
+      "fieldName": "Crypto Wallet Address",
+      "schemaName": "cryptoWalletAddress",
+      "regEx": null,
+      "required": true
+    }
+  ],
+  "beneficiaryDetails": [
+    {
+      "fieldName": "Alias Name",
+      "schemaName": "aliasName",
+      "regEx": null,
+      "required": true
+    }
+
+  ],
+  "beneficiaryStatus": [
+    {
+      "id": 1,
+      "value": "in_active",
+      "label": "INACTIVE"
+    },
+    {
+      "id": 2,
+      "value": "active",
+      "label": "ACTIVE"
+    }
+  ],
+  "localCryptoBneficiaryMapper": [
+    {
+      "fieldName": "beneReference",
+      "labelName": "Beneficiary Reference",
+      "inputType": "input",
+      "required": true
+    },
+    {
+      "fieldName": "clientName",
+      "labelName": "Client Name",
+      "inputType": "input",
+      "required": true
+    },
+    {
+      "fieldName": "vendorName",
+      "labelName": "Vendor Name",
+      "inputType": "input"
+    },
+    {
+      "fieldName": "aliasName",
+      "labelName": "Alias Name",
+      "inputType": "input"
+    },
+    {
+      "fieldName": "cryptoCurrency",
+      "labelName": "Crypto Currency",
+      "inputType": "input",
+      "required": true
+    },
+    {
+      "fieldName": "cryptoWalletAddress",
+      "labelName": "Crypto Wallet Address",
+      "inputType": "input",
+      "required": true
+    },
+    {
+      "fieldName": "beneStatus",
+      "labelName": "Beneficiary Status",
+      "inputType": "input",
+      "required": true
+    },
+    {
+      "fieldName": "comments",
+      "labelName": "comments",
+      "inputType": "input",
+      "required": true
+    }
+  ],
+  "currencyFields": [
+    {
+      "id": "001",
+      "value": "USDT",
+      "lable": "USDT"
+    },
+    {
+      "id": "002",
+      "value": "USDC",
+      "lable": "USDC"
+    },
+    {
+      "id": "003",
+      "value": "BTC",
+      "lable": "BTC"
+    }
+  ]  
+
+}

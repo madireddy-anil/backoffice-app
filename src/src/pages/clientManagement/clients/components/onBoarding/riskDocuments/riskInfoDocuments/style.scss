@@ -1,0 +1,205 @@
+$heading-color: #313343;
+$link-color: #145ed0;
+$font-size-secondary: 15px;
+
+.panel__header {
+  color: $heading-color;
+  font-size: 14px;
+  margin-left: 3%;
+}
+.panelDiv {
+  // border-bottom: 1px solid #eae7e7;
+  margin: 5px 0 15px;
+  padding: 5px 0 15px;
+  width: 100%;
+}
+.panelHeadTitle {
+  font-size: 14px;
+  color: #313343;
+  font-weight: 500;
+}
+.pendingStatus {
+  font-weight: 600;
+  font-size: 12px;
+  color: #fff;
+  background: #fecd41;
+  text-align: center;
+  padding: 2px;
+  border: 1px solid #fecd41;
+  border-radius: 20px;
+  max-width: 80px;
+  width: 100%;
+  float: right;
+}
+.approvedStatus {
+  font-weight: 600;
+  font-size: 12px;
+  color: #fff;
+  background: #54d19d;
+  text-align: center;
+  padding: 2px;
+  border: 1px solid #54d19d;
+  border-radius: 20px;
+  max-width: 80px;
+  width: 100%;
+  float: right;
+}
+.rejectStatus {
+  font-weight: 600;
+  font-size: 12px;
+  color: #fff;
+  background: #ff5757;
+  text-align: center;
+  padding: 2px;
+  border: 1px solid #ff5757;
+  border-radius: 20px;
+  max-width: 80px;
+  width: 100%;
+  float: right;
+}
+.fileInfo .ant-upload-list-picture .ant-upload-list-item {
+  height: 60px;
+  margin: 15px 15px 0 0;
+}
+.fileInfo .ant-upload-list-picture .ant-upload-list-item-thumbnail {
+  width: 15px;
+  height: 15px;
+  top: 24px;
+}
+.fileInfo .ant-upload-list-picture .ant-upload-list-item-thumbnail img {
+  width: 15px;
+  height: 15px;
+}
+.fileInfo .ant-upload-list-picture .ant-upload-list-item-name {
+  padding-left: 15px;
+  text-transform: capitalize;
+  padding-right: 10px;
+  width: 250px;
+  color: #2196f3;
+  font-size: 13px;
+  font-weight: 400;
+}
+.fileInfo .downloadIcon {
+  position: absolute;
+  right: 55px;
+  top: 72px;
+}
+.fileInfo .ant-upload-list-item-icon {
+  font-size: 18px;
+}
+.fileInfo .anticon-delete {
+  color: #2196f3;
+}
+.noFileWrapper {
+  border: 1px solid #e4e9f0;
+  padding: 19px 10px;
+}
+.noFileIcon {
+  margin-right: 5px;
+  color: #bdc4ce;
+  font-size: 18px;
+}
+.noFileText {
+  width: 200px;
+  display: inline-block;
+  margin: 0 20px;
+}
+.warningIcon {
+  color: #ff5757;
+  font-size: 15px;
+}
+.panelCriteria {
+  float: left;
+  width: 100%;
+  margin: 10px 0;
+}
+.panelCriteria label {
+  margin: 10px 0 0;
+}
+.rejectDocModule {
+  font-size: 16px;
+  font-weight: 700;
+  color: #313343;
+}
+.missingCriteria {
+  color: #9799a9;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.rejectReason .ant-checkbox + span {
+  font-size: 14px;
+  color: #313343;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.panel__content .ant-form-item {
+  margin: 0;
+}
+@media (max-width: 568px) {
+  .panel__header {
+    width: 60%;
+  }
+}
+
+.cc_doc_uploadBtn {
+  font-size: 11px !important;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  width: 200px !important;
+  height: 60px !important;
+  justify-content: center;
+  border: 1px dashed #525252 !important;
+  border-radius: 8px !important;
+}
+.cc_doc_uploadBtn span {
+  color: #000;
+  text-transform: capitalize;
+  white-space: normal;
+}
+.cc_custom_upload .ant-upload-list-item-name {
+  position: relative;
+  cursor: pointer;
+}
+.cc_custom_upload .ant-upload-list-picture .ant-upload-list-item,
+.ant-upload-list-picture-card .ant-upload-list-item {
+  border: none;
+  margin-top: -1px !important;
+  margin-bottom: -4px !important;
+  font-size: 10px !important;
+  .anticon-delete {
+    display: none !important;
+  }
+  .ant-upload-list-picture .ant-upload-list-item,
+  .ant-upload-list-picture-card .ant-upload-list-item {
+    height: 55px !important;
+    font-size: 10px !important;
+  }
+  .ant-upload-list-item-info {
+    margin-top: 4px !important;
+  }
+
+  .ant-upload-list-picture .ant-upload-list-item-thumbnail img,
+  .ant-upload-list-picture-card .ant-upload-list-item-thumbnail img {
+    margin-top: 11px !important;
+    width: 40px !important;
+    height: 27px !important;
+  }
+  .ant-upload-list-item {
+    font-size: 10px !important;
+  }
+}
+
+.cc_custom-upload {
+  display: flex;
+  .ant-upload-list {
+    display: none !important;
+  }
+  .ant-upload-list-item .ant-upload-list-item-undefined .ant-upload-list-item-list-type-text {
+    display: none !important;
+  }
+  // .ant-upload.ant-upload-select {
+  //   display: block !important;
+  // }
+}

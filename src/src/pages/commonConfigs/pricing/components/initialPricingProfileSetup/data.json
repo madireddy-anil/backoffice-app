@@ -1,0 +1,22 @@
+{
+    "profileType" : [
+        {
+            "value": "standard",
+            "label":"Standard"
+        },
+        {
+            "value": "custom",
+            "label":"Custom"
+        }
+    ],
+    "productType" : [
+        {
+            "value": "payments",
+            "label":"Payments"
+        },
+        {
+            "value": "trades",
+            "label":"Foreign Exchange"
+        }
+    ]
+}

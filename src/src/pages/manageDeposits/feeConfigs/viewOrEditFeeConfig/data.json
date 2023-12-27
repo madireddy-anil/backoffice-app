@@ -1,0 +1,120 @@
+{
+    "countryCurrencyFields": [
+        {
+            "id": "0",
+            "currency": "CNY",
+            "country": "China"
+        },
+        {
+            "id": "2",
+            "currency": "THB",
+            "country": "Thailand"
+        },
+        {
+            "id": "3",
+            "currency": "MYR",
+            "country": "Malaysia"
+        },
+        {
+            "id": "4",
+            "currency": "IDR",
+            "country": "Indonesia"
+        },
+        {
+            "id": "5",
+            "currency": "VND",
+            "country": "Vietnam"
+        },
+        {
+            "id": "6",
+            "currency": "GBP",
+            "country": "United Kingdom"
+        },
+        {
+            "id": "7",
+            "currency": "USD",
+            "country": "United States"
+        }
+    ],
+    "editFeeConfig": [
+        {
+            "fieldName": "sourceCurrency",
+            "labelName": "Source Currency",
+            "inputType": "select"
+        },
+        {
+            "fieldName": "destinationCurrency",
+            "labelName": "Destination Currency",
+            "inputType": "select"
+        },
+        {
+            "fieldName": "feeValue",
+            "labelName": "Fee",
+            "inputType": "input"
+        },
+        {
+            "fieldName": "spreadType",
+            "labelName": "Spread Type",
+            "inputType": "select"
+        },
+        {
+            "fieldName": "tradingHours",
+            "labelName": "Trading Hours",
+            "inputType": "select"
+        }
+    ],
+    "viewFeeConfig": [
+        {
+            "fieldName": "createdAt",
+            "labelName": "Creation Date"
+        },
+        {
+            "fieldName": "clientName",
+            "labelName": "Client"
+        },
+        {
+            "fieldName": "sourceCurrency",
+            "labelName": "Source Currency"
+        },
+        {
+            "fieldName": "destinationCurrency",
+            "labelName": "Destination Currency"
+        },
+        {
+            "fieldName": "feeValue",
+            "labelName": "Fee"
+        },
+        {
+            "fieldName": "spreadType",
+            "labelName": "Spreed Type"
+        },
+        {
+            "fieldName": "tradingHours",
+            "labelName": "Trading Hours"
+        }
+    ],
+    "tradingHours": [
+        {
+            "labelName": "notimingpreference",
+            "fieldName": "No Timing Preference"  
+        },
+        {
+            "labelName": "businesshours",
+            "fieldName": "Business Hours"  
+        },
+        {
+            "labelName": "overnight_weekend",
+            "fieldName": "Overnight/Weekend"  
+        }
+    ],
+    "spreadTypes": [
+        {
+            "labelName": "fixed",
+            "fieldName": "Fixed"  
+        },
+        {
+            "labelName": "variable",
+            "fieldName": "Variable"  
+        }
+    ]
+}

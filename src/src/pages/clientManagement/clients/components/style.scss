@@ -1,0 +1,143 @@
+.cardHeader {
+  margin-left: 40px;
+}
+.companyHeaderTitle {
+  font-weight: bold;
+  font-size: 26px;
+  color: #313343;
+  margin-left: -35px;
+}
+.riskLabelHeader {
+  border-radius: 16px;
+  background-color: #ff5757 !important;
+  margin-left: 30px;
+  border: 1px solid #ff5757 !important;
+}
+.riskLabel {
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.editLabel {
+  font-weight: 600;
+  font-size: 14px;
+  color: #313343;
+}
+.editVector {
+  margin-left: 8px;
+}
+.editVector img {
+  width: 90%;
+  vertical-align: baseline;
+}
+.companyManagementInfo {
+  margin-bottom: 24px;
+}
+.companyTitle {
+  font-weight: normal;
+  font-size: 11px;
+  color: #313343;
+  margin-bottom: 7px;
+}
+.companySubject {
+  font-weight: normal;
+  font-size: 14px;
+  color: #888a9d;
+  margin: 0;
+  text-transform: capitalize;
+}
+.productInfo,
+.companySite {
+  font-weight: 500;
+  font-size: 14px;
+  color: #313343;
+}
+.productInfoSubject,
+.webSiteSubject {
+  border: 0.8px solid #efefef;
+  padding: 20px;
+  border-radius: 18px;
+  margin-right: 20px;
+}
+.productInfoSubject .companySubject,
+.webSiteSubject .website {
+  margin-bottom: 24px;
+}
+.websiteTitle {
+  font-weight: normal;
+  font-size: 14px;
+  color: #313343;
+  margin-left: 7px;
+  margin-bottom: 24px;
+}
+.editModulePage {
+  margin-left: 15px;
+  color: #313343;
+  font-size: 24px;
+  font-weight: 700;
+}
+.editModulePage .modal-desc {
+  font-size: 16px;
+  margin-top: 11px;
+}
+.formInputItem {
+  margin: 10px 5px 0;
+  position: relative;
+}
+.formTextAreaItem {
+  margin: 15px 0 0 !important;
+  position: relative;
+}
+.formInputItem .ant-form-item-label,
+.formTextAreaItem .ant-form-item-label {
+  overflow: visible;
+  white-space: nowrap;
+  width: 100%;
+}
+.formInputItem .ant-form-item-label > label::after,
+.formTextAreaItem .ant-form-item-label > label::after {
+  content: none;
+}
+.formInputItem label,
+.formTextAreaItem label {
+  color: #888a9d;
+  font-size: 11px;
+  position: absolute;
+  pointer-events: none;
+  left: 20px;
+  top: 0;
+  z-index: 1000;
+  display: block;
+  background: #fff !important;
+}
+.formTextAreaItem label {
+  top: -30px !important;
+}
+.formInputItem input {
+  color: #313343;
+  font-size: 14px;
+  padding: 20px;
+}
+.formTextAreaItem textarea {
+  padding-top: 10px;
+  color: #888a9d;
+  font-size: 13px;
+}
+.formAdd .formInputItem {
+  margin: 4px 0 12px;
+}
+.addIcon {
+  border: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2196f3;
+}
+[ant-click-animating-without-extra-node]:after {
+  animation: 0s !important;
+}
+.removeIcon {
+  position: absolute;
+  top: 0;
+  right: 16px;
+}

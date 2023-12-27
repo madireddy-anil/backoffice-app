@@ -1,0 +1,15 @@
+{
+    "users":[
+        {
+            "firstName" : "Madhuri",
+            "lastName"  : "Veepuri",
+            "email" : "amdhuri.vee@payconstruct.com",
+            "country" : "VN",
+            "role" : "admin",
+            "password" : "ertyuio"
+
+        }
+    ]
+
+    
+}

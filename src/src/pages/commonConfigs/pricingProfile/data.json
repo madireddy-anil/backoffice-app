@@ -1,0 +1,197 @@
+{
+    "profileType" : [
+        {
+            "value": "standard",
+            "label":"Standard"
+        },
+        {
+            "value": "custom",
+            "label":"Custom"
+        }
+    ],
+
+    "direction" : [
+        {
+            "value": "inbound",
+            "label":"Inbound"
+        },
+        {
+            "value": "outbound",
+            "label":"Outbound"
+        }
+    ],
+    "priority" : [
+        {
+            "value": "normal",
+            "label":"Normal"
+        },
+        {
+            "value": "urgent",
+            "label":"urgent"
+        }
+    ],
+    "paymentType" : [
+        {
+            "value": "external",
+            "label":"External"
+        },
+        {
+            "value": "internal",
+            "label":"Internal"
+        }
+    ],
+    "productType" : [
+        {
+            "value": "payments",
+            "label":"Payments"
+        },
+        {
+            "value": "trades",
+            "label":"Trades"
+        }
+    ],
+
+    "tieringMethods" : [
+        {
+            "value": "monthly_value",
+            "label":"Monthly Value"
+        },
+        {
+            "value": "monthly_volume",
+            "label":"Monthly Volume"
+        },
+        {
+            "value": "single_value",
+            "label":"Single Value"
+        }
+    ],
+    "tradeTieringMethods" : [
+        {
+            "value": "monthly_value",
+            "label":"Monthly Buy Amount  "
+        },
+        {
+            "value": "monthly_volume",
+            "label":"Monthly Trade Volume"
+        },
+        {
+            "value": "single_value",
+            "label":"Single Buy Amount"
+        }
+    ],
+    "feeTypeMethod" : [
+        {
+            "value": "flat",
+            "label":"FLAT"
+        },
+        {
+            "value": "percentage",
+            "label":"PERCENTAGE"
+        },
+        {
+            "value": "NA",
+            "label":"N/A"
+        }
+    ],
+    "montlyValue": [
+        "paymentsTier",
+        "paymentsTieringMethod",
+        "monthly.fromValueOfMonthlyPayments",
+        "monthly.maxValueOfMonthlyPayments",
+        "liftingFeeMethod",
+        "liftingFeeAmount",
+        "invoiceFeeMethod",
+        "invoiceAmount",
+        "invoiceCurrency",
+        "isFinalTier",
+        "paymentsTieringActive",
+        "actions"
+      ],
+      "montlyVolume": [
+          "paymentsTier",
+        "paymentsTieringMethod",
+        "monthly.fromNumberOfMonthlyPayments",
+        "monthly.maxNumberOfMonthlyPayments",
+        "liftingFeeMethod",
+        "liftingFeeAmount",
+        "invoiceFeeMethod",
+        "invoiceAmount",
+        "invoiceCurrency",
+        "isFinalTier",
+        "paymentsTieringActive",
+        "actions"
+      ],
+      "singleValue": [
+          "paymentsTier",
+        "paymentsTieringMethod",
+        "single.fromValueOfSinglePayment",
+        "single.maxValueOfSinglePayment",
+        "liftingFeeMethod",
+        "liftingFeeAmount",
+        "invoiceFeeMethod",
+        "invoiceAmount",
+        "invoiceCurrency",
+        "isFinalTier",
+        "paymentsTieringActive",
+        "actions"
+      ],
+
+      "nonTieringList": [
+        "liftingFeeMethod",
+        "liftingFeeAmount",
+        "invoiceFeeMethod",
+        "invoiceAmount",
+        "invoiceCurrency",
+        "actions"
+      ],
+
+      "tradeMontlyValue": [
+        "tradesTieringMethod",
+        "monthly.fromMonthlyBuyAmount",
+        "monthly.maxMonthlyBuyAmount",
+        "spread",
+        "markup",
+        "isFinalTier",
+        "tradesTieringActive",
+        "actions"
+      ],
+      "tradeMontlyVolume": [
+        "tradesTieringMethod",
+        "monthly.fromNumberOfMonthlyTrades",
+        "monthly.maxNumberOfMonthlyTrades",
+        "spread",
+        "markup",
+        "isFinalTier",
+        "tradesTieringActive",
+        "actions"
+      ],
+      "tradeSingleValue": [
+        "tradesTieringMethod",
+        "single.fromValueOfSingleBuyAmount",
+        "single.maxValueOfSingleBuyAmount",
+        "spread",
+        "markup",
+        "isFinalTier",
+        "tradesTieringActive",
+        "actions"
+      ],
+
+      "nonTieringTradeList": [
+        "spread",
+        "markup",
+        "isFinalTier",
+        "actions"
+      ],
+      "status" : [
+        {
+            "value": "true",
+            "label":"Active"
+        },
+        {
+            "value": "false",
+            "label":"InActive"
+        }
+
+      ]
+   
+}

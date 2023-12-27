@@ -1,0 +1,118 @@
+{
+    "direction" : [
+        {
+            "value": "inbound",
+            "label":"Inbound"
+        },
+        {
+            "value": "outbound",
+            "label":"Outbound"
+        }
+    ],
+    "priority" : [
+        {
+            "value": "normal",
+            "label":"Normal"
+        },
+        {
+            "value": "urgent",
+            "label":"urgent"
+        }
+    ],
+    "paymentType" : [
+        {
+            "value": "external",
+            "label":"External"
+        },
+        {
+            "value": "internal",
+            "label":"Internal"
+        }
+    ],
+    "productType" : [
+        {
+            "value": "payments",
+            "label":"Payments"
+        },
+        {
+            "value": "trades",
+            "label":"Trades"
+        }
+    ],
+    "tieringMethods" : [
+        {
+            "value": "monthly_value",
+            "label":"Monthly Value"
+        },
+        {
+            "value": "monthly_volume",
+            "label":"Monthly Volume"
+        },
+        {
+            "value": "single_value",
+            "label":"Single Value"
+        }
+    ],
+    "feeTypeMethod" : [
+        {
+            "value": "flat",
+            "label":"FLAT"
+        },
+        {
+            "value": "percentage",
+            "label":"PERCENTAGE"
+        }
+    ],
+
+    "montlyValue": [
+        "paymentsTier",
+        "paymentsTieringMethod",
+        "monthly.fromValueOfMonthlyPayments",
+        "monthly.maxValueOfMonthlyPayments",
+        "liftingFeeMethod",
+        "liftingFeeAmount",
+        "invoiceFeeMethod",
+        "invoiceAmount",
+        "invoiceCurrency",
+        "isFinalTier",
+        "paymentsTieringActive",
+        "actions"
+      ],
+      "montlyVolume": [
+          "paymentsTier",
+        "paymentsTieringMethod",
+        "monthly.fromNumberOfMonthlyPayments",
+        "monthly.maxNumberOfMonthlyPayments",
+        "liftingFeeMethod",
+        "liftingFeeAmount",
+        "invoiceFeeMethod",
+        "invoiceAmount",
+        "invoiceCurrency",
+        "isFinalTier",
+        "paymentsTieringActive",
+        "actions"
+      ],
+      "singleValue": [
+          "paymentsTier",
+        "paymentsTieringMethod",
+        "single.fromValueOfSinglePayment",
+        "single.maxValueOfSinglePayment",
+        "liftingFeeMethod",
+        "liftingFeeAmount",
+        "invoiceFeeMethod",
+        "invoiceAmount",
+        "invoiceCurrency",
+        "isFinalTier",
+        "paymentsTieringActive",
+        "actions"
+      ],
+
+      "nonTieringList": [
+        "liftingFeeMethod",
+        "liftingFeeAmount",
+        "invoiceFeeMethod",
+        "invoiceAmount",
+        "invoiceCurrency",
+        "actions"
+      ]
+}

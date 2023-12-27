@@ -1,0 +1,36 @@
+@import 'assets/styles/mixins.scss';
+
+.listCard {
+  border: 1px solid #a8c6fa;
+  padding: 10px;
+  border-radius: 7px;
+  transition: all 1s;
+}
+.card {
+  :global {
+    .ant-card-body {
+      padding: 0;
+    }
+  }
+}
+.codeBlockContainer {
+  pre {
+    padding: 0.5em;
+    margin: 0;
+    counter-reset: line;
+    border: none;
+  }
+  pre span {
+    display: block;
+    line-height: 1.5rem;
+  }
+  pre span:before {
+    counter-increment: line;
+    content: counter(line);
+    display: inline-block;
+    border-right: 1px solid #ddd;
+    padding: 0 0.5em;
+    margin-right: 0.5em;
+    color: #888;
+  }
+}

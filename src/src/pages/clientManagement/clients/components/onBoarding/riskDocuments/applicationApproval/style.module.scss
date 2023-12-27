@@ -1,0 +1,43 @@
+$heading-color: #313343;
+$link-color: #145ed0;
+$font-size-secondary: 15px;
+
+.clear__bottom_margin {
+  margin-bottom: 0;
+}
+
+.panel__header {
+  color: $heading-color;
+  font-size: 14px;
+  margin-left: 3%;
+}
+.btnlink {
+  width: auto !important;
+  border: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.btnlink span {
+  color: $link-color;
+  font-size: $font-size-secondary;
+  font-weight: 600;
+}
+.cc_status_bar {
+  display: flex !important;
+  align-items: center;
+  text-align: right;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+@media (max-width: 568px) {
+  .panel__header {
+    width: 60%;
+  }
+  .btnlink span {
+    font-size: 12px;
+  }
+  .cc_resendEmail {
+    margin: 0 !important;
+  }
+}

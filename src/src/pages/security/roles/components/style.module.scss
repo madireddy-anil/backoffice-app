@@ -1,0 +1,56 @@
+@import 'assets/styles/mixins.scss';
+
+.modalHeader {
+  margin-left: -25px;
+  margin-right: -24px;
+  margin-top: -27px;
+}
+.formActions {
+  text-align: center;
+  margin-bottom: -25px;
+}
+.btnAddPermission {
+  height: 3rem;
+  background-color: #75a9f9;
+  color: #fff;
+  width: 200px;
+}
+.formBlock {
+  margin-top: 48px;
+  font-weight: 600;
+}
+.inputbox {
+  padding: 19px;
+  border: 1px solid #a8c6fa;
+  border-radius: 4px;
+  width: 90%;
+}
+.listCard {
+  border: 1px solid #a8c6fa;
+  padding: 10px;
+  border-radius: 7px;
+  transition: all 1s;
+}
+.badge {
+  padding: 10px;
+}
+.test {
+  padding: 10px;
+}
+.cstmSelectInput {
+  font-size: 13px;
+  font-family: 'Nunito Sans', sans-serif;
+  border-radius: 4px;
+  border: 1px solid #a8c6fa;
+  padding: 3px;
+  :global {
+    .ant-select-selection {
+      border: none;
+    }
+  }
+}
+@media (max-width: $md-max-width) {
+  .modalHeader {
+    margin-top: -34px;
+  }
+}

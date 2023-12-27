@@ -1,0 +1,27 @@
+@import 'assets/styles/mixins.scss';
+.stepUploadBlock {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  margin-left: -14px;
+}
+
+.stepBodyBlock {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.buttonStyle {
+  border-radius: 16px;
+  width: 100%;
+}
+
+.guideLineButtonStyle {
+  border-radius: 16px;
+  width: 100%;
+  margin-left: -20px;
+}
+
+.errorBlock {
+  margin-top: 25px;
+  margin-bottom: -18px;
+}

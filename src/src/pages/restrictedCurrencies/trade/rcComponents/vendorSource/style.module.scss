@@ -1,0 +1,20 @@
+@import 'assets/styles/mixins.scss';
+
+.flex {
+  display: flex;
+}
+
+.inputBox {
+  border: 1px solid #a8c6fa;
+  border-radius: 4px;
+  width: 90%;
+}
+
+.leftInput {
+  padding: 10px;
+  border-right: 1px solid #a8c6fa;
+}
+
+.rightInput {
+  padding: 10px;
+}

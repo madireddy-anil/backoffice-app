@@ -1,0 +1,125 @@
+{
+  "accountManagementList": [
+    {
+      "accountStatus": "new",
+      "id": "1",
+      "createdAt": "12-04-2021",
+      "companyType": "Limited Company",
+      "companyName": "Google",
+      "countryOfIncorporation": "India"
+    },
+    {
+      "accountStatus": "pending",
+      "id": "2",
+      "createdAt": "11-04-2021",
+      "companyType": "Sole Trader",
+      "companyName": "Instagram",
+      "countryOfIncorporation": "china"
+    },
+    {
+      "accountStatus": "new",
+      "id": "3",
+      "createdAt": "12-04-2021",
+      "companyType": "Registered Partnership",
+      "companyName": "Facebook",
+      "countryOfIncorporation": "USA"
+    },
+    {
+      "accountStatus": "new",
+      "id": "4",
+      "createdAt": "10-04-2021",
+      "companyType": "Limited Company",
+      "companyName": "Google",
+      "countryOfIncorporation": "Germany"
+    },
+    {
+      "accountStatus": "new",
+      "id": "5",
+      "createdAt": "11-04-2021",
+      "companyType": "Limited Company",
+      "companyName": "Facebook",
+      "countryOfIncorporation": "Peru"
+    }
+  ],
+  "companyManagementList": [
+    {
+      "id": "0",
+      "companyTitle": "Trading Name",
+      "companySubject": "Merchant 123"
+    },
+    {
+      "id": "1",
+      "companyTitle": "Company Number",
+      "companySubject": "1234567890"
+    },
+    {
+      "id": "2",
+      "companyTitle": "Company Incorporation",
+      "companySubject": "Unkited Kingdom"
+    },
+    {
+      "id": "3",
+      "companyTitle": "Industry",
+      "companySubject": "Forex"
+    },
+    {
+      "id": "4",
+      "companyTitle": "Industry Sub-Type",
+      "companySubject": "Broker"
+    },
+    {
+      "id": "5",
+      "companyTitle": "Other Industry",
+      "companySubject": "-"
+    }
+  ],
+  "productInformationList": [
+    {
+      "id": "0",
+      "companyTitle": "Brands",
+      "companySubject": "PayConstruct"
+    },
+    {
+      "id": "1",
+      "companyTitle": "Products",
+      "companySubject": "Restricted Currency Transfer"
+    },
+    {
+      "id": "2",
+      "companyTitle": "Sub-Product 1",
+      "companySubject": "PayConstruct - Restricted Currency Transfer  - China"
+    },
+    {
+      "id": "3",
+      "companyTitle": "Sub-Product 2",
+      "companySubject": "PayConstruct - Restricted Currency Transfer  - Vietnam"
+    },
+    {
+      "id": "4",
+      "companyTitle": "Sub-Product 3",
+      "companySubject": "PayConstruct - Restricted Currency Transfer  - Malaysia"
+    }
+  ],
+  "websiteInformationList": [
+    {
+      "id": "0",
+      "title": "merchant123.com"
+    },
+    {
+      "id": "1",
+      "title": "bet123.com"
+    },
+    {
+      "id": "2",
+      "title": "betting-web.com"
+    },
+    {
+      "id": "3",
+      "title": "123bet.com"
+    },
+    {
+      "id": "4",
+      "title": "betting123.com"
+    }
+  ]
+}

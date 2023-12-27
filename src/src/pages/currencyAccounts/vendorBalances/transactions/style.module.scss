@@ -1,0 +1,93 @@
+@import 'assets/styles/mixins.scss';
+
+.balance {
+  font-weight: bold;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.65);
+}
+.listHeader {
+  // margin-top: -11px;
+  // margin-bottom: 7px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.moreInfo {
+  margin-left: -18px;
+  // color: #313343;
+}
+.summaryHeader {
+  margin-bottom: 10px;
+  margin-top: -10px;
+  margin-left: -6px;
+}
+.backArrowIcon {
+  color: #0190fe;
+  cursor: pointer;
+}
+.activeCard {
+  background-color: #313343 !important;
+  border-radius: 5px;
+  .nameBlock {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    float: left;
+    letter-spacing: 1px;
+  }
+  .typeBlock {
+    color: #fff;
+    font-size: 15px;
+    // float: right;
+  }
+  .accountNumber {
+    color: $white;
+    font-weight: bold;
+    float: left;
+    letter-spacing: 5px;
+    font-size: 15px;
+    margin-top: 7px;
+  }
+  .currencyBlock {
+    color: $white;
+    font-size: 15px;
+    float: right;
+    margin-top: 2px;
+  }
+  .balanceBlock {
+    color: $white;
+    font-size: 15px;
+    font-weight: bold;
+    float: right;
+    margin-top: 4px;
+  }
+  .availablebalanceBlock {
+    color: $white;
+    font-size: 15px;
+    font-weight: bold;
+    float: right;
+    margin-top: 4px;
+  }
+  .statusBlock {
+    color: $white;
+    font-size: 15px;
+    float: right;
+  }
+  .addressBlock {
+    color: $white;
+    font-size: 15px;
+    margin-top: 3px;
+  }
+}
+.imageBlock {
+  clip: rect(1px, 100px, 80px, 1px);
+}
+.tableHeader {
+  margin-left: 18px;
+}
+.debitBtn {
+  margin-left: 14px;
+}
+.moreInfoBlock {
+  align-content: center;
+  margin-left: -5px;
+}

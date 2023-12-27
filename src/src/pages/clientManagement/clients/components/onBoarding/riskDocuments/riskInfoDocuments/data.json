@@ -1,0 +1,101 @@
+{
+  "rejectDocument": [
+    {
+      "id": "29",
+      "label": "Entities name listed",
+      "name": "entitiesNameRejectcertificateOfIncorporation",
+      "value": "entitiesName",
+      "inputType": "checkBox",
+      "documentType": "certificateOfIncorporation"
+    },
+    {
+      "id": "30",
+      "label": "Entities name listed",
+      "name": "entitiesNameRejectarticlesOfAssociation",
+      "value": "entitiesName",
+      "inputType": "checkBox",
+      "documentType": "articlesOfAssociation"
+    },
+    {
+      "id": "31",
+      "label": "Incorporation number is listed",
+      "name": "incorporationNumberRejectcertificateOfIncorporation",
+      "value": "incorporationNumber",
+      "inputType": "checkBox",
+      "documentType": "certificateOfIncorporation"
+    },
+    {
+      "id": "32",
+      "label": "Other reasons",
+      "name": "otherReasonsRejectcertificateOfIncorporation",
+      "value": "otherReasons",
+      "inputType": "checkBox",
+      "documentType": "certificateOfIncorporation"
+    }
+  ],
+  "requiredDocumentsList": [
+    {
+      "label": "Regulatory Licence",
+      "maxLimit": 1,
+      "minLimit": 1,
+      "name": "regulatory_license",
+      "toolTip": "Registred company licence"
+    },
+   {
+     "name": "certificate_of_incorporation",
+     "label": "Certificate Of Incorporation",
+     "minLimit": 1,
+     "maxLimit": 1,
+     "toolTip": "Written evidence relating to the company formation that reflects the registration information"
+   },
+   {
+    "name": "articles_of_association",
+    "label": "Articles Of Association",
+    "minLimit": 1,
+    "maxLimit": 1,
+    "toolTip": "A document that defines the company purpose and sets out the rules in which a company must be run and administered"
+  },
+  {
+    "name": "directors_register",
+    "label": "Directors Register",
+    "minLimit": 1,
+    "maxLimit": 1,
+    "toolTip": "This pertains to a list of the directors elected by the firm. *Please submit a document that was issued in the last 12 months"
+  },
+  {
+    "name": "shareholder_register",
+    "label": "Shareholder Register",
+    "minLimit": 1,
+    "maxLimit": 1,
+    "toolTip": "This document requires that every current shareholder is recorded. *Please submit a document that was issued in the last 12 months"
+  },
+  {
+    "name": "aml_policies_procedures",
+    "label": "Aml Policies Procedures",
+    "minLimit": 3,
+    "maxLimit": 6,
+    "toolTip": "Anti-money laundering (AML) refers to the laws, regulations and procedures intended to prevent criminals from disguising illegally obtained funds as legitimate income. These policies can include areas such as customer due diligence, monitoring and controls. *Please submit the most recent version of your AML policies"
+  },
+  {
+    "name": "financial_statement",
+    "label": "Financial Statement",
+    "minLimit": 3,
+    "maxLimit": 6,
+    "toolTip": "This document is a formal record of the financial activities of a company. *Please submit a document that was issued in the last 12 months"
+  },
+  {
+    "name": "client_list",
+    "label": "Client List",
+    "minLimit": 3,
+    "maxLimit": 6,
+    "toolTip": "This requirement is to check if the merchant is doing PEP and sanction screening of players; and what the tool/software they use to do this process. *Please submit a list of newly-boarded customers/players in the last 2 months. An onboarding specialist will get back to you with 3 randomly-selected names"
+  },
+  {
+    "name": "wolfsburg_questionnaire",
+    "label": "Wolfsburg Questionnaire",
+    "minLimit": 1,
+    "maxLimit": 1,
+    "toolTip": "This questionnaire established by The Wolfsberg Group airms to provide a standardised overview of a financial institution's AML policies and practices. *The template of the questionnaire may be found here: https://www.wolfsberg-principles.com/sites/default/files/wb/FCCQ_V1.1_SC04_.pdf"
+  }
+  ]
+}

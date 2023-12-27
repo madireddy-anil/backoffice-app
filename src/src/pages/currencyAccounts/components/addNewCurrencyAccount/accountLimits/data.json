@@ -1,0 +1,41 @@
+{
+    "types": [
+        {
+            "id" : 1,
+            "label" : "Maximum Amount",
+            "value" : "max_amount"
+        },
+        {
+            "id" : 2,
+            "label" : "Minimum Volume",
+            "value" : "min_volume"
+        },
+        {
+            "id" : 3,
+            "label" : "Maximum Volume",
+            "value" : "max_volume"
+        },
+        {
+            "id" : 3,
+            "label" : "Minimum Transaction",
+            "value" : "min_transaction"
+        },
+        {
+            "id" : 5,
+            "label" : "Maximum Transaction",
+            "value" : "max_transaction"
+        }
+    ],
+    "days" : [
+        {
+            "id" : 1,
+            "label" : "Day",
+            "value" : "day"
+        },
+        {
+            "id" : 2,
+            "label" : "Month",
+            "value" : "month"
+        }
+    ]
+}

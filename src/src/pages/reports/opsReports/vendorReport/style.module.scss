@@ -1,0 +1,22 @@
+@import 'assets/styles/mixins.scss';
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchBox {
+  margin-bottom: 20px;
+}
+
+.modifyColumnBtn {
+  margin-top: 6px;
+  .txncheckbox {
+    display: inline-grid !important;
+    margin-top: -26px;
+  }
+}
+
+.closeBtn {
+  justify-content: flex-end;
+  padding: 10px 25px 0 0;
+}

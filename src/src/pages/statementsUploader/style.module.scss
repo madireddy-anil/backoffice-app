@@ -1,0 +1,59 @@
+@import 'assets/styles/mixins.scss';
+.mainCard {
+  border-radius: 13px;
+  border-left: 1px;
+  border-right: 1px;
+  border-bottom: 1px;
+  border-top: 1px;
+}
+
+.cstmSelectInput {
+  font-size: 13px;
+  font-family: 'Nunito Sans', sans-serif;
+  border-radius: 4px;
+  border: 1px solid #a8c6fa;
+  margin-left: -12px;
+  margin-top: 4px;
+  :global {
+    .ant-select-selection {
+      border: none;
+    }
+  }
+}
+
+.stepUploadBlock {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  margin-left: -14px;
+}
+
+.stepBodyBlock {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.buttonStyle {
+  border-radius: 16px;
+  width: 100%;
+}
+
+.titleBlock {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.totalData {
+  margin-top: 20px;
+  padding-left: 16px;
+  margin-bottom: 17px;
+}
+
+.paginationTab {
+  float: right;
+  margin-right: -10px;
+}
+
+.totalPageBlock {
+  margin-top: 5px;
+  margin-left: -13px;
+}

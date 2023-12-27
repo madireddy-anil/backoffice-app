@@ -1,0 +1,26 @@
+.pi__collapse {
+  margin-bottom: 20px;
+}
+.panel__header {
+  padding: 8px;
+}
+.ccremittancetrue {
+  border: none;
+  color: #54d19d;
+  background: #e5f8f0;
+  font-size: 12px;
+  pointer-events: none;
+}
+.ccremittancefalse {
+  border: none;
+  color: #ff5757;
+  background: #fee;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+@media (max-width: 568px) {
+  .panel__header {
+    width: 60%;
+  }
+}

@@ -1,0 +1,1161 @@
+const actions = {
+  UPDATE_SELECED_TYPE: 'UPDATE_SELECED_TYPE',
+  UPDATE_SELECTED_CURRENCY_DATA: 'UPDATE_SELECTED_CURRENCY_DATA',
+
+  GET_CLIENT_ACCOUNTS: 'GET_CLIENT_ACCOUNTS',
+  GET_CLIENT_ACCOUNTS_SUCCESS: 'GET_CLIENT_ACCOUNTS_SUCCESS',
+  GET_CLIENT_ACCOUNTS_FAILURE: 'GET_CLIENT_ACCOUNTS_FAILURE',
+
+  GET_P_AND_L_ACCOUNTS: 'GET_P_AND_L_ACCOUNTS',
+  GET_P_AND_L_ACCOUNTS_SUCCESS: 'GET_P_AND_L_ACCOUNTS_SUCCESS',
+  GET_P_AND_L_ACCOUNTS_FAILURE: 'GET_P_AND_L_ACCOUNTS_FAILURE',
+
+  // remove
+
+  GET_VENDOR_ACCOUNTS: 'GET_VENDOR_ACCOUNTS',
+  GET_VENDOR_ACCOUNTS_SUCCESS: 'GET_VENDOR_ACCOUNTS_SUCCESS',
+  GET_VENDOR_ACCOUNTS_FAILURE: 'GET_VENDOR_ACCOUNTS_FAILURE',
+
+  GET_CURRENCY_ACCOUNTS_OF_VENDOR_BY_FILTERS: 'GET_CURRENCY_ACCOUNTS_OF_VENDOR_BY_FILTERS',
+  GET_CURRENCY_ACCOUNTS_OF_VENDOR_BY_FILTERS_SUCCESS:
+    'GET_CURRENCY_ACCOUNTS_OF_VENDOR_BY_FILTERS_SUCCESS',
+  GET_CURRENCY_ACCOUNTS_OF_VENDOR_BY_FILTERS_FAILURE:
+    'GET_CURRENCY_ACCOUNTS_OF_VENDOR_BY_FILTERS_FAILURE',
+
+  ADD_VENDOR_CA_BY_CURRENCY: 'ADD_VENDOR_CA_BY_CURRENCY',
+  ADD_VENDOR_CA_BY_CURRENCY_SUCCESS: 'ADD_VENDOR_CA_BY_CURRENCY_SUCCESS',
+  ADD_VENDOR_CA_BY_CURRENCY_FAILURE: 'ADD_VENDOR_CA_BY_CURRENCY_FAILURE',
+
+  // new
+
+  GET_ALL_VENDOR_CLIENT_ACCOUNTS: 'GET_ALL_VENDOR_CLIENT_ACCOUNTS',
+  GET_ALL_VENDOR_CLIENT_ACCOUNTS_SUCCESS: 'GET_ALL_VENDOR_CLIENT_ACCOUNTS_SUCCESS',
+  GET_ALL_VENDOR_CLIENT_ACCOUNTS_FAILURE: 'GET_ALL_VENDOR_CLIENT_ACCOUNTS_FAILURE',
+
+  GET_CURRENCY_ACCOUNTS_OF_VENDOR_CLIENT_BY_FILTERS:
+    'GET_CURRENCY_ACCOUNTS_OF_VENDOR_CLIENT_BY_FILTERS',
+  GET_CURRENCY_ACCOUNTS_OF_VENDOR_CLIENT_BY_FILTERS_SUCCESS:
+    'GET_CURRENCY_ACCOUNTS_OF_VENDOR_CLIENT_BY_FILTERS_SUCCESS',
+  GET_CURRENCY_ACCOUNTS_OF_VENDOR_CLIENT_BY_FILTERS_FAILURE:
+    'GET_CURRENCY_ACCOUNTS_OF_VENDOR_CLIENT_BY_FILTERS_FAILURE',
+
+  GET_ALL_VENDOR_PL_ACCOUNTS: 'GET_ALL_VENDOR_PL_ACCOUNTS',
+  GET_ALL_VENDOR_PL_ACCOUNTS_SUCCESS: 'GET_ALL_VENDOR_PL_ACCOUNTS_SUCCESS',
+  GET_ALL_VENDOR_PL_ACCOUNTS_FAILURE: 'GET_ALL_VENDOR_PL_ACCOUNTS_FAILURE',
+
+  GET_CURRENCY_ACCOUNTS_OF_VENDOR_PL_BY_FILTERS: 'GET_CURRENCY_ACCOUNTS_OF_VENDOR_PL_BY_FILTERS',
+  GET_CURRENCY_ACCOUNTS_OF_VENDOR_PL_BY_FILTERS_SUCCESS:
+    'GET_CURRENCY_ACCOUNTS_OF_VENDOR_PL_BY_FILTERS_SUCCESS',
+  GET_CURRENCY_ACCOUNTS_OF_VENDOR_PL_BY_FILTERS_FAILURE:
+    'GET_CURRENCY_ACCOUNTS_OF_VENDOR_PL_BY_FILTERS_FAILURE',
+
+  GET_ALL_PL_VENDOR_ACCOUNTS: 'GET_ALL_PL_VENDOR_ACCOUNTS',
+  GET_ALL_PL_VENDOR_ACCOUNTS_SUCCESS: 'GET_ALL_PL_VENDOR_ACCOUNTS_SUCCESS',
+  GET_ALL_PL_VENDOR_ACCOUNTS_FAIL: 'GET_ALL_PL_VENDOR_ACCOUNTS_FAIL',
+
+  GET_CURRENCY_ACCOUNTS_OF_CLIENT_BY_FILTERS: 'GET_CURRENCY_ACCOUNTS_OF_CLIENT_BY_FILTERS',
+  GET_CURRENCY_ACCOUNTS_OF_CLIENT_BY_FILTERS_SUCCESS:
+    'GET_CURRENCY_ACCOUNTS_OF_CLIENT_BY_FILTERS_SUCCESS',
+  GET_CURRENCY_ACCOUNTS_OF_CLIENT_BY_FILTERS_FAILURE:
+    'GET_CURRENCY_ACCOUNTS_OF_CLIENT_BY_FILTERS_FAILURE',
+
+  SHOW_CURRENCY_LIST_MODAL: 'SHOW_CURRENCY_LIST_MODAL',
+
+  CLOSE_CURRENCY_LIST_MODAL: 'CLOSE_CURRENCY_LIST_MODAL',
+
+  ADD_ACCOUNT_BY_CURRENCY: 'ADD_ACCOUNT_BY_CURRENCY',
+  ADD_ACCOUNT_BY_CURRENCY_SUCCESS: 'ADD_ACCOUNT_BY_CURRENCY_SUCCESS',
+  ADD_ACCOUNT_BY_CURRENCY_FAILURE: 'ADD_ACCOUNT_BY_CURRENCY_FAILURE',
+
+  // new
+  ADD_VENDOR_CLIENT_CA_BY_CURRENCY: 'ADD_VENDOR_CLIENT_CA_BY_CURRENCY',
+  ADD_VENDOR_CLIENT_CA_BY_CURRENCY_SUCCESS: 'ADD_VENDOR_CLIENT_CA_BY_CURRENCY_SUCCESS',
+  ADD_VENDOR_CLIENT_CA_BY_CURRENCY_FAILURE: 'ADD_VENDOR_CLIENT_CA_BY_CURRENCY_FAILURE',
+
+  ADD_VENDOR__PL_CA_BY_CURRENCY: 'ADD_VENDOR__PL_CA_BY_CURRENCY',
+  ADD_VENDOR__PL_CA_BY_CURRENCY_SUCCESS: 'ADD_VENDOR__PL_CA_BY_CURRENCY_SUCCESS',
+  ADD_VENDOR__PL_CA_BY_CURRENCY_FAILURE: 'ADD_VENDOR__PL_CA_BY_CURRENCY_FAILURE',
+
+  ADD_PL_CA_BY_CURRENCY: 'ADD_PL_CA_BY_CURRENCY',
+  ADD_PL_CA_BY_CURRENCY_SUCCESS: 'ADD_PL_CA_BY_CURRENCY_SUCCESS',
+  ADD_PL_CA_BY_CURRENCY_FAILURE: 'ADD_PL_CA_BY_CURRENCY_FAILURE',
+
+  GET_P_AND_L_ACCOUNTS_BY_FILTERS: 'GET_P_AND_L_ACCOUNTS_BY_FILTERS',
+  GET_P_AND_L_ACCOUNTS_BY_FILTERS_SUCCESS: 'GET_P_AND_L_ACCOUNTS_BY_FILTERS_SUCCESS',
+  GET_P_AND_L_ACCOUNTS_BY_FILTERS_FAILURE: 'GET_P_AND_L_ACCOUNTS_BY_FILTERS_FAILURE',
+
+  UPDATE_SELECED_ACCOUNT: 'UPDATE_SELECED_ACCOUNT',
+
+  GET_CLIENT_CA_BY_ID: 'GET_CLIENT_CA_BY_ID',
+  GET_CLIENT_CA_BY_ID_SUCCESS: 'GET_CLIENT_CA_BY_ID_SUCCESS',
+  GET_CLIENT_CA_BY_ID_FAILURE: 'GET_CLIENT_CA_BY_ID_FAILURE',
+
+  GET_PL_CA_BY_ID: 'GET_PL_CA_BY_ID',
+  GET_PL_CA_BY_ID_SUCCESS: 'GET_PL_CA_BY_ID_SUCCESS',
+  GET_PL_CA_BY_ID_FAILURE: 'GET_PL_CA_BY_ID_FAILURE',
+
+  GET_SUSPENSE_CA_BY_ID: 'GET_SUSPENSE_CA_BY_ID',
+  GET_SUSPENSE_CA_BY_ID_SUCCESS: 'GET_SUSPENSE_CA_BY_ID_SUCCESS',
+  GET_SUSPENSE_CA_BY_ID_FAILURE: 'GET_SUSPENSE_CA_BY_ID_FAILURE',
+
+  // New version
+
+  ADD_ACCOUNT_DETAILS_VISIBLE: 'ADD_ACCOUNT_DETAILS_VISIBLE',
+  ADD_EXTERNAL_REFERENCES_VISIBLE: 'ADD_EXTERNAL_REFERENCES_VISIBLE',
+  EDIT_EXTERNAL_REFERENCES_VISIBLE: 'EDIT_EXTERNAL_REFERENCES_VISIBLE',
+  ADD_ACCOUNT_LIMITS_VISIBLE: 'ADD_ACCOUNT_LIMITS_VISIBLE',
+  EDIT_ACCOUNT_LIMITS_VISIBLE: 'EDIT_ACCOUNT_LIMITS_VISIBLE',
+  ADD_EXOTIC_FX_CONFIG_VISIBLE: 'ADD_EXOTIC_FX_CONFIG_VISIBLE',
+  EDIT_EXOTIC_FX_CONFIG_VISIBLE: 'EDIT_EXOTIC_FX_CONFIG_VISIBLE',
+
+  CA_INITIAL_DATA_EDIT_MODE: 'CA_INITIAL_DATA_EDIT_MODE',
+
+  GET_ALL_PAYMENT_ACCOUNTS: 'GET_ALL_PAYMENT_ACCOUNTS',
+  GET_ALL_PAYMENT_ACCOUNTS_SUCCESS: 'GET_ALL_PAYMENT_ACCOUNTS_SUCCESS',
+  GET_ALL_PAYMENT_ACCOUNTS_FAILURE: 'GET_ALL_PAYMENT_ACCOUNTS_FAILURE',
+
+  GET_PAYMENT_ACCOUNTS_BY_FILTERS: 'GET_PAYMENT_ACCOUNTS_BY_FILTERS',
+  GET_PAYMENT_ACCOUNTS_BY_FILTERS_SUCCESS: 'GET_PAYMENT_ACCOUNTS_BY_FILTERS_SUCCESS',
+  GET_PAYMENT_ACCOUNTS_BY_FILTERS_FAILURE: 'GET_PAYMENT_ACCOUNTS_BY_FILTERS_FAILURE',
+
+  ADD_NEW_PAYMENT_ACCOUNT: 'ADD_NEW_PAYMENT_ACCOUNT',
+  ADD_NEW_PAYMENT_ACCOUNT_SUCCESS: 'ADD_NEW_PAYMENT_ACCOUNT_SUCCESS',
+  ADD_NEW_PAYMENT_ACCOUNT_FAILURE: 'ADD_NEW_PAYMENT_ACCOUNT_FAILURE',
+
+  EDIT_PAYMENT_ACCOUNT: 'EDIT_PAYMENT_ACCOUNT',
+  EDIT_PAYMENT_ACCOUNT_SUCCESS: 'EDIT_PAYMENT_ACCOUNT_SUCCESS',
+  EDIT_PAYMENT_ACCOUNT_FAILURE: 'EDIT_PAYMENT_ACCOUNT_FAILURE',
+
+  DELETE_PAYMENT_ACCOUNT: 'DELETE_PAYMENT_ACCOUNT',
+  DELETE_PAYMENT_ACCOUNT_SUCCESS: 'DELETE_PAYMENT_ACCOUNT_SUCCESS',
+  DELETE_PAYMENT_ACCOUNT_FAILURE: 'DELETE_PAYMENT_ACCOUNT_FAILURE',
+
+  ADD_NEW_ACCOUNT_IDENTIFICATION: 'ADD_NEW_ACCOUNT_IDENTIFICATION',
+  ADD_NEW_ACCOUNT_IDENTIFICATION_SUCCESS: 'ADD_NEW_ACCOUNT_IDENTIFICATION_SUCCESS',
+  ADD_NEW_ACCOUNT_IDENTIFICATION_FAILURE: 'ADD_NEW_ACCOUNT_IDENTIFICATION_FAILURE',
+
+  DELETE_ACCOUNT_IDENTIFICATION: 'DELETE_ACCOUNT_IDENTIFICATION',
+  DELETE_ACCOUNT_IDENTIFICATION_SUCCESS: 'DELETE_ACCOUNT_IDENTIFICATION_SUCCESS',
+  DELETE_ACCOUNT_IDENTIFICATION_FAILURE: 'DELETE_ACCOUNT_IDENTIFICATION_FAILURE',
+
+  ADD_NEW_EXTERNAL_REFERENCE: 'ADD_NEW_EXTERNAL_REFERENCE',
+  ADD_NEW_EXTERNAL_REFERENCE_SUCCESS: 'ADD_NEW_EXTERNAL_REFERENCE_SUCCESS',
+  ADD_NEW_EXTERNAL_REFERENCE_FAILURE: 'ADD_NEW_EXTERNAL_REFERENCE_FAILURE',
+
+  DELETE_ACCOUNT_REFERENCE_BY_ID: 'DELETE_ACCOUNT_REFERENCE_BY_ID',
+  DELETE_ACCOUNT_REFERENCE_BY_ID_SUCCESS: 'DELETE_ACCOUNT_REFERENCE_BY_ID_SUCCESS',
+  DELETE_ACCOUNT_REFERENCE_BY_ID_FAILURE: 'DELETE_ACCOUNT_REFERENCE_BY_ID_FAILURE',
+
+  ADD_NEW_ACCOUNT_THRESHOLD: 'ADD_NEW_ACCOUNT_THRESHOLD',
+  ADD_NEW_ACCOUNT_THRESHOLD_SUCCESS: 'ADD_NEW_ACCOUNT_THRESHOLD_SUCCESS',
+  ADD_NEW_ACCOUNT_THRESHOLD_FAILURE: 'ADD_NEW_ACCOUNT_THRESHOLD_FAILURE',
+
+  DELETE_ACCOUNT_THRESHOLD_BY_ID: 'DELETE_ACCOUNT_THRESHOLD_BY_ID',
+  DELETE_ACCOUNT_THRESHOLD_BY_ID_SUCCESS: 'DELETE_ACCOUNT_THRESHOLD_BY_ID_SUCCESS',
+  DELETE_ACCOUNT_THRESHOLD_BY_ID_FAILURE: 'DELETE_ACCOUNT_THRESHOLD_BY_ID_FAILURE',
+
+  ADD_NEW_EXOTIC_FX_CONFIG: 'ADD_NEW_EXOTIC_FX_CONFIG',
+  ADD_NEW_EXOTIC_FX_CONFIG_SUCCESS: 'ADD_NEW_EXOTIC_FX_CONFIG_SUCCESS',
+  ADD_NEW_EXOTIC_FX_CONFIG_FAILURE: 'ADD_NEW_EXOTIC_FX_CONFIG_FAILURE',
+
+  DELETE_EXOTIC_FX_CONFIG_BY_ID: 'DELETE_EXOTIC_FX_CONFIG_BY_ID',
+  DELETE_EXOTIC_FX_CONFIG_BY_ID_SUCCESS: 'DELETE_EXOTIC_FX_CONFIG_BY_ID_SUCCESS',
+  DELETE_EXOTIC_FX_CONFIG_BY_ID_FAILURE: 'DELETE_EXOTIC_FX_CONFIG_BY_ID_FAILURE',
+
+  GET_PAYMENT_ACCOUNT_DETAILS_BY_ID: 'GET_PAYMENT_ACCOUNT_DETAILS_BY_ID',
+  GET_PAYMENT_ACCOUNT_DETAILS_BY_ID_SUCCESS: 'GET_PAYMENT_ACCOUNT_DETAILS_BY_ID_SUCCESS',
+  GET_PAYMENT_ACCOUNT_DETAILS_BY_ID_FAILURE: 'GET_PAYMENT_ACCOUNT_DETAILS_BY_ID_FAILURE',
+
+  UPDATE_ACCOUNTS_ERROR_LIST: 'UPDATE_ACCOUNTS_ERROR_LIST',
+  UPDATE_FILTERS_SELECTED: 'UPDATE_FILTERS_SELECTED',
+
+  // Client Accounts
+
+  UPDATE_ACCOUNT_SELECTED_RECORD_TO_EDIT: 'UPDATE_ACCOUNT_SELECTED_RECORD_TO_EDIT',
+
+  ADD_NEW_CLIENT_PAYMENT_ACCOUNT: 'ADD_NEW_CLIENT_PAYMENT_ACCOUNT',
+  ADD_NEW_CLIENT_PAYMENT_ACCOUNT_SUCCESS: 'ADD_NEW_CLIENT_PAYMENT_ACCOUNT_SUCCESS',
+  ADD_NEW_CLIENT_PAYMENT_ACCOUNT_FAILURE: 'ADD_NEW_CLIENT_PAYMENT_ACCOUNT_FAILURE',
+
+  EDIT_CLIENT_PAYMENT_ACCOUNT: 'EDIT_CLIENT_PAYMENT_ACCOUNT',
+  EDIT_CLIENT_PAYMENT_ACCOUNT_SUCCESS: 'EDIT_CLIENT_PAYMENT_ACCOUNT_SUCCESS',
+  EDIT_CLIENT_PAYMENT_ACCOUNT_FAILURE: 'EDIT_CLIENT_PAYMENT_ACCOUNT_FAILURE',
+
+  DELETE_CLIENT_PAYMENT_ACCOUNT: 'DELETE_CLIENT_PAYMENT_ACCOUNT',
+  DELETE_CLIENT_PAYMENT_ACCOUNT_SUCCESS: 'DELETE_CLIENT_PAYMENT_ACCOUNT_SUCCESS',
+  DELETE_CLIENT_PAYMENT_ACCOUNT_FAILURE: 'DELETE_CLIENT_PAYMENT_ACCOUNT_FAILURE',
+
+  ADD_NEW_CLIENT_EXTERNAL_REFERENCE: 'ADD_NEW_CLIENT_EXTERNAL_REFERENCE',
+  ADD_NEW_CLIENT_EXTERNAL_REFERENCE_SUCCESS: 'ADD_NEW_CLIENT_EXTERNAL_REFERENCE_SUCCESS',
+  ADD_NEW_CLIENT_EXTERNAL_REFERENCE_FAILURE: 'ADD_NEW_CLIENT_EXTERNAL_REFERENCE_FAILURE',
+
+  EDIT_CLIENT_EXTERNAL_REFERENCE: 'EDIT_CLIENT_EXTERNAL_REFERENCE',
+  EDIT_CLIENT_EXTERNAL_REFERENCE_SUCCESS: 'EDIT_CLIENT_EXTERNAL_REFERENCE_SUCCESS',
+  EDIT_CLIENT_EXTERNAL_REFERENCE_FAILURE: 'EDIT_CLIENT_EXTERNAL_REFERENCE_FAILURE',
+
+  DELETE_CLIENT_EXTERNAL_REFERENCE_BY_ID: 'DELETE_CLIENT_EXTERNAL_REFERENCE_BY_ID',
+  DELETE_CLIENT_EXTERNAL_REFERENCE_BY_ID_SUCCESS: 'DELETE_CLIENT_EXTERNAL_REFERENCE_BY_ID_SUCCESS',
+  DELETE_CLIENT_EXTERNAL_REFERENCE_BY_ID_FAILURE: 'DELETE_CLIENT_EXTERNAL_REFERENCE_BY_ID_FAILURE',
+
+  ADD_NEW_CLIENT_ACCOUNT_THRESHOLD: 'ADD_NEW_CLIENT_ACCOUNT_THRESHOLD',
+  ADD_NEW_CLIENT_ACCOUNT_THRESHOLD_SUCCESS: 'ADD_NEW_CLIENT_ACCOUNT_THRESHOLD_SUCCESS',
+  ADD_NEW_CLIENT_ACCOUNT_THRESHOLD_FAILURE: 'ADD_NEW_CLIENT_ACCOUNT_THRESHOLD_FAILURE',
+
+  EDIT_CLIENT_ACCOUNT_THRESHOLD: 'EDIT_CLIENT_ACCOUNT_THRESHOLD',
+  EDIT_CLIENT_ACCOUNT_THRESHOLD_SUCCESS: 'EDIT_CLIENT_ACCOUNT_THRESHOLD_SUCCESS',
+  EDIT_CLIENT_ACCOUNT_THRESHOLD_FAILURE: 'EDIT_CLIENT_ACCOUNT_THRESHOLD_FAILURE',
+
+  DELETE_CLIENT_ACCOUNT_THRESHOLD_BY_ID: 'DELETE_CLIENT_ACCOUNT_THRESHOLD_BY_ID',
+  DELETE_CLIENT_ACCOUNT_THRESHOLD_BY_ID_SUCCESS: 'DELETE_CLIENT_ACCOUNT_THRESHOLD_BY_ID_SUCCESS',
+  DELETE_CLIENT_ACCOUNT_THRESHOLD_BY_ID_FAILURE: 'DELETE_CLIENT_ACCOUNT_THRESHOLD_BY_ID_FAILURE',
+
+  // PL Accounts
+
+  ADD_NEW_PL_PAYMENT_ACCOUNT: 'ADD_NEW_PL_PAYMENT_ACCOUNT',
+  ADD_NEW_PL_PAYMENT_ACCOUNT_SUCCESS: 'ADD_NEW_PL_PAYMENT_ACCOUNT_SUCCESS',
+  ADD_NEW_PL_PAYMENT_ACCOUNT_FAILURE: 'ADD_NEW_PL_PAYMENT_ACCOUNT_FAILURE',
+
+  EDIT_PL_PAYMENT_ACCOUNT: 'EDIT_PL_PAYMENT_ACCOUNT',
+  EDIT_PL_PAYMENT_ACCOUNT_SUCCESS: 'EDIT_PL_PAYMENT_ACCOUNT_SUCCESS',
+  EDIT_PL_PAYMENT_ACCOUNT_FAILURE: 'EDIT_PL_PAYMENT_ACCOUNT_FAILURE',
+
+  DELETE_PL_PAYMENT_ACCOUNT: 'DELETE_PL_PAYMENT_ACCOUNT',
+  DELETE_PL_PAYMENT_ACCOUNT_SUCCESS: 'DELETE_PL_PAYMENT_ACCOUNT_SUCCESS',
+  DELETE_PL_PAYMENT_ACCOUNT_FAILURE: 'DELETE_PL_PAYMENT_ACCOUNT_FAILURE',
+
+  ADD_NEW_PL_EXTERNAL_REFERENCE: 'ADD_NEW_PL_EXTERNAL_REFERENCE',
+  ADD_NEW_PL_EXTERNAL_REFERENCE_SUCCESS: 'ADD_NEW_PL_EXTERNAL_REFERENCE_SUCCESS',
+  ADD_NEW_PL_EXTERNAL_REFERENCE_FAILURE: 'ADD_NEW_PL_EXTERNAL_REFERENCE_FAILURE',
+
+  EDIT_PL_EXTERNAL_REFERENCE: 'EDIT_PL_EXTERNAL_REFERENCE',
+  EDIT_PL_EXTERNAL_REFERENCE_SUCCESS: 'EDIT_PL_EXTERNAL_REFERENCE_SUCCESS',
+  EDIT_PL_EXTERNAL_REFERENCE_FAILURE: 'EDIT_PL_EXTERNAL_REFERENCE_FAILURE',
+
+  DELETE_PL_EXTERNAL_REFERENCE_BY_ID: 'DELETE_PL_EXTERNAL_REFERENCE_BY_ID',
+  DELETE_PL_EXTERNAL_REFERENCE_BY_ID_SUCCESS: 'DELETE_PL_EXTERNAL_REFERENCE_BY_ID_SUCCESS',
+  DELETE_PL_EXTERNAL_REFERENCE_BY_ID_FAILURE: 'DELETE_PL_EXTERNAL_REFERENCE_BY_ID_FAILURE',
+
+  // Vendor Client
+
+  ADD_NEW_VENDOR_CLIENT_PAYMENT_ACCOUNT: 'ADD_NEW_VENDOR_CLIENT_PAYMENT_ACCOUNT',
+  ADD_NEW_VENDOR_CLIENT_PAYMENT_ACCOUNT_SUCCESS: 'ADD_NEW_VENDOR_CLIENT_PAYMENT_ACCOUNT_SUCCESS',
+  ADD_NEW_VENDOR_CLIENT_PAYMENT_ACCOUNT_FAILURE: 'ADD_NEW_VENDOR_CLIENT_PAYMENT_ACCOUNT_FAILURE',
+
+  EDIT_VENDOR_CLIENT_PAYMENT_ACCOUNT: 'EDIT_VENDOR_CLIENT_PAYMENT_ACCOUNT',
+  EDIT_VENDOR_CLIENT_PAYMENT_ACCOUNT_SUCCESS: 'EDIT_VENDOR_CLIENT_PAYMENT_ACCOUNT_SUCCESS',
+  EDIT_VENDOR_CLIENT_PAYMENT_ACCOUNT_FAILURE: 'EDIT_VENDOR_CLIENT_PAYMENT_ACCOUNT_FAILURE',
+
+  DELETE_VENDOR_CLIENT_PAYMENT_ACCOUNT: 'DELETE_VENDOR_CLIENT_PAYMENT_ACCOUNT',
+  DELETE_VENDOR_CLIENT_PAYMENT_ACCOUNT_SUCCESS: 'DELETE_VENDOR_CLIENT_PAYMENT_ACCOUNT_SUCCESS',
+  DELETE_VENDOR_CLIENT_PAYMENT_ACCOUNT_FAILURE: 'DELETE_VENDOR_CLIENT_PAYMENT_ACCOUNT_FAILURE',
+
+  ADD_NEW_VENDOR_CLIENT_EXTERNAL_REFERENCE: 'ADD_NEW_VENDOR_CLIENT_EXTERNAL_REFERENCE',
+  ADD_NEW_VENDOR_CLIENT_EXTERNAL_REFERENCE_SUCCESS:
+    'ADD_NEW_VENDOR_CLIENT_EXTERNAL_REFERENCE_SUCCESS',
+  ADD_NEW_VENDOR_CLIENT_EXTERNAL_REFERENCE_FAILURE:
+    'ADD_NEW_VENDOR_CLIENT_EXTERNAL_REFERENCE_FAILURE',
+
+  EDIT_VENDOR_CLIENT_EXTERNAL_REFERENCE: 'EDIT_VENDOR_CLIENT_EXTERNAL_REFERENCE',
+  EDIT_VENDOR_CLIENT_EXTERNAL_REFERENCE_SUCCESS: 'EDIT_VENDOR_CLIENT_EXTERNAL_REFERENCE_SUCCESS',
+  EDIT_VENDOR_CLIENT_EXTERNAL_REFERENCE_FAILURE: 'EDIT_VENDOR_CLIENT_EXTERNAL_REFERENCE_FAILURE',
+
+  DELETE_VENDOR_CLIENT_EXTERNAL_REFERENCE_BY_ID: 'DELETE_VENDOR_CLIENT_EXTERNAL_REFERENCE_BY_ID',
+  DELETE_VENDOR_CLIENT_EXTERNAL_REFERENCE_BY_ID_SUCCESS:
+    'DELETE_VENDOR_CLIENT_EXTERNAL_REFERENCE_BY_ID_SUCCESS',
+  DELETE_VENDOR_CLIENT_EXTERNAL_REFERENCE_BY_ID_FAILURE:
+    'DELETE_VENDOR_CLIENT_EXTERNAL_REFERENCE_BY_ID_FAILURE',
+
+  ADD_NEW_VENDOR_CLIENT_ACCOUNT_THRESHOLD: 'ADD_NEW_VENDOR_CLIENT_ACCOUNT_THRESHOLD',
+  ADD_NEW_VENDOR_CLIENT_ACCOUNT_THRESHOLD_SUCCESS:
+    'ADD_NEW_VENDOR_CLIENT_ACCOUNT_THRESHOLD_SUCCESS',
+  ADD_NEW_VENDOR_CLIENT_ACCOUNT_THRESHOLD_FAILURE:
+    'ADD_NEW_VENDOR_CLIENT_ACCOUNT_THRESHOLD_FAILURE',
+
+  EDIT_VENDOR_CLIENT_ACCOUNT_THRESHOLD: 'EDIT_VENDOR_CLIENT_ACCOUNT_THRESHOLD',
+  EDIT_VENDOR_CLIENT_ACCOUNT_THRESHOLD_SUCCESS: 'EDIT_VENDOR_CLIENT_ACCOUNT_THRESHOLD_SUCCESS',
+  EDIT_VENDOR_CLIENT_ACCOUNT_THRESHOLD_FAILURE: 'EDIT_VENDOR_CLIENT_ACCOUNT_THRESHOLD_FAILURE',
+
+  DELETE_VENDOR_CLIENT_ACCOUNT_THRESHOLD_BY_ID: 'DELETE_VENDOR_CLIENT_ACCOUNT_THRESHOLD_BY_ID',
+  DELETE_VENDOR_CLIENT_ACCOUNT_THRESHOLD_BY_ID_SUCCESS:
+    'DELETE_VENDOR_CLIENT_ACCOUNT_THRESHOLD_BY_ID_SUCCESS',
+  DELETE_VENDOR_CLIENT_ACCOUNT_THRESHOLD_BY_ID_FAILURE:
+    'DELETE_VENDOR_CLIENT_ACCOUNT_THRESHOLD_BY_ID_FAILURE',
+
+  ADD_NEW_VENDOR_CLIENT_EXOTIC_FX_CONFIG: 'ADD_NEW_VENDOR_CLIENT_EXOTIC_FX_CONFIG',
+  ADD_NEW_VENDOR_CLIENT_EXOTIC_FX_CONFIG_SUCCESS: 'ADD_NEW_VENDOR_CLIENT_EXOTIC_FX_CONFIG_SUCCESS',
+  ADD_NEW_VENDOR_CLIENT_EXOTIC_FX_CONFIG_FAILURE: 'ADD_NEW_VENDOR_CLIENT_EXOTIC_FX_CONFIG_FAILURE',
+
+  EDIT_VENDOR_CLIENT_EXOTIC_FX_CONFIG: 'EDIT_VENDOR_CLIENT_EXOTIC_FX_CONFIG',
+  EDIT_VENDOR_CLIENT_EXOTIC_FX_CONFIG_SUCCESS: 'EDIT_VENDOR_CLIENT_EXOTIC_FX_CONFIG_SUCCESS',
+  EDIT_VENDOR_CLIENT_EXOTIC_FX_CONFIG_FAILURE: 'EDIT_VENDOR_CLIENT_EXOTIC_FX_CONFIG_FAILURE',
+
+  // vendor PL
+
+  ADD_NEW_VENDOR_PL_PAYMENT_ACCOUNT: 'ADD_NEW_VENDOR_PL_PAYMENT_ACCOUNT',
+  ADD_NEW_VENDOR_PL_PAYMENT_ACCOUNT_SUCCESS: 'ADD_NEW_VENDOR_PL_PAYMENT_ACCOUNT_SUCCESS',
+  ADD_NEW_VENDOR_PL_PAYMENT_ACCOUNT_FAILURE: 'ADD_NEW_VENDOR_PL_PAYMENT_ACCOUNT_FAILURE',
+
+  EDIT_VENDOR_PL_PAYMENT_ACCOUNT: 'EDIT_VENDOR_PL_PAYMENT_ACCOUNT',
+  EDIT_VENDOR_PL_PAYMENT_ACCOUNT_SUCCESS: 'EDIT_VENDOR_PL_PAYMENT_ACCOUNT_SUCCESS',
+  EDIT_VENDOR_PL_PAYMENT_ACCOUNT_FAILURE: 'EDIT_VENDOR_PL_PAYMENT_ACCOUNT_FAILURE',
+
+  DELETE_VENDOR_PL_PAYMENT_ACCOUNT: 'DELETE_VENDOR_PL_PAYMENT_ACCOUNT',
+  DELETE_VENDOR_PL_PAYMENT_ACCOUNT_SUCCESS: 'DELETE_VENDOR_PL_PAYMENT_ACCOUNT_SUCCESS',
+  DELETE_VENDOR_PL_PAYMENT_ACCOUNT_FAILURE: 'DELETE_VENDOR_PL_PAYMENT_ACCOUNT_FAILURE',
+
+  ADD_NEW_VENDOR_PL_EXTERNAL_REFERENCE: 'ADD_NEW_VENDOR_PL_EXTERNAL_REFERENCE',
+  ADD_NEW_VENDOR_PL_EXTERNAL_REFERENCE_SUCCESS: 'ADD_NEW_VENDOR_PL_EXTERNAL_REFERENCE_SUCCESS',
+  ADD_NEW_VENDOR_PL_EXTERNAL_REFERENCE_FAILURE: 'ADD_NEW_VENDOR_PL_EXTERNAL_REFERENCE_FAILURE',
+
+  EDIT_VENDOR_PL_EXTERNAL_REFERENCE: 'EDIT_VENDOR_PL_EXTERNAL_REFERENCE',
+  EDIT_VENDOR_PL_EXTERNAL_REFERENCE_SUCCESS: 'EDIT_VENDOR_PL_EXTERNAL_REFERENCE_SUCCESS',
+  EDIT_VENDOR_PL_EXTERNAL_REFERENCE_FAILURE: 'EDIT_VENDOR_PL_EXTERNAL_REFERENCE_FAILURE',
+
+  DELETE_VENDOR_PL_EXTERNAL_REFERENCE_BY_ID: 'DELETE_VENDOR_PL_EXTERNAL_REFERENCE_BY_ID',
+  DELETE_VENDOR_PL_EXTERNAL_REFERENCE_BY_ID_SUCCESS:
+    'DELETE_VENDOR_PL_EXTERNAL_REFERENCE_BY_ID_SUCCESS',
+  DELETE_VENDOR_PL_EXTERNAL_REFERENCE_BY_ID_FAILURE:
+    'DELETE_VENDOR_PL_EXTERNAL_REFERENCE_BY_ID_FAILURE',
+
+  ADD_NEW_VENDOR_PL_ACCOUNT_THRESHOLD: 'ADD_NEW_VENDOR_PL_ACCOUNT_THRESHOLD',
+  ADD_NEW_VENDOR_PL_ACCOUNT_THRESHOLD_SUCCESS: 'ADD_NEW_VENDOR_PL_ACCOUNT_THRESHOLD_SUCCESS',
+  ADD_NEW_VENDOR_PL_ACCOUNT_THRESHOLD_FAILURE: 'ADD_NEW_VENDOR_PL_ACCOUNT_THRESHOLD_FAILURE',
+
+  EDIT_VENDOR_PL_ACCOUNT_THRESHOLD: 'EDIT_VENDOR_PL_ACCOUNT_THRESHOLD',
+  EDIT_VENDOR_PL_ACCOUNT_THRESHOLD_SUCCESS: 'EDIT_VENDOR_PL_ACCOUNT_THRESHOLD_SUCCESS',
+  EDIT_VENDOR_PL_ACCOUNT_THRESHOLD_FAILURE: 'EDIT_VENDOR_PL_ACCOUNT_THRESHOLD_FAILURE',
+
+  DELETE_VENDOR_PL_ACCOUNT_THRESHOLD_BY_ID: 'DELETE_VENDOR_PL_ACCOUNT_THRESHOLD_BY_ID',
+  DELETE_VENDOR_PL_ACCOUNT_THRESHOLD_BY_ID_SUCCESS:
+    'DELETE_VENDOR_PL_ACCOUNT_THRESHOLD_BY_ID_SUCCESS',
+  DELETE_VENDOR_PL_ACCOUNT_THRESHOLD_BY_ID_FAILURE:
+    'DELETE_VENDOR_PL_ACCOUNT_THRESHOLD_BY_ID_FAILURE',
+
+  ADD_NEW_VENDOR_PL_EXOTIC_FX_CONFIG: 'ADD_NEW_VENDOR_PL_EXOTIC_FX_CONFIG',
+  ADD_NEW_VENDOR_PL_EXOTIC_FX_CONFIG_SUCCESS: 'ADD_NEW_VENDOR_PL_EXOTIC_FX_CONFIG_SUCCESS',
+  ADD_NEW_VENDOR_PL_EXOTIC_FX_CONFIG_FAILURE: 'ADD_NEW_VENDOR_PL_EXOTIC_FX_CONFIG_FAILURE',
+
+  EDIT_VENDOR_PL_EXOTIC_FX_CONFIG: 'EDIT_VENDOR_PL_EXOTIC_FX_CONFIG',
+  EDIT_VENDOR_PL_EXOTIC_FX_CONFIG_SUCCESS: 'EDIT_VENDOR_PL_EXOTIC_FX_CONFIG_SUCCESS',
+  EDIT_VENDOR_PL_EXOTIC_FX_CONFIG_FAILURE: 'EDIT_VENDOR_PL_EXOTIC_FX_CONFIG_FAILURE',
+
+  GET_ALL_VENDOR_CLIENT_VENDOR_PL_ACCOUNTS: 'GET_ALL_VENDOR_CLIENT_VENDOR_PL_ACCOUNTS',
+  GET_ALL_VENDOR_CLIENT_VENDOR_PL_ACCOUNTS_SUCCESS:
+    'GET_ALL_VENDOR_CLIENT_VENDOR_PL_ACCOUNTS_SUCCESS',
+  GET_ALL_VENDOR_CLIENT_VENDOR_PL_ACCOUNTS_FAILURE:
+    'GET_ALL_VENDOR_CLIENT_VENDOR_PL_ACCOUNTS_FAILURE',
+
+  // Suspense Accounts
+
+  ADD_NEW_SUSPENSE_PAYMENT_ACCOUNT: 'ADD_NEW_SUSPENSE_PAYMENT_ACCOUNT',
+  ADD_NEW_SUSPENSE_PAYMENT_ACCOUNT_SUCCESS: 'ADD_NEW_SUSPENSE_PAYMENT_ACCOUNT_SUCCESS',
+  ADD_NEW_SUSPENSE_PAYMENT_ACCOUNT_FAILURE: 'ADD_NEW_SUSPENSE_PAYMENT_ACCOUNT_FAILURE',
+
+  EDIT_SUSPENSE_PAYMENT_ACCOUNT: 'EDIT_SUSPENSE_PAYMENT_ACCOUNT',
+  EDIT_SUSPENSE_PAYMENT_ACCOUNT_SUCCESS: 'EDIT_SUSPENSE_PAYMENT_ACCOUNT_SUCCESS',
+  EDIT_SUSPENSE_PAYMENT_ACCOUNT_FAILURE: 'EDIT_SUSPENSE_PAYMENT_ACCOUNT_FAILURE',
+
+  DELETE_SUSPENSE_PAYMENT_ACCOUNT: 'DELETE_SUSPENSE_PAYMENT_ACCOUNT',
+  DELETE_SUSPENSE_PAYMENT_ACCOUNT_SUCCESS: 'DELETE_SUSPENSE_PAYMENT_ACCOUNT_SUCCESS',
+  DELETE_SUSPENSE_PAYMENT_ACCOUNT_FAILURE: 'DELETE_SUSPENSE_PAYMENT_ACCOUNT_FAILURE',
+
+  ADD_NEW_SUSPENSE_EXTERNAL_REFERENCE: 'ADD_NEW_SUSPENSE_EXTERNAL_REFERENCE',
+  ADD_NEW_SUSPENSE_EXTERNAL_REFERENCE_SUCCESS: 'ADD_NEW_SUSPENSE_EXTERNAL_REFERENCE_SUCCESS',
+  ADD_NEW_SUSPENSE_EXTERNAL_REFERENCE_FAILURE: 'ADD_NEW_SUSPENSE_EXTERNAL_REFERENCE_FAILURE',
+
+  EDIT_SUSPENSE_EXTERNAL_REFERENCE: 'EDIT_SUSPENSE_EXTERNAL_REFERENCE',
+  EDIT_SUSPENSE_EXTERNAL_REFERENCE_SUCCESS: 'EDIT_SUSPENSE_EXTERNAL_REFERENCE_SUCCESS',
+  EDIT_SUSPENSE_EXTERNAL_REFERENCE_FAILURE: 'EDIT_SUSPENSE_EXTERNAL_REFERENCE_FAILURE',
+
+  DELETE_SUSPENSE_EXTERNAL_REFERENCE_BY_ID: 'DELETE_SUSPENSE_EXTERNAL_REFERENCE_BY_ID',
+  DELETE_SUSPENSE_EXTERNAL_REFERENCE_BY_ID_SUCCESS:
+    'DELETE_SUSPENSE_EXTERNAL_REFERENCE_BY_ID_SUCCESS',
+  DELETE_SUSPENSE_EXTERNAL_REFERENCE_BY_ID_FAILURE:
+    'DELETE_SUSPENSE_EXTERNAL_REFERENCE_BY_ID_FAILURE',
+
+  SET_ACCOUNTS_FILTERS: 'SET_ACCOUNTS_FILTERS',
+}
+export default actions
+
+export const getCAofClientById = (value, token) => {
+  return {
+    type: actions.GET_CLIENT_CA_BY_ID,
+    value,
+    token,
+  }
+}
+
+export const getPlCAById = (value, token) => {
+  return {
+    type: actions.GET_PL_CA_BY_ID,
+    value,
+    token,
+  }
+}
+
+export const getSuspenseCAById = (value, token) => {
+  return {
+    type: actions.GET_SUSPENSE_CA_BY_ID,
+    value,
+    token,
+  }
+}
+
+export const getAllClientAccounts = (value, token) => {
+  return {
+    type: actions.GET_CLIENT_ACCOUNTS,
+    value,
+    token,
+  }
+}
+
+export const getAllplAccounts = (value, token) => {
+  return {
+    type: actions.GET_P_AND_L_ACCOUNTS,
+    value,
+    token,
+  }
+}
+
+// remove
+export const getAllVendorAccounts = (value, token) => {
+  return {
+    type: actions.GET_VENDOR_ACCOUNTS,
+    value,
+    token,
+  }
+}
+
+export const getVendorCAByFilters = (value, token) => {
+  return {
+    type: actions.GET_CURRENCY_ACCOUNTS_OF_VENDOR_BY_FILTERS,
+    value,
+    token,
+  }
+}
+
+export const addVendorCAByCurrency = (value, token) => {
+  return {
+    type: actions.ADD_VENDOR_CA_BY_CURRENCY,
+    value,
+    token,
+  }
+}
+
+// new
+
+export const getAllVendorClientAccounts = (value, token) => {
+  return {
+    type: actions.GET_ALL_VENDOR_CLIENT_ACCOUNTS,
+    value,
+    token,
+  }
+}
+
+// To fetch ALL the accounts to list under Linked Vendor Account dropdown for Client & Pl accounts
+
+export const getAllVendorClientVendorPlAccounts = token => {
+  return {
+    type: actions.GET_ALL_VENDOR_CLIENT_VENDOR_PL_ACCOUNTS,
+    token,
+  }
+}
+
+export const getCAofVendorClientByFilters = (value, token) => {
+  return {
+    type: actions.GET_CURRENCY_ACCOUNTS_OF_VENDOR_CLIENT_BY_FILTERS,
+    value,
+    token,
+  }
+}
+
+export const addVendorClientCAByCurrency = (value, token) => {
+  return {
+    type: actions.ADD_VENDOR_CLIENT_CA_BY_CURRENCY,
+    value,
+    token,
+  }
+}
+
+export const addVendorPLCAByCurrency = (value, token) => {
+  return {
+    type: actions.ADD_VENDOR__PL_CA_BY_CURRENCY,
+    value,
+    token,
+  }
+}
+
+export const getAllVendorPLAccounts = (value, token) => {
+  return {
+    type: actions.GET_ALL_VENDOR_PL_ACCOUNTS,
+    value,
+    token,
+  }
+}
+
+export const getCAofVendorPLByFilters = (value, token) => {
+  return {
+    type: actions.GET_CURRENCY_ACCOUNTS_OF_VENDOR_PL_BY_FILTERS,
+    value,
+    token,
+  }
+}
+
+export const getClientCAByFilters = (value, token) => {
+  return {
+    type: actions.GET_CURRENCY_ACCOUNTS_OF_CLIENT_BY_FILTERS,
+    value,
+    token,
+  }
+}
+
+export const showCurrencyListModal = () => {
+  return {
+    type: actions.SHOW_CURRENCY_LIST_MODAL,
+  }
+}
+
+export const closeCurrencyListModal = () => {
+  return {
+    type: actions.CLOSE_CURRENCY_LIST_MODAL,
+  }
+}
+
+export const addAccountByCurrency = (value, token) => {
+  return {
+    type: actions.ADD_ACCOUNT_BY_CURRENCY,
+    value,
+    token,
+  }
+}
+
+export const addPLCAByCurrency = (value, token) => {
+  return {
+    type: actions.ADD_PL_CA_BY_CURRENCY,
+    value,
+    token,
+  }
+}
+
+export const getAllplAccountsByFilters = (value, token) => {
+  return {
+    type: actions.GET_P_AND_L_ACCOUNTS_BY_FILTERS,
+    value,
+    token,
+  }
+}
+
+export const updateSelectedAccount = value => {
+  return {
+    type: actions.UPDATE_SELECED_ACCOUNT,
+    value,
+  }
+}
+
+export const updateSelectedType = value => {
+  return {
+    type: actions.UPDATE_SELECED_TYPE,
+    value,
+  }
+}
+
+export const updateSelectedCurrencyData = value => {
+  return {
+    type: actions.UPDATE_SELECTED_CURRENCY_DATA,
+    value,
+  }
+}
+
+// New Version 2
+
+export const updateShowAccountDetails = value => {
+  return {
+    type: actions.ADD_ACCOUNT_DETAILS_VISIBLE,
+    value,
+  }
+}
+
+export const updateShowAddExternalReference = value => {
+  return {
+    type: actions.ADD_EXTERNAL_REFERENCES_VISIBLE,
+    value,
+  }
+}
+
+export const updateShowAddAccountLimits = value => {
+  return {
+    type: actions.ADD_ACCOUNT_LIMITS_VISIBLE,
+    value,
+  }
+}
+
+export const updateShowEditAccountLimits = value => {
+  return {
+    type: actions.EDIT_ACCOUNT_LIMITS_VISIBLE,
+    value,
+  }
+}
+
+export const updateShowAddExoticFXConfig = value => {
+  return {
+    type: actions.ADD_EXOTIC_FX_CONFIG_VISIBLE,
+    value,
+  }
+}
+
+export const updateCAInitialDataEditMode = value => {
+  return {
+    type: actions.CA_INITIAL_DATA_EDIT_MODE,
+    value,
+  }
+}
+
+export const getAllPaymentsAccounts = (value, token) => {
+  return {
+    type: actions.GET_ALL_PAYMENT_ACCOUNTS,
+    value,
+    token,
+  }
+}
+
+export const getPaymentAccountsByFilters = (value, token) => {
+  return {
+    type: actions.GET_PAYMENT_ACCOUNTS_BY_FILTERS,
+    value,
+    token,
+  }
+}
+
+export const addNewPaymentAccount = (value, token) => {
+  return {
+    type: actions.ADD_NEW_PAYMENT_ACCOUNT,
+    value,
+    token,
+  }
+}
+
+export const editPaymentAccount = (accountId, value, token) => {
+  return {
+    type: actions.EDIT_PAYMENT_ACCOUNT,
+    accountId,
+    value,
+    token,
+  }
+}
+
+export const addAccountIdentificationDetails = (accountId, value, token) => {
+  return {
+    type: actions.ADD_NEW_ACCOUNT_IDENTIFICATION,
+    accountId,
+    value,
+    token,
+  }
+}
+
+export const deleteAccountIdentificationDetails = (accountId, accIdentifierId, token) => {
+  return {
+    type: actions.DELETE_ACCOUNT_IDENTIFICATION,
+    accountId,
+    accIdentifierId,
+    token,
+  }
+}
+
+// Eternal Reference
+
+export const addNewExternalReference = (accountId, value, token) => {
+  return {
+    type: actions.ADD_NEW_EXTERNAL_REFERENCE,
+    accountId,
+    value,
+    token,
+  }
+}
+
+export const deletedExternalReference = (accountId, externalReferenceId, token) => {
+  return {
+    type: actions.DELETE_ACCOUNT_REFERENCE_BY_ID,
+    accountId,
+    externalReferenceId,
+    token,
+  }
+}
+
+// Account Thresholds
+
+export const addNewAccountThresholds = (accountId, value, token) => {
+  return {
+    type: actions.ADD_NEW_ACCOUNT_THRESHOLD,
+    accountId,
+    value,
+    token,
+  }
+}
+
+export const deleteAccountThreshold = (accountId, thresholdId, token) => {
+  return {
+    type: actions.DELETE_ACCOUNT_THRESHOLD_BY_ID,
+    accountId,
+    thresholdId,
+    token,
+  }
+}
+
+// Exotic FX config
+
+export const addNewExoticFXConfig = (accountId, value, token) => {
+  return {
+    type: actions.ADD_NEW_EXOTIC_FX_CONFIG,
+    accountId,
+    value,
+    token,
+  }
+}
+
+export const deleteExoticForeignExchangeId = (accountId, exoticForeignExchangeId, token) => {
+  return {
+    type: actions.DELETE_EXOTIC_FX_CONFIG_BY_ID,
+    accountId,
+    exoticForeignExchangeId,
+    token,
+  }
+}
+
+export const getAccountDetailsById = (id, token) => {
+  return {
+    type: actions.GET_PAYMENT_ACCOUNT_DETAILS_BY_ID,
+    id,
+    token,
+  }
+}
+
+export const deletePaymentAccount = (accountId, token) => {
+  return {
+    type: actions.DELETE_PAYMENT_ACCOUNT,
+    accountId,
+    token,
+  }
+}
+
+export const updateAccountsErrorList = (value, token) => {
+  return {
+    type: actions.UPDATE_ACCOUNTS_ERROR_LIST,
+    value,
+    token,
+  }
+}
+
+export const updateSelectedFilters = (value, token) => {
+  return {
+    type: actions.UPDATE_FILTERS_SELECTED,
+    value,
+    token,
+  }
+}
+
+// New Account creation vesrion 3
+
+// Client Accounts
+
+export const addNewClientPaymentAccount = (value, token) => {
+  return {
+    type: actions.ADD_NEW_CLIENT_PAYMENT_ACCOUNT,
+    value,
+    token,
+  }
+}
+
+export const editClientPaymentAccount = (accountId, value, token) => {
+  return {
+    type: actions.EDIT_CLIENT_PAYMENT_ACCOUNT,
+    accountId,
+    value,
+    token,
+  }
+}
+
+export const deleteClientPaymentAccount = (accountId, token) => {
+  return {
+    type: actions.DELETE_CLIENT_PAYMENT_ACCOUNT,
+    accountId,
+    token,
+  }
+}
+
+export const addNewClientExternalReference = (accountId, value, token) => {
+  return {
+    type: actions.ADD_NEW_CLIENT_EXTERNAL_REFERENCE,
+    accountId,
+    value,
+    token,
+  }
+}
+
+export const editClientExternalReference = (accountId, externalReferenceId, value, token) => {
+  return {
+    type: actions.EDIT_CLIENT_EXTERNAL_REFERENCE,
+    accountId,
+    externalReferenceId,
+    value,
+    token,
+  }
+}
+
+export const deletedClientExternalReference = (accountId, externalReferenceId, token) => {
+  return {
+    type: actions.DELETE_CLIENT_EXTERNAL_REFERENCE_BY_ID,
+    accountId,
+    externalReferenceId,
+    token,
+  }
+}
+
+export const addNewClientAccountThresholds = (accountId, value, token) => {
+  return {
+    type: actions.ADD_NEW_CLIENT_ACCOUNT_THRESHOLD,
+    accountId,
+    value,
+    token,
+  }
+}
+
+export const editClientAccountThresholds = (accountId, thresholdId, value, token) => {
+  return {
+    type: actions.EDIT_CLIENT_ACCOUNT_THRESHOLD,
+    accountId,
+    thresholdId,
+    value,
+    token,
+  }
+}
+
+export const deleteClientAccountThreshold = (accountId, thresholdId, token) => {
+  return {
+    type: actions.DELETE_CLIENT_ACCOUNT_THRESHOLD_BY_ID,
+    accountId,
+    thresholdId,
+    token,
+  }
+}
+
+export const updateShowEditExternalReference = value => {
+  return {
+    type: actions.EDIT_EXTERNAL_REFERENCES_VISIBLE,
+    value,
+  }
+}
+
+export const updateSelectedRecordToEdit = value => {
+  return {
+    type: actions.UPDATE_ACCOUNT_SELECTED_RECORD_TO_EDIT,
+    value,
+  }
+}
+
+// PL Accounts
+
+export const addNewPLPaymentAccount = (value, token) => {
+  return {
+    type: actions.ADD_NEW_PL_PAYMENT_ACCOUNT,
+    value,
+    token,
+  }
+}
+
+export const editPLPaymentAccount = (accountId, value, token) => {
+  return {
+    type: actions.EDIT_PL_PAYMENT_ACCOUNT,
+    accountId,
+    value,
+    token,
+  }
+}
+
+export const deletePLPaymentAccount = (accountId, token) => {
+  return {
+    type: actions.DELETE_PL_PAYMENT_ACCOUNT,
+    accountId,
+    token,
+  }
+}
+
+export const addNewPLExternalReference = (accountId, value, token) => {
+  return {
+    type: actions.ADD_NEW_PL_EXTERNAL_REFERENCE,
+    accountId,
+    value,
+    token,
+  }
+}
+
+export const editPLExternalReference = (accountId, externalReferenceId, value, token) => {
+  return {
+    type: actions.EDIT_PL_EXTERNAL_REFERENCE,
+    accountId,
+    externalReferenceId,
+    value,
+    token,
+  }
+}
+
+// Vendor Client
+
+export const addVendorClientPaymentAccount = (value, token) => {
+  return {
+    type: actions.ADD_NEW_VENDOR_CLIENT_PAYMENT_ACCOUNT,
+    value,
+    token,
+  }
+}
+
+export const editVendorClientPaymentAccount = (accountId, value, token) => {
+  return {
+    type: actions.EDIT_VENDOR_CLIENT_PAYMENT_ACCOUNT,
+    accountId,
+    value,
+    token,
+  }
+}
+
+export const deleteVendorClientPaymentAccount = (accountId, token) => {
+  return {
+    type: actions.DELETE_VENDOR_CLIENT_PAYMENT_ACCOUNT,
+    accountId,
+    token,
+  }
+}
+
+export const addNewVendorClientExternalReference = (accountId, value, token) => {
+  return {
+    type: actions.ADD_NEW_VENDOR_CLIENT_EXTERNAL_REFERENCE,
+    accountId,
+    value,
+    token,
+  }
+}
+
+export const editVendorClientExternalReference = (accountId, externalReferenceId, value, token) => {
+  return {
+    type: actions.EDIT_VENDOR_CLIENT_EXTERNAL_REFERENCE,
+    accountId,
+    externalReferenceId,
+    value,
+    token,
+  }
+}
+
+export const deletedVendorClientExternalReference = (accountId, externalReferenceId, token) => {
+  return {
+    type: actions.DELETE_VENDOR_CLIENT_EXTERNAL_REFERENCE_BY_ID,
+    accountId,
+    externalReferenceId,
+    token,
+  }
+}
+
+export const addNewVendorClientAccountThresholds = (accountId, value, token) => {
+  return {
+    type: actions.ADD_NEW_VENDOR_CLIENT_ACCOUNT_THRESHOLD,
+    accountId,
+    value,
+    token,
+  }
+}
+
+export const editVendorClientAccountThresholds = (accountId, thresholdId, value, token) => {
+  return {
+    type: actions.EDIT_VENDOR_CLIENT_ACCOUNT_THRESHOLD,
+    accountId,
+    thresholdId,
+    value,
+    token,
+  }
+}
+
+export const deleteVendorClientAccountThreshold = (accountId, thresholdId, token) => {
+  return {
+    type: actions.DELETE_VENDOR_CLIENT_ACCOUNT_THRESHOLD_BY_ID,
+    accountId,
+    thresholdId,
+    token,
+  }
+}
+
+export const addNewVendorClientExoticFXConfig = (accountId, value, token) => {
+  return {
+    type: actions.ADD_NEW_VENDOR_CLIENT_EXOTIC_FX_CONFIG,
+    accountId,
+    value,
+    token,
+  }
+}
+
+export const editVendorClientExoticFXConfig = (accountId, value, token) => {
+  return {
+    type: actions.EDIT_VENDOR_CLIENT_EXOTIC_FX_CONFIG,
+    accountId,
+    value,
+    token,
+  }
+}
+
+export const updateShowEditExoticFX = value => {
+  return {
+    type: actions.EDIT_EXOTIC_FX_CONFIG_VISIBLE,
+    value,
+  }
+}
+
+// Vendor PL
+
+export const addVendorPLPaymentAccount = (value, token) => {
+  return {
+    type: actions.ADD_NEW_VENDOR_PL_PAYMENT_ACCOUNT,
+    value,
+    token,
+  }
+}
+
+export const editVendorPLPaymentAccount = (accountId, value, token) => {
+  return {
+    type: actions.EDIT_VENDOR_PL_PAYMENT_ACCOUNT,
+    accountId,
+    value,
+    token,
+  }
+}
+
+export const deleteVendorPLPaymentAccount = (accountId, token) => {
+  return {
+    type: actions.DELETE_VENDOR_PL_PAYMENT_ACCOUNT,
+    accountId,
+    token,
+  }
+}
+
+export const addNewVendorPLExternalReference = (accountId, value, token) => {
+  return {
+    type: actions.ADD_NEW_VENDOR_PL_EXTERNAL_REFERENCE,
+    accountId,
+    value,
+    token,
+  }
+}
+
+export const editVendorPLExternalReference = (accountId, externalReferenceId, value, token) => {
+  return {
+    type: actions.EDIT_VENDOR_PL_EXTERNAL_REFERENCE,
+    accountId,
+    externalReferenceId,
+    value,
+    token,
+  }
+}
+
+export const deletedVendorPLExternalReference = (accountId, externalReferenceId, token) => {
+  return {
+    type: actions.DELETE_VENDOR_PL_EXTERNAL_REFERENCE_BY_ID,
+    accountId,
+    externalReferenceId,
+    token,
+  }
+}
+
+export const addNewVendorPLAccountThresholds = (accountId, value, token) => {
+  return {
+    type: actions.ADD_NEW_VENDOR_PL_ACCOUNT_THRESHOLD,
+    accountId,
+    value,
+    token,
+  }
+}
+
+export const editVendorPLAccountThresholds = (accountId, thresholdId, value, token) => {
+  return {
+    type: actions.EDIT_VENDOR_PL_ACCOUNT_THRESHOLD,
+    accountId,
+    thresholdId,
+    value,
+    token,
+  }
+}
+
+export const deleteVendorPLAccountThreshold = (accountId, thresholdId, token) => {
+  return {
+    type: actions.DELETE_VENDOR_PL_ACCOUNT_THRESHOLD_BY_ID,
+    accountId,
+    thresholdId,
+    token,
+  }
+}
+
+export const addNewVendorPLExoticFXConfig = (accountId, value, token) => {
+  return {
+    type: actions.ADD_NEW_VENDOR_PL_EXOTIC_FX_CONFIG,
+    accountId,
+    value,
+    token,
+  }
+}
+
+export const editVendorPLExoticFXConfig = (accountId, value, token) => {
+  return {
+    type: actions.EDIT_VENDOR_PL_EXOTIC_FX_CONFIG,
+    accountId,
+    value,
+    token,
+  }
+}
+
+// Suspense Accounts
+
+export const addNewSuspensePaymentAccount = (value, token) => {
+  return {
+    type: actions.ADD_NEW_SUSPENSE_PAYMENT_ACCOUNT,
+    value,
+    token,
+  }
+}
+
+export const editSuspensePaymentAccount = (accountId, value, token) => {
+  return {
+    type: actions.EDIT_SUSPENSE_PAYMENT_ACCOUNT,
+    accountId,
+    value,
+    token,
+  }
+}
+
+export const deleteSuspensePaymentAccount = (accountId, token) => {
+  return {
+    type: actions.DELETE_SUSPENSE_PAYMENT_ACCOUNT,
+    accountId,
+    token,
+  }
+}
+
+export const addNewSuspenseExternalReference = (accountId, value, token) => {
+  return {
+    type: actions.ADD_NEW_SUSPENSE_EXTERNAL_REFERENCE,
+    accountId,
+    value,
+    token,
+  }
+}
+
+export const editSuspenseExternalReference = (accountId, externalReferenceId, value, token) => {
+  return {
+    type: actions.EDIT_SUSPENSE_EXTERNAL_REFERENCE,
+    accountId,
+    externalReferenceId,
+    value,
+    token,
+  }
+}
+
+export const setAccountsFilters = value => {
+  return {
+    type: actions.SET_ACCOUNTS_FILTERS,
+    value,
+  }
+}

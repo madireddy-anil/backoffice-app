@@ -1,0 +1,14 @@
+@import 'assets/styles/mixins.scss';
+
+.subText {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: -16px;
+}
+.subSubText {
+  margin-top: 9px;
+  font-size: 12px;
+}
+.timelineBody {
+  margin-bottom: 50px;
+}

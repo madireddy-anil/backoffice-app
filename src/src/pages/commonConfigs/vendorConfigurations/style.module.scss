@@ -1,0 +1,41 @@
+@import 'assets/styles/mixins.scss';
+
+.mainCard {
+  border-radius: 13px;
+  border-left: 1px;
+  border-right: 1px;
+  border-bottom: 1px;
+  border-top: 1px;
+}
+
+.onBoardingWrapper {
+  background: #f4f5f8;
+  margin: 0 -26px;
+  .ant-tabs-nav-container {
+    background-color: #fff;
+  }
+  .ant-tabs-nav .ant-tabs-tab {
+    color: #888a9d;
+    font-size: 14px;
+  }
+  .ant-tabs-nav .ant-tabs-tab:active {
+    color: #0190fe !important;
+  }
+  .ant-collapse-content-active {
+    background-color: #fff !important;
+  }
+}
+
+.totalPageBlock {
+  margin-top: 19px;
+  margin-bottom: 19px;
+}
+.paginationTab {
+  float: right;
+  margin-top: 19px !important;
+  margin-bottom: 17px;
+}
+
+.entriesBlock {
+  margin-left: 15px;
+}

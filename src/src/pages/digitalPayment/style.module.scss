@@ -1,0 +1,163 @@
+@import 'assets/styles/mixins.scss';
+
+.mainCard {
+  border-radius: 13px;
+  border-left: 1px;
+  border-right: 1px;
+  border-bottom: 1px;
+  border-top: 1px;
+}
+
+.processSection {
+  padding: 2px;
+}
+
+.singleInput {
+  width: 60% !important;
+}
+
+.amountInput {
+  width: 100% !important;
+}
+
+.prgressContent {
+  padding: 10px 0;
+}
+.activebuttonStyle {
+  border-radius: 16px;
+  background-color: #313343 !important;
+  color: $white;
+}
+.inactivebuttonStyle {
+  border-radius: 16px;
+  background-color: white !important;
+  color: #313343;
+}
+.buttonBene {
+  margin-left: -8px;
+}
+
+.headerBlock {
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  float: left;
+  color: #313343;
+}
+
+.titleBlock {
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  float: left;
+  color: $white;
+}
+
+.subHeaderBlock {
+  letter-spacing: 1px;
+  float: left;
+  color: #313343;
+}
+.listBlock {
+  color: black !important;
+  float: right;
+}
+
+.closeBtn {
+  float: right;
+  margin-top: -8px;
+  margin-right: -6px;
+  font-size: 19px;
+  color: #313343;
+}
+
+.activeCard {
+  color: #313343;
+  background-color: $white;
+  // border-color: #313343;
+  border-radius: inherit !important;
+}
+
+.imageBlock {
+  clip: rect(-10px, 100px, 45px, -13px);
+}
+
+.beneInput {
+  margin-top: 2px;
+  display: flex;
+}
+
+.swapIcon {
+  text-align: center;
+  font-size: 21px;
+}
+
+.infoBlock {
+  background-color: #313343;
+  color: $white;
+  text-align: center;
+  height: 39px;
+  margin-top: 20px;
+  margin-left: 16px;
+}
+.btnNext {
+  width: 8rem;
+  height: 3rem;
+  background-color: #75a9f9;
+  color: #fff;
+  // margin-bottom: 2rem;
+}
+
+.btnCANCEL {
+  width: 8rem;
+  height: 3rem;
+  background-color: #fff;
+  color: $black-lighten-more;
+  margin-right: 20px;
+  margin-bottom: 2rem;
+}
+
+.flexJCSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexJCFlexStart {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.errMessages {
+  margin-top: 12px;
+}
+
+.errorBlock {
+  // margin-left: 21px;
+  margin-bottom: 30px;
+}
+
+.errorHeader {
+  font-size: 13px;
+  color: red;
+}
+
+.feeBlock {
+  display: flex;
+}
+
+.amountBlock {
+  margin-left: 3px;
+}
+
+.logoBlock {
+  clip: rect(-10px, 100px, 67px, -13px);
+}
+
+.countryBlock {
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  float: right;
+  color: #313343;
+}

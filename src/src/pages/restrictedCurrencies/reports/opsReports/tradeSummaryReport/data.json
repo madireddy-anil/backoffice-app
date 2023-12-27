@@ -1,0 +1,134 @@
+{
+  "initialColumns": [
+    {
+      "label": "Month",
+      "value": "month"
+    },
+    {
+      "label": "Number Of Trades",
+      "value": "numberOfTrades"
+    },
+    {
+      "label": "Trade Value - CNY",
+      "value": "valueInCNY"
+    },
+    {
+      "label": "Trade Value - CNY (In USD)",
+      "value": "valueInCNY_To_USD"
+    },
+    {
+      "label": "Trade Value - THB",
+      "value": "valueInTHB"
+    },
+    {
+      "label": "Trade Value - THB (In USD)",
+      "value": "valueInTHB_To_USD"
+    },
+    {
+      "label": "Trade Value - VND",
+      "value": "valueInVND"
+    },
+    {
+      "label": "Trade Value - VND (In USD)",
+      "value": "valueInVND_To_USD"
+    },
+    {
+      "label": "Trade Value - USD",
+      "value": "valueInUSD"
+    },
+    {
+      "label": "Trade Value - PHP",
+      "value": "valueInPHP"
+    },
+    {
+      "label": "Trade Value - PHP (In USD)",
+      "value": "valueInPHP_To_USD"
+    },
+    {
+      "label": "Total Trade Value - USD",
+      "value": "grandDepositAmountInUSD"
+    },
+    {
+      "label": "Total Profit",
+      "value": "grandPCRevenueInUSD"
+    }
+  ],
+  "allColumns": [
+    {
+      "label": "Month",
+      "value": "month"
+    },
+    {
+      "label": "Number of Trades",
+      "value": "numberOfTrades"
+    },
+    {
+      "label": "Trade Value - CNY",
+      "value": "valueInCNY"
+    },
+    {
+      "label": "Trade Value - CNY (In USD)",
+      "value": "valueInCNY_To_USD"
+    },
+    {
+      "label": "Trade Value - THB",
+      "value": "valueInTHB"
+    },
+    {
+      "label": "Trade Value - THB (In USD)",
+      "value": "valueInTHB_To_USD"
+    },
+    {
+      "label": "Trade Value - VND",
+      "value": "valueInVND"
+    },
+    {
+      "label": "Trade Value - VND (In USD)",
+      "value": "valueInVND_To_USD"
+    },
+    {
+      "label": "Trade Value - IDR",
+      "value": "valueInIDR"
+    },
+    {
+      "label": "Trade Value - IDR (In USD)",
+      "value": "valueInIDR_To_USD"
+    },
+    {
+      "label": "Trade Value - MYR",
+      "value": "valueInMYR"
+    },
+    {
+      "label": "Trade Value - MYR (In USD)",
+      "value": "valueInMYR_To_USD"
+    },
+    {
+      "label": "Trade Value - PHP",
+      "value": "valueInPHP"
+    },
+    {
+      "label": "Trade Value - PHP (In USD)",
+      "value": "valueInPHP_To_USD"
+    },
+    {
+      "label": "Trade Value - USD",
+      "value": "valueInUSD"
+    },
+    {
+      "label": "Trade Value - EUR",
+      "value": "valueInEUR"
+    },
+    {
+      "label": "Trade Value - EUR (In USD)",
+      "value": "valueInEUR_To_USD"
+    },
+    {
+      "label": "Total Trade Value - USD",
+      "value": "grandDepositAmountInUSD"
+    },
+    {
+      "label": "Total Profit",
+      "value": "grandPCRevenueInUSD"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+@import 'assets/styles/mixins.scss';
+
+.cardBlock {
+  border: 1px thin $gray;
+  border-radius: 5px;
+}
+
+.cuurencyBlock {
+  letter-spacing: 2px;
+  font-weight: bold;
+  float: left;
+}
+
+.accountNumber {
+  font-weight: bold;
+  float: left;
+  letter-spacing: 7px;
+  font-size: 15px;
+}
+
+.balanceBlock {
+  font-size: 17px;
+  font-weight: bold;
+  float: left;
+}
+
+.viewBtn {
+  float: right;
+  margin-top: -8px;
+  margin-right: -6px;
+  font-size: 19px;
+}
+
+.activeCard {
+  background-color: #313343;
+  border-radius: 5px;
+  .cuurencyBlock {
+    color: $white;
+    font-weight: bold;
+    float: left;
+  }
+  .accountNumber {
+    color: $white;
+    font-weight: bold;
+    float: left;
+    letter-spacing: 7px;
+    font-size: 15px;
+  }
+  .balanceBlock {
+    color: $white;
+    font-size: 17px;
+    font-weight: bold;
+    float: left;
+  }
+  .viewBtn {
+    color: $white !important;
+    float: right;
+    margin-top: -8px;
+    margin-right: -6px;
+  }
+}
+.imageBlock {
+  clip: rect(1px, 100px, 80px, 1px);
+}
+
+.cardBlock:hover {
+  cursor: pointer;
+}
+
+@media (max-width: $md-max-width) {
+  .activeCard {
+    margin-top: 10px;
+  }
+  .cardBlock {
+    margin-top: 10px;
+  }
+}

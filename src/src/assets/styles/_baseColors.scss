@@ -1,0 +1,47 @@
+/**************
+*** Colours ***
+**************/
+
+/* Main UI colours: Links, buttons, active states etc. */
+
+$blue-100: #3698ec;
+$blue-70: #72b7f2;
+$blue-50: #9acbf5;
+$blue-20: #d7eafb;
+
+$green-100: #35ae7e;
+$green-70: #71c6a4;
+$green-50: #9ad6be;
+
+/* Borders, backgrounds, secondary button etc. */
+
+$grey-100: #dee0ef;
+$grey-50: #eeeff7;
+$grey-35: #f3f4f9;
+$grey-20: #f8f9fc;
+
+/* Typography, icons, bordered fades etc. */
+
+$warm-grey-100: #545665;
+$warm-grey-70: #878893;
+$warm-grey-50: #a9aab2;
+$white: #fff;
+
+$cool-grey-100: #8e9eaf;
+$cool-grey-70: #b0bbc7;
+$cool-grey-20: #e3e7ed;
+$cool-grey-04: #fbfbfc;
+
+$primary-text-color: $warm-grey-100;
+
+/* Warnings, errors, delete etc. */
+
+$orange-100: #f7ad43;
+$orange-70: #f9c57b;
+$red-100: #fd4d4d;
+$red-70: #fe8282;
+
+/* Unbranded text colors */
+
+$label-color: $cool-grey-100;
+$output-color: $warm-grey-70;

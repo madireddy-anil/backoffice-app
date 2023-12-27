@@ -1,0 +1,38 @@
+{
+    "headerData" : [
+        {
+          "header":"Banking Vendor" ,
+          "key": "bankingVendor",
+          "width": 32
+        },
+        {
+            "header":"Account Number" ,
+            "key": "accountNumber",
+            "width": 32
+          },
+          {
+            "header":"Account Currency" ,
+            "key": "accountCurrency",
+            "width": 32
+          },
+          {
+            "header":"Balance Type" ,
+            "key": "balanceType",
+            "width": 32
+          },
+          {
+            "header":"Balance Amount" ,
+            "key": "balanceAmount",
+            "width": 32
+          },{
+            "header":"Credit Debit Indicator" ,
+            "key": "creditDebitIndicator",
+            "width": 32
+          }
+          ,{
+            "header":"Balance Date" ,
+            "key": "balanceDate",
+            "width": 32
+          }
+      ]
+}

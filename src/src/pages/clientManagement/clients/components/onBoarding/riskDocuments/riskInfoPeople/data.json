@@ -1,0 +1,52 @@
+{
+    "riskInformationIDVPartI": [
+      {
+        "id": "0",
+        "shareHolderName": "Louis Litt",
+        "percentage": "25%",
+        "shareholderDesignation": "UBO, Director",
+        "shareholderMail": "louis.litt@bet123.com",
+        "isIDVProvided": "IDV details provided",
+        "shareholderAddress": "21, Albert Embankment, London, SW1 21A, United Kingdom ",
+        "dated": "25/03/2022",
+        "expandIconName": "See less"
+      },
+      {
+        "id": "1",
+        "shareHolderName": "Spectre Harvey",
+        "percentage": "25%",
+        "shareholderDesignation": "UBO, Director",
+        "shareholderMail": "hs@bet123.com",
+        "isIDVProvided": "IDV details provided",
+        "shareholderAddress": "21, Albert Embankment, London, SW1 21A, United Kingdom ",
+        "expandIconName": "See less"
+      },
+      {
+        "id": "2",
+        "shareHolderName": "Chris Mason",
+        "percentage": "25%",
+        "shareholderDesignation": "UBO, Director",
+        "shareholderMail": "me@bet123.com",
+        "isIDVProvided": "IDV details provided",
+        "shareholderAddress": "21, Albert Embankment, London, SW1 21A, United Kingdom ",
+        "dated": "25/03/2022",
+        "expandIconName": "See more"
+      }
+    ],
+    "riskInformationIDVPartII": [
+      {
+        "id": "10",
+        "shareholderAddress": "21, Albert Embankment, London, SW1 21A, United Kingdom ",
+        "dated": "25/03/2022"
+      },
+      {
+        "id": "11",
+        "shareholderAddress": "21, Albert Embankment, London, SW1 21A, United Kingdom "
+      },
+      {
+        "id": "12",
+        "shareholderAddress": "21, Albert Embankment, London, SW1 21A, United Kingdom ",
+        "dated": "25/03/2022"
+      }
+    ]
+  }  

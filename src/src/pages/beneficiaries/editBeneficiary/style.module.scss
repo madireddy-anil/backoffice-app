@@ -1,0 +1,42 @@
+@import 'assets/styles/mixins.scss';
+
+.mainCard {
+  border-radius: 13px;
+  border-left: 1px;
+  border-right: 1px;
+  border-bottom: 1px;
+  border-top: 1px;
+}
+
+.beneTitle {
+  font-size: 17px;
+  margin-bottom: 25px;
+  margin-left: 7px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.btnNext {
+  width: 8rem;
+  height: 3rem;
+  background-color: #75a9f9;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.btnCANCEL {
+  width: 8rem;
+  height: 3rem;
+  background-color: #fff;
+  color: $black-lighten-more;
+  margin-right: 20px;
+  margin-bottom: 2rem;
+}
+.flexSpaceBetween {
+  display: flex;
+  justify-content: flex-start;
+}
+.checkboxBtn {
+  font-weight: bold;
+  // margin-bottom: 15px !important;
+}

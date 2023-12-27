@@ -1,0 +1,25 @@
+@import 'assets/styles/mixins.scss';
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formItem {
+  margin-bottom: 0;
+}
+.cstmInput {
+  border: none;
+  font-size: 13px;
+  font-family: 'Nunito Sans', sans-serif;
+  border-bottom: 3px dotted #0190fe;
+  :global {
+    .ant-select-selection {
+      border: none;
+    }
+  }
+}
+.cstmInputDisabled {
+  border: none;
+  font-size: 13px;
+  font-family: 'Nunito Sans', sans-serif;
+}

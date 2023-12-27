@@ -1,0 +1,43 @@
+@import 'assets/styles/mixins.scss';
+
+.mainCard {
+  border-radius: 13px;
+  border-left: 1px;
+  border-right: 1px;
+  border-bottom: 1px;
+  border-top: 1px;
+}
+.permissionHeader {
+  margin-bottom: 10px;
+  margin-top: -10px;
+  margin-left: -6px;
+}
+.backArrowIcon {
+  color: #0190fe;
+  cursor: pointer;
+}
+.tableHeader {
+  margin-bottom: 16px;
+}
+.listHeaderRow {
+  margin-top: -14px;
+  margin-bottom: 8px;
+}
+.listHeader {
+  font-size: 15px;
+  font-weight: bold;
+}
+.listName {
+  font-weight: 600;
+}
+.listDescrption {
+  font-weight: 500;
+}
+.actionBlock {
+  text-align: right;
+}
+.searchBlock {
+  margin-top: -18px;
+  margin-left: -21px;
+  margin-bottom: 11px;
+}

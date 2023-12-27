@@ -1,0 +1,67 @@
+{
+    "initialColumns": [
+      {
+        "value": "tradeDate",
+        "label": "Trade Date"
+      },
+      {
+        "value": "tradeReference",
+        "label": "Trade ID"
+      },
+      {
+        "value": "customerName",
+        "label": "Customer Name"
+      },
+      {
+        "value": "sourceCurrency",
+        "label": "Source Currency"
+      },
+      {
+        "value": "pcRevenue",
+        "label": "PC Revenue"
+      },
+      {
+        "value": "tradeComment",
+        "label": "Comment"
+      }
+    ],
+    "allColumns": [
+      {
+          "value": "tradeDate",
+          "label": "Trade Date"
+      },
+      {
+        "value": "tradeReference",
+        "label": "Trade ID"
+      },
+      {
+        "value": "customerName",
+        "label": "Customer Name"
+      },
+      {
+        "value": "sourceCurrency",
+        "label": "Source Currency"
+      },
+      {
+        "value": "beneficiary",
+        "label": "Beneficiary"
+      },
+      {
+        "value": "destinationCurrency",
+        "label": "Destination Currency"
+      },
+      {
+        "value": "convertedAmount",
+        "label": "Converted Amount"
+      },
+      {
+        "value": "pcRevenue",
+        "label": "PC Revenue"
+      },
+      {
+        "value": "tradeComment",
+        "label": "Comment"
+      }
+    ]
+}
+  

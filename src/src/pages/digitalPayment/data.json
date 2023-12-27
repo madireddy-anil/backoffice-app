@@ -1,0 +1,31 @@
+{
+    "accountTypes": [
+        {
+          "key": "0",
+          "label": "Individual",
+          "value": "individual"
+        },
+        {
+          "key": "1",
+          "label": "Company",
+          "value": "business"
+        }
+      ],
+      "paymentEntities": [
+        {
+          "key": "clientEntity",
+          "label": "Client",
+          "value": "client"
+        },
+        {
+          "key": "plEntity",
+          "label": "PL",
+          "value": "pl"
+        },
+        {
+          "key": "suspenseEntity",
+          "label": "Suspense",
+          "value": "suspense"
+        }
+      ]
+}

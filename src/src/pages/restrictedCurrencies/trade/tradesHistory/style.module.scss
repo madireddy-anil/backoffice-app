@@ -1,0 +1,26 @@
+@import 'assets/styles/mixins.scss';
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchBox {
+  margin-bottom: 20px;
+}
+
+:global {
+  .ant-card {
+    border-radius: 10px;
+  }
+  .trades {
+    .ant-table-pagination.ant-pagination {
+      float: none !important;
+      display: flex;
+      justify-content: flex-end;
+      li:first-child {
+        margin-right: auto;
+      }
+    }
+  }
+}

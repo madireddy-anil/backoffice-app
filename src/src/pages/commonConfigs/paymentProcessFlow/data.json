@@ -1,0 +1,138 @@
+{
+    "nextExitStatusCode" : [
+        {
+            "value": "P1",
+            "label":"P1"
+        },
+        {
+            "value": "P2",
+            "label":"P2"
+        },
+        {
+            "value": "P3",
+            "label":"P3"
+        },
+        {
+            "value": "P4",
+            "label":"P4"
+        },
+        {
+            "value": "P5",
+            "label":"P5"
+        },
+        {
+            "value": "P6",
+            "label":"P6"
+        },
+        {
+            "value": "P7",
+            "label":"P7"
+        },
+        {
+            "value": "R1",
+            "label":"R1"
+        },
+        {
+            "value": "N1",
+            "label":"N1"
+        },
+        {
+            "value": "N2",
+            "label":"N2"
+        },
+        {
+            "value": "E1",
+            "label":"E1"
+        },
+        {
+            "value": "Q1",
+            "label":"Q1"
+        }
+    ],
+    "processFlow" : [
+        {
+            "value": "outbound_credit_transfer_client_external",
+            "label":"Outbound Credit Transfer Client External"
+        },
+        {
+            "value": "outbound_credit_transfer_client_internal",
+            "label":"Outbound Credit Transfer Client Internal"
+        },
+        {
+            "value": "inbound_credit_transfer_client_external",
+            "label":"Inbound Credit Transfer Client External"
+        },
+        {
+            "value": "inbound_credit_transfer_client_internal",
+            "label":"Inbound Credit Transfer Client Internal"
+        },
+        {
+            "value": "manual_credit_adjustment",
+            "label":"Manual Credit Adjustment"
+        },
+        {
+            "value": "manual_debit_adjustment",
+            "label":"Manual Debit Adjustment"
+        },
+        {
+            "value": "outbound_return_payment",
+            "label":"Outbound Return Payment"
+        }
+    ],
+    "callFunction" : [
+        {
+            "value": "messageValidation",
+            "label":"Message Validation"
+        },
+        {
+            "value": "complianceCheck",
+            "label":"Compliance Check"
+        },
+        {
+            "value": "declineOutboundTransfer",
+            "label":"Decline Outbound Transfer"
+        },
+        {
+            "value": "paymentRoutingAndSettlement",
+            "label":"Payment Routing And Settlement"
+        },
+        {
+            "value": "blockBalance",
+            "label":"Block Balance"
+        },
+        {
+            "value": "pricing",
+            "label":"Pricing"
+        },
+        {
+            "value": "retrieveAndApplyAccountingProfile",
+            "label":"Retrieve And Apply Accounting Profile"
+        },
+        {
+            "value": "compileOutbound",
+            "label":"Compile Outbound"
+        },
+        {
+            "value": "outboundReturn",
+            "label":"Outbound Return"
+        },
+        {
+            "value": "outboundReturnPayment",
+            "label":"Outbound Return Payment"
+        }
+    ],
+    "statusType" :[
+        {
+            "value": "success",
+            "label":"Success"
+        },
+        {
+            "value": "error",
+            "label":"Error"
+        },
+        {
+            "value": "fail",
+            "label":"Fail"
+        }
+    ]
+}

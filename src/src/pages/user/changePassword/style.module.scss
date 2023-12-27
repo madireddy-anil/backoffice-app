@@ -1,0 +1,21 @@
+@import 'assets/styles/mixins.scss';
+
+.form {
+  max-width: 32.07rem;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-left: 21px;
+}
+
+.formTitle {
+  font-weight: 600;
+  font-size: 14px;
+  color: $text-darken-more;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  margin-top: 23px;
+}
+.errMsg {
+  color: red;
+}

@@ -1,0 +1,49 @@
+@import 'assets/styles/mixins.scss';
+
+.timelineCard {
+  height: 100%;
+  padding: 20px;
+  // overflow-y: scroll;
+  border-right: 1px solid #a8c6fa;
+}
+.beneTypeBlock {
+  display: flex;
+}
+.beneTypeRow {
+  float: right;
+}
+.beneTypeCard {
+  margin-top: 1px;
+  width: 200px;
+  margin-right: 40px;
+  cursor: pointer;
+  border-radius: 1px;
+  border: 1px solid #a8c6fa;
+}
+.activeBeneTypeCard {
+  margin-top: 1px;
+  width: 200px;
+  margin-right: 40px;
+  cursor: pointer;
+  background: #323242;
+  border-radius: 1px;
+  color: #fff;
+}
+.btnNext {
+  width: 8rem;
+  height: 3rem;
+  background-color: #75a9f9;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.cstmSelectInput {
+  font-size: 13px;
+  font-family: 'Nunito Sans', sans-serif;
+  border-radius: 4px;
+  border: 1px solid #a8c6fa;
+  :global {
+    .ant-select-selection {
+      border: none;
+    }
+  }
+}

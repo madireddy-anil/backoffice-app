@@ -1,0 +1,44 @@
+@import 'assets/styles/mixins.scss';
+
+.mainCard {
+  border-radius: 13px;
+  border-left: 1px;
+  border-right: 1px;
+  border-bottom: 1px;
+  border-top: 1px;
+}
+
+.actionBtns {
+  text-align: right;
+  margin-top: -21px;
+}
+
+.rejectButton {
+  background: #ff0102 !important;
+  margin-left: 10px;
+  width: 8rem;
+}
+
+.approveButton {
+  width: 8rem;
+}
+.statusMsg {
+  color: #da3434;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.modalHeader {
+  margin-left: -25px;
+  margin-right: -24px;
+  margin-top: -16px;
+  margin-bottom: -25px;
+}
+
+.innerTable {
+  width: 100%;
+}
+
+.dividerBlock {
+  margin-top: 13px;
+}

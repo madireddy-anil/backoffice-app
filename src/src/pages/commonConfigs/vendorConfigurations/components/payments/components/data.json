@@ -1,0 +1,101 @@
+{
+
+    "currencyPaymentTypesSupported" : [
+        {
+            "id" : 0,
+            "label" :"Credit Transfer",
+            "value" : "creditTransfer"
+        },
+        {
+            "id" : 0,
+            "label" :"Debit Transfer",
+            "value" : "debitTransfer"
+        },
+        {
+            "id" : 0,
+            "label" :"Direct Debit",
+            "value" : "directDebit"
+        }
+        
+    ],
+    "daysList" : [
+        {
+            "value": "monday",
+            "label":"Monday"
+        },
+        {
+            "value": "tuesday",
+            "label":"Tuesday"
+        },
+        {
+            "value": "wednesday",
+            "label":"Wednesday"
+        },
+        {
+            "value": "thursday",
+            "label":"Thursday"
+        },
+        {
+            "value": "friday",
+            "label":"Friday"
+        },
+        {
+            "value": "saturday",
+            "label":"Saturday"
+        },
+        {
+            "value": "sunday",
+            "label":"Sunday"
+        }
+    ],
+    "routingChannels" : [
+        {
+            "id" : 1,
+            "label" :"SEPA",
+            "value" : "SEPA"
+        },
+        {
+            "id" : 2,
+            "label" :"FPS",
+            "value" : "FPS"
+        },
+        {
+            "id" : 3,
+            "label" :"CHAPS",
+            "value" : "CHAPS"
+        },
+        {
+            "id" : 4,
+            "label" :"BACS",
+            "value" : "BACS"
+        },
+        {
+            "id" : 5,
+            "label" :"SWIFT",
+            "value" : "SWIFT"
+        },
+        {
+            "id" : 6,
+            "label" :"TARGET2",
+            "value" : "TARGET2"
+        },
+        {
+            "id" : 7,
+            "label" :"BLOCKCHAIN",
+            "value" : "BLOCKCHAIN"
+        }
+        
+    ],
+    "boolenValues" : [
+        {
+            "id" :1,
+            "label" : "Yes",
+            "value" : "yes"
+        },
+        {
+            "id" :2,
+            "label" : "No",
+            "value" : "no"
+        }
+    ]
+}

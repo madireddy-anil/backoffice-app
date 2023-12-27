@@ -1,0 +1,69 @@
+{
+    "initialColumns": [
+      {
+        "value": "clientName",
+        "label": "Customer Name"
+      },
+      {
+        "value": "monthAndYear",
+        "label": "Month"
+      },
+      {
+        "value": "numberOfTrades",
+        "label": "Total No of Trades"
+      },
+      {
+        "value": "tradeValueIDR",
+        "label": "Trade Value IDR"
+      },
+      {
+        "value": "tradeValueIDRtoUSD",
+        "label": "Trade Value IDR to USD"
+      },
+      {
+        "value": "tradeValuePHP",
+        "label": "Trade Value PHP"
+      },
+      {
+        "value": "tradeValuePHPtoUSD",
+        "label": "Trade Value PHP to USD"
+      },
+      {
+        "value": "tradeValueTHB",
+        "label": "Trade Value THB"
+      },
+      {
+        "value": "tradeValueTHBtoUSD",
+        "label": "Trade Value THB to USD"
+      },
+      {
+        "value": "tradeValueVND",
+        "label": "Trade Value VND"
+      },
+      {
+        "value": "tradeValueVNDtoUSD",
+        "label": "Trade Value VND to USD"
+      },
+      {
+        "value": "tradeValueUSD",
+        "label": "Trade Value USD"
+      },
+      {
+        "value": "tradeValueCNY",
+        "label": "Trade Value CNY"
+      },
+      {
+        "value": "tradeValueCNYtoUSD",
+        "label": "Trade Value CNY to USD"
+      },
+      {
+        "value": "grandDepositAmountInUSD",
+        "label": "Total Trade Value USD"
+      },
+      {
+        "value": "grandPCRevenueInUSD",
+        "label": "Profit in USD"
+      }
+    ]
+
+  }

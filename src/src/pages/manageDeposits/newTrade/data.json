@@ -1,0 +1,49 @@
+{
+  "currencies": [
+    {
+      "currency": "Vietnamese Dong",
+      "currencyCode": "VND",
+      "currencyHash": "a73244aa-b72c-e911-a8a0-002248005556"
+    },
+    {
+      "currency": "Chinese Yuan",
+      "currencyCode": "CNY",
+      "currencyHash": "35d4d0f6-b72c-e911-a8a0-002248005556"
+    },
+    {
+      "currency": "Thai Baht",
+      "currencyCode": "THB",
+      "currencyHash": "9d42b31e-b82c-e911-a8a0-002248005556"
+    },
+    {
+      "currency": "Indonesian Rupiah",
+      "currencyCode": "IDR",
+      "currencyHash": "a7785251-b82c-e911-a8a0-002248005556"
+    },
+    {
+      "currency": "Malaysian Ringgit",
+      "currencyCode": "MYR",
+      "currencyHash": "17698acf-b82c-e911-a8a0-002248005556"
+    },
+    {
+      "currency": "Philippine Peso",
+      "currencyCode": "PHP",
+      "currencyHash": "1994222a-b82c-e911-a8a0-002248005556"
+    },
+    {
+      "currency": "United States Dollar",
+      "currencyCode": "USD",
+      "currencyHash": "1454222a-b82c-e900-a8a0-0022480099956"
+    },
+    {
+      "currency": "Euro",
+      "currencyCode": "EUR",
+      "currencyHash": "1454234-b82a-e930-a8a0-0022480099956"
+    },
+    {
+      "currency": "Hong Kong dollar",
+      "currencyCode": "HKD",
+      "currencyHash": "1423435a-b82c-e900-a2a0-0022480099956"
+    }
+  ]
+}

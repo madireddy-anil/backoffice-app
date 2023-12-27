@@ -1,0 +1,25 @@
+@import 'assets/styles/mixins.scss';
+@import '../addCryptoBeneficiary/style.module.scss';
+
+.beneTitle {
+  font-size: 21px;
+  margin-bottom: 25px;
+}
+.inputbox {
+  padding: 10px;
+  border: 1px solid #a8c6fa;
+  border-radius: 4px;
+  width: 90%;
+}
+.btnCANCEL {
+  width: 8rem;
+  height: 3rem;
+  background-color: #fff;
+  color: $black-lighten-more;
+  margin-right: 20px;
+  margin-bottom: 2rem;
+}
+.flexSpaceBetween {
+  display: flex;
+  justify-content: flex-start;
+}

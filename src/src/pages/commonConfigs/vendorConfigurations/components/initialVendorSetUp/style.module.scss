@@ -1,0 +1,97 @@
+@import 'assets/styles/mixins.scss';
+
+.dividerBlock {
+  margin-top: 13px;
+}
+
+.title {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 500;
+}
+
+.mainCard {
+  border-radius: 13px;
+  border-left: 1px;
+  border-right: 1px;
+  border-bottom: 1px;
+  border-top: 1px;
+}
+
+.editIcon {
+  margin-left: 2px;
+  font-size: '15px';
+  color: #498df3;
+}
+
+.deleteIcon {
+  margin-left: -20px;
+  font-size: '10px';
+  color: red;
+}
+
+.btnCANCEL {
+  width: 8rem;
+  background-color: #fff;
+  color: $black-lighten-more;
+  margin-right: 20px;
+  margin-bottom: 2rem;
+}
+.btnStyles {
+  margin-bottom: -27px;
+  margin-left: 14px;
+}
+
+.btnSAVE {
+  width: 8rem;
+  background-color: #75a9f9;
+  color: #fff;
+  margin-bottom: 2rem;
+  margin-top: 27px;
+}
+
+.timeZoneBlock {
+  margin-top: 2px;
+  border-radius: 5px;
+  // min-height: 44px
+}
+
+.timeZoneTitle {
+  color: rgba(0, 0, 0, 0.85);
+  min-height: 44px;
+}
+
+.cstmSelectInput {
+  font-size: 13px;
+  // font-family: 'Nunito Sans', sans-serif;
+  border-radius: 4px;
+  // border: 1px solid #a8c6fa;
+  :global {
+    .css-yk16xz-control {
+      min-height: 10px;
+      height: 33px;
+      color: #bfbfbf;
+      border: 1px solid #e4e9f0;
+      font-family: 'Nunito Sans', sans-serif;
+    }
+    .css-g1d714-ValueContainer {
+      margin-bottom: 11px;
+      color: #bfbfbf;
+    }
+    .css-1hb7zxy-IndicatorsContainer {
+      margin-top: -12px;
+    }
+    .css-1okebmr-indicatorSeparator {
+      display: none;
+    }
+  }
+}
+
+.actionBtns {
+  text-align: right;
+  margin-top: -21px;
+}
+
+.wrapperSelect {
+  margin-top: 9px;
+}

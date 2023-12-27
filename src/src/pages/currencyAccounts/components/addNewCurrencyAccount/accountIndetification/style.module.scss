@@ -1,0 +1,46 @@
+@import 'assets/styles/mixins.scss';
+.mainCard {
+  border-radius: 13px;
+  border-left: 1px;
+  border-right: 1px;
+  border-bottom: 1px;
+  border-top: 1px;
+}
+
+.btnSAVE {
+  width: 8rem;
+  background-color: #75a9f9;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.btnCANCEL {
+  width: 8rem;
+  background-color: #fff;
+  color: $black-lighten-more;
+  margin-right: 20px;
+  margin-bottom: 2rem;
+}
+.btnStyles {
+  margin-bottom: -27px;
+  margin-left: 14px;
+}
+.modalHeader {
+  margin-left: -25px;
+  margin-right: -24px;
+  margin-top: -16px;
+  margin-bottom: -25px;
+}
+.addButtonBlock {
+  text-align: center;
+  margin-bottom: 17px;
+}
+.deleteIcon {
+  // margin-left: 14px;
+  font-size: '15px';
+  color: red;
+}
+
+.errorBlock {
+  width: 100%;
+}

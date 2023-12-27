@@ -1,0 +1,12 @@
+@import 'assets/styles/mixins.scss';
+
+:global {
+  .ant-table-pagination.ant-pagination {
+    float: none !important;
+    display: flex;
+    justify-content: flex-end;
+    li:first-child {
+      margin-right: auto;
+    }
+  }
+}

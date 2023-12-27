@@ -1,0 +1,32 @@
+{
+    "currencyList" : [
+        {
+            "title" : "USDT",
+            "subTitle" : "Tether USDT",
+            "logo" : "resources/images/usdt.png",
+            "width" : "200px",
+            "height" : "200px"
+        },
+        {
+            "title" : "BTC",
+            "subTitle" : "Bitcoin",
+            "logo" : "resources/images/Bitcoin.svg",
+            "width" : "200px",
+            "height" : "200px"
+        },
+        {
+            "title" : "TST",
+            "subTitle" : "Tether",
+            "logo" : "resources/images/usdt.png",
+            "width" : "200px",
+            "height" : "200px"
+        },
+        {
+            "title" : "USDC",
+            "subTitle" : "USDC",
+            "logo" : "resources/images/usdc.png",
+            "width" : "200px",
+            "height" : "200px"
+        }
+    ]
+}

@@ -1,0 +1,1307 @@
+const actions = {
+  NP_GET_ALL_TRANSACTIONS: 'NP_GET_ALL_TRANSACTIONS',
+  NP_GET_ALL_TRANSACTIONS_SUCCESS: 'NP_GET_ALL_TRANSACTIONS_SUCCESS',
+  NP_GET_ALL_TRANSACTIONS_FAILURE: 'NP_GET_ALL_TRANSACTIONS_FAILURE',
+
+  NP_INITIATE_TRANSACTION: 'NP_INITIATE_TRANSACTION',
+
+  NP_GET_TRANSACTIONS_BY_ID: 'NP_GET_TRANSACTIONS_BY_ID',
+  NP_GET_TRANSACTIONS_BY_ID_SUCCESS: 'NP_GET_TRANSACTIONS_BY_ID_SUCCESS',
+  NP_GET_TRANSACTIONS_BY_ID_FAILURE: 'NP_GET_TRANSACTIONS_BY_ID_FAILURE',
+
+  NP_GET_TRANSACTIONS_BY_CLIENT_ID: 'NP_GET_TRANSACTIONS_BY_CLIENT_ID',
+  NP_GET_TRANSACTIONS_BY_CLIENT_ID_SUCCESS: 'NP_GET_TRANSACTIONS_BY_CLIENT_ID_SUCCESS',
+  NP_GET_TRANSACTIONS_BY_CLIENT_ID_FAILURE: 'NP_GET_TRANSACTIONS_BY_CLIENT_ID_FAILURE',
+
+  NP_SELECTED_LIST_TRANSACTION: 'NP_SELECTED_LIST_TRANSACTION',
+
+  NP_CHANGE_EDIT_TXN_MODE: 'NP_CHANGE_EDIT_TXN_MODE',
+
+  NP_UPDATE_TRANSACTION: 'NP_UPDATE_TRANSACTION',
+  NP_UPDATE_TRANSACTION_SUCCESS: 'NP_UPDATE_TRANSACTION_SUCCESS',
+  NP_UPDATE_TRANSACTION_FAILURE: 'NP_UPDATE_TRANSACTION_FAILURE',
+
+  NP_CANCEL_TRANSACTION: 'NP_CANCEL_TRANSACTION',
+  NP_CANCEL_TRANSACTION_SUCCESS: 'NP_CANCEL_TRANSACTION_SUCCESS',
+  NP_CANCEL_TRANSACTION_FAILURE: 'NP_CANCEL_TRANSACTION_FAILURE',
+
+  NP_DELETE_TRANSACTION: 'NP_DELETE_TRANSACTION',
+  NP_DELETE_TRANSACTION_SUCCESS: 'NP_DELETE_TRANSACTION_SUCCESS',
+  NP_DELETE_TRANSACTION_FAILURE: 'NP_DELETE_TRANSACTION_FAILURE',
+
+  NP_BULK_DELETE_TRANSACTION: 'NP_BULK_DELETE_TRANSACTION',
+  NP_BULK_DELETE_TRANSACTION_SUCCESS: 'NP_BULK_DELETE_TRANSACTION_SUCCESS',
+  NP_BULK_DELETE_TRANSACTION_FAILURE: 'NP_BULK_DELETE_TRANSACTION_FAILURE',
+
+  NP_UPDATE_VENDOR: 'NP_UPDATE_VENDOR',
+  NP_UPDATE_VENDOR_SUCCESS: 'NP_UPDATE_VENDOR_SUCCESS',
+  NP_UPDATE_VENDOR_FAILURE: 'NP_UPDATE_VENDOR_FAILURE',
+
+  NP_SELECTED_VENDOR: 'NP_SELECTED_VENDOR',
+
+  NP_GET_BENEFICIARY_BY_VENDOR_ID: 'NP_GET_BENEFICIARY_BY_VENDOR_ID',
+  NP_GET_BENEFICIARY_BY_VENDOR_ID_SUCCESS: 'NP_GET_BENEFICIARY_BY_VENDOR_ID_SUCCESS',
+  NP_GET_BENEFICIARY_BY_VENDOR_ID_FAILURE: 'NP_GET_BENEFICIARY_BY_VENDOR_ID_FAILURE',
+
+  NP_REMOVE_VENDOR: 'NP_REMOVE_VENDOR',
+  NP_UPDATE_BENEFICIARY: 'NP_UPDATE_BENEFICIARY',
+  NP_REMOVE_BENEFICIARY: 'NP_REMOVE_BENEFICIARY',
+  NP_UPDATE_DEPOSIT_CURRENCY: 'NP_UPDATE_DEPOSIT_CURRENCY',
+  NP_UPDATE_DEPOSIT_AMOUNT: 'NP_UPDATE_DEPOSIT_AMOUNT',
+
+  NP_CREATE_TRANSACTION: 'NP_CREATE_TRANSACTION',
+  NP_CREATE_TRANSACTION_SUCCESS: 'NP_CREATE_TRANSACTION_SUCCESS',
+  NP_CREATE_TRANSACTION_FAILURE: 'NP_CREATE_TRANSACTION_FAILURE',
+
+  NP_UPDATE_SELECTED_BENEFICIARY: 'NP_UPDATE_SELECTED_BENEFICIARY',
+  NP_UPDATE_SELECTED_BENEFICIARY_SUCCESS: 'NP_UPDATE_SELECTED_BENEFICIARY_SUCCESS',
+  NP_UPDATE_SELECTED_BENEFICIARY_FAILURE: 'NP_UPDATE_SELECTED_BENEFICIARY_FAILURE',
+
+  NP_UPDATE_SELECTED_VENDOR: 'NP_UPDATE_SELECTED_VENDOR',
+  NP_UPDATE_SELECTED_VENDOR_SUCCESS: 'NP_UPDATE_SELECTED_VENDOR_SUCCESS',
+  NP_UPDATE_SELECTED_VENDOR_FAILURE: 'NP_UPDATE_SELECTED_VENDOR_FAILURE',
+
+  NP_SELECTED_ACCOUNT_REQUESTED_DATE: 'NP_SELECTED_ACCOUNT_REQUESTED_DATE',
+  NP_SELECTED_ACCOUNT_RECEIVED_DATE: 'NP_SELECTED_ACCOUNT_RECEIVED_DATE',
+
+  NP_CONFIRM_ACCOUNT_REQUESTED_DATE: 'NP_CONFIRM_ACCOUNT_REQUESTED_DATE',
+  NP_CONFIRM_ACCOUNT_REQUESTED_DATE_SUCCESS: 'NP_CONFIRM_ACCOUNT_REQUESTED_DATE_SUCCESS',
+  NP_CONFIRM_ACCOUNT_REQUESTED_DATE_FAILURE: 'NP_CONFIRM_ACCOUNT_REQUESTED_DATE_FAILURE',
+
+  NP_CONFIRM_ACCOUNT_RECEIVED_DATE: 'NP_CONFIRM_ACCOUNT_RECEIVED_DATE',
+  NP_CONFIRM_ACCOUNT_RECEIVED_DATE_SUCCESS: 'NP_CONFIRM_ACCOUNT_RECEIVED_DATE_SUCCESS',
+  NP_CONFIRM_ACCOUNT_RECEIVED_DATE_FAILURE: 'NP_CONFIRM_ACCOUNT_RECEIVED_DATE_FAILURE',
+
+  NP_ENTERED_RECEIVED_AMOUNT: 'NP_ENTERED_RECEIVED_AMOUNT',
+  NP_SELECTED_RECEIVED_AMOUNT_CONFIRMATION_DATE: 'NP_SELECTED_RECEIVED_AMOUNT_CONFIRMATION_DATE',
+
+  NP_UPDATE_TRANSACTION_AMOUNT: 'NP_UPDATE_TRANSACTION_AMOUNT',
+  NP_UPDATE_TRANSACTION_AMOUNT_SUCCESS: 'NP_UPDATE_TRANSACTION_AMOUNT_SUCCESS',
+  NP_UPDATE_TRANSACTION_AMOUNT_FAILURE: 'NP_UPDATE_TRANSACTION_AMOUNT_FAILURE',
+
+  NP_CONFIRM_RECEIVED_AMOUNT: 'NP_CONFIRM_RECEIVED_AMOUNT',
+  NP_CONFIRM_RECEIVED_AMOUNT_SUCCESS: 'NP_CONFIRM_RECEIVED_AMOUNT_SUCCESS',
+  NP_CONFIRM_RECEIVED_AMOUNT_FAILURE: 'NP_CONFIRM_RECEIVED_AMOUNT_FAILURE',
+
+  NP_ENTERED_REMITTED_AMOUNT: 'NP_ENTERED_REMITTED_AMOUNT',
+  NP_SELECTED_REMITED_AMOUNT_CONFIRMATION_DATE: 'NP_SELECTED_REMITED_AMOUNT_CONFIRMATION_DATE',
+
+  NP_CONFIRM_REMITED_FUNDS: 'NP_CONFIRM_REMITED_FUNDS',
+  NP_CONFIRM_REMITED_FUNDS_SUCCESS: 'NP_CONFIRM_REMITED_FUNDS_SUCCESS',
+  NP_CONFIRM_REMITED_FUNDS_FAILURE: 'NP_CONFIRM_REMITED_FUNDS_FAILURE',
+
+  NP_UPDATE_VENDOR_DETAILS: 'NP_UPDATE_VENDOR_DETAILS',
+
+  NP_GET_BUY_RATE: 'NP_GET_BUY_RATE',
+  NP_GET_BUY_RATE_SUCCESS: 'NP_GET_BUY_RATE_SUCCESS',
+  NP_GET_BUY_RATE_FAILURE: 'NP_GET_BUY_RATE_FAILURE',
+
+  NP_CHANGE_DAY_RATE: 'NP_CHANGE_DAY_RATE',
+  NP_UPDATE_DAY_RATE: 'NP_UPDATE_DAY_RATE',
+  NP_CHANGE_INVERSE_RATE: 'NP_CHANGE_INVERSE_RATE',
+  NP_CHECK_PRECISION: 'NP_CHECK_PRECISION',
+  NP_UPDATE_PRECISION: 'NP_UPDATE_PRECISION',
+  NP_ENTERED_NEW_RATE: 'NP_ENTERED_NEW_RATE',
+
+  NP_GET_FX_BASE_RATE_BY_VENDOR: 'NP_GET_FX_BASE_RATE_BY_VENDOR',
+  NP_GET_FX_BASE_RATE_BY_VENDOR_SUCCESS: 'NP_GET_FX_BASE_RATE_BY_VENDOR_SUCCESS',
+  NP_GET_FX_BASE_RATE_BY_VENDOR_FAILURE: 'NP_GET_FX_BASE_RATE_BY_VENDOR_FAILURE',
+
+  NP_UPDATE_TRANSACTION_VALUES: 'NP_UPDATE_TRANSACTION_VALUES',
+  NP_UPDATE_TRANSACTION_VALUES_SUCCESS: 'NP_UPDATE_TRANSACTION_VALUES_SUCCESS',
+  NP_UPDATE_TRANSACTION_VALUES_FAILURE: 'NP_UPDATE_TRANSACTION_VALUES_FAILURE',
+
+  NP_CREATE_TXN_FEES: 'NP_CREATE_TXN_FEES',
+  NP_CREATE_TXN_FEES_SUCCESS: 'NP_CREATE_TXN_FEES_SUCCESS',
+  NP_CREATE_TXN_FEES_FAILURE: 'NP_CREATE_TXN_FEES_FAILURE',
+
+  NP_GET_TXN_FEES_BY_TXN_ID: 'NP_GET_TXN_FEES_BY_TXN_ID',
+  NP_GET_TXN_FEES_BY_TXN_ID_SUCCESS: 'NP_GET_TXN_FEES_BY_TXN_ID_SUCCESS',
+  NP_GET_TXN_FEES_BY_TXN_ID_FAILURE: 'NP_GET_TXN_FEES_BY_TXN_ID_FAILURE',
+
+  NP_GET_TXN_RATES_BY_TXN_ID: 'NP_GET_TXN_RATES_BY_TXN_ID',
+  NP_GET_TXN_RATES_BY_TXN_ID_SUCCESS: 'NP_GET_TXN_RATES_BY_TXN_ID_SUCCESS',
+  NP_GET_TXN_RATES_BY_TXN_ID_FAILURE: 'NP_GET_TXN_RATES_BY_TXN_ID_FAILURE',
+
+  NP_CREATE_TXN_RATES: 'NP_CREATE_TXN_RATES',
+  NP_CREATE_TXN_RATES_SUCCESS: 'NP_CREATE_TXN_RATES_SUCCESS',
+  NP_CREATE_TXN_RATES_FAILURE: 'NP_CREATE_TXN_RATES_FAILURE',
+
+  NP_CREATE_REMITTANCE_SLIP_SUCCESS_ACCOUNTS_ONLY:
+    'NP_CREATE_REMITTANCE_SLIP_SUCCESS_ACCOUNTS_ONLY',
+  NP_CREATE_REMITTANCE_SLIP_FAILURE_ACCOUNTS_ONLY:
+    'NP_CREATE_REMITTANCE_SLIP_FAILURE_ACCOUNTS_ONLY',
+
+  NP_DELETE_REMITTANCE_SLIP_ACCOUNTS_ONLY: 'NP_DELETE_REMITTANCE_SLIP_ACCOUNTS_ONLY',
+  NP_DELETE_REMITTANCE_SLIP_SUCCESS_ACCOUNTS_ONLY:
+    'NP_DELETE_REMITTANCE_SLIP_SUCCESS_ACCOUNTS_ONLY',
+  NP_DELETE_REMITTANCE_SLIP_FAILURE_ACCOUNTS_ONLY:
+    'NP_DELETE_REMITTANCE_SLIP_FAILURE_ACCOUNTS_ONLY',
+
+  NP_CREATE_REMITTANCE_SLIP_SUCCESS_SWAP: 'NP_CREATE_REMITTANCE_SLIP_SUCCESS_SWAP',
+  NP_CREATE_REMITTANCE_SLIP_FAILURE_SWAP: 'NP_CREATE_REMITTANCE_SLIP_FAILURE_SWAP',
+
+  NP_DELETE_REMITTANCE_SLIP_SWAP: 'NP_DELETE_REMITTANCE_SLIP_SWAP',
+  NP_DELETE_REMITTANCE_SLIP_SUCCESS_SWAP: 'NP_DELETE_REMITTANCE_SLIP_SUCCESS_SWAP',
+  NP_DELETE_REMITTANCE_SLIP_FAILURE_SWAP: 'NP_DELETE_REMITTANCE_SLIP_FAILURE_SWAP',
+
+  NP_CREATE_REMITTANCE_SLIP_SUCCESS_FX: 'NP_CREATE_REMITTANCE_SLIP_SUCCESS_FX',
+  NP_CREATE_REMITTANCE_SLIP_FAILURE_FX: 'NP_CREATE_REMITTANCE_SLIP_FAILURE_FX',
+
+  NP_DELETE_REMITTANCE_SLIP_FX: 'NP_DELETE_REMITTANCE_SLIP_FX',
+  NP_DELETE_REMITTANCE_SLIP_SUCCESS_FX: 'NP_DELETE_REMITTANCE_SLIP_SUCCESS_FX',
+  NP_DELETE_REMITTANCE_SLIP_FAILURE_FX: 'NP_DELETE_REMITTANCE_SLIP_FAILURE_FX',
+
+  NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_FX: 'NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_FX',
+  NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_SUCCESS_FX:
+    'NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_SUCCESS_FX',
+  NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_FAILURE_FX:
+    'NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_FAILURE_FX',
+
+  NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_ACCOUNTS_ONLY:
+    'NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_ACCOUNTS_ONLY',
+  NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_SUCCESS_ACCOUNTS_ONLY:
+    'NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_SUCCESS_ACCOUNTS_ONLY',
+  NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_FAILURE_ACCOUNTS_ONLY:
+    'NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_FAILURE_ACCOUNTS_ONLY',
+
+  NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_SWAP: 'NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_SWAP',
+  NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_SUCCESS_SWAP:
+    'NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_SUCCESS_SWAP',
+  NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_FAILURE_SWAP:
+    'NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_FAILURE_SWAP',
+
+  // local accounts
+  // UPDATE_BANK_ACCOUNTS_ON_VENDOR: 'UPDATE_BANK_ACCOUNTS_ON_VENDOR',
+
+  NP_SELECTED_BANK_ACCOUNTS: 'NP_SELECTED_BANK_ACCOUNTS',
+
+  NP_UPDATE_LOCAL_AMOUNT: 'NP_UPDATE_LOCAL_AMOUNT',
+
+  NP_DELETE_SELECTED_ACCOUNT: 'NP_DELETE_SELECTED_ACCOUNT',
+  NP_DELETE_SELECTED_ACCOUNT_SUCCESS: 'NP_DELETE_SELECTED_ACCOUNT_SUCCESS',
+  NP_DELETE_SELECTED_ACCOUNT_FAILURE: 'NP_DELETE_SELECTED_ACCOUNT_FAILURE',
+
+  NP_UPDATE_LOCAL_ACCOUNTS_TO_TRANSACTION: 'NP_UPDATE_LOCAL_ACCOUNTS_TO_TRANSACTION',
+  NP_UPDATE_LOCAL_ACCOUNTS_TO_TRANSACTION_SUCCESS:
+    'NP_UPDATE_LOCAL_ACCOUNTS_TO_TRANSACTION_SUCCESS',
+  NP_UPDATE_LOCAL_ACCOUNTS_TO_TRANSACTION_FAILURE:
+    'NP_UPDATE_LOCAL_ACCOUNTS_TO_TRANSACTION_FAILURE',
+
+  NP_UPDATE_LOCAL_ACCOUNTS_TO_TRADE: 'NP_UPDATE_LOCAL_ACCOUNTS_TO_TRADE',
+  NP_UPDATE_LOCAL_ACCOUNTS_TO_TRADE_SUCCESS: 'NP_UPDATE_LOCAL_ACCOUNTS_TO_TRADE_SUCCESS',
+  NP_UPDATE_LOCAL_ACCOUNTS_TO_TRADE_FAILURE: 'NP_UPDATE_LOCAL_ACCOUNTS_TO_TRADE_FAILURE',
+
+  NP_UPDATE_LOCAL_BANK_ACCOUNTS: 'NP_UPDATE_LOCAL_BANK_ACCOUNTS',
+  NP_UPDATE_LOCAL_BANK_ACCOUNTS_SUCCESS: 'NP_UPDATE_LOCAL_BANK_ACCOUNTS_SUCCESS',
+  NP_UPDATE_LOCAL_BANK_ACCOUNTS_FAILURE: 'NP_UPDATE_LOCAL_BANK_ACCOUNTS_FAILURE',
+
+  NP_GET_ALL_BANK_ACCOUNTS_BY_VENDOR: 'NP_GET_ALL_BANK_ACCOUNTS_BY_VENDOR',
+  NP_GET_ALL_BANK_ACCOUNTS_BY_VENDOR_SUCCESS: 'NP_GET_ALL_BANK_ACCOUNTS_BY_VENDOR_SUCCESS',
+  NP_GET_ALL_BANK_ACCOUNTS_BY_VENDOR_FAILURE: 'NP_GET_ALL_BANK_ACCOUNTS_BY_VENDOR_FAILURE',
+
+  NP_UPDATE_SWAP_TXN_SOURCE_CURRENCY: 'NP_UPDATE_SWAP_TXN_SOURCE_CURRENCY',
+  NP_UPDATE_SWAP_TXN_SOURCE_AMOUNT: 'NP_UPDATE_SWAP_TXN_SOURCE_AMOUNT',
+  NP_UPDATE_SWAP_TXN_SOURCE_DETAILS: 'NP_UPDATE_SWAP_TXN_SOURCE_DETAILS',
+
+  NP_ENTERED_AMOUNT_SOLD: 'NP_ENTERED_AMOUNT_SOLD',
+
+  NP_HANDLE_TXN_PAGINATION: 'NP_HANDLE_TXN_PAGINATION',
+
+  // Fee Calc
+
+  NP_HANDLE_TXN_FEE_CALCULATION: 'NP_HANDLE_TXN_FEE_CALCULATION',
+  NP_HANDLE_TXN_FEE_CALCULATION_SUCCESS: 'NP_HANDLE_TXN_FEE_CALCULATION_SUCCESS',
+  NP_HANDLE_TXN_FEE_CALCULATION_FAILURE: 'NP_HANDLE_TXN_FEE_CALCULATION_FAILURE',
+
+  // crypto
+  NP_CHANGE_MODE_OPERATION: 'NP_CHANGE_MODE_OPERATION',
+
+  NP_FETCH_BANK_ACCOUNTS: 'NP_FETCH_BANK_ACCOUNTS',
+  NP_FETCH_BANK_ACCOUNTS_SUCCESS: 'NP_FETCH_BANK_ACCOUNTS_SUCCESS',
+  NP_FETCH_BANK_ACCOUNTS_FAILURE: 'NP_FETCH_BANK_ACCOUNTS_FAILURE',
+
+  NP_UPDATE_ROUTE_TYPE: 'NP_UPDATE_ROUTE_TYPE',
+
+  NP_GET_ALL_CRYPTO_TRANSACTIONS: 'NP_GET_ALL_CRYPTO_TRANSACTIONS',
+  NP_GET_ALL_CRYPTO_TRANSACTIONS_SUCCESS: 'NP_GET_ALL_CRYPTO_TRANSACTIONS_SUCCESS',
+  NP_GET_ALL_CRYPTO_TRANSACTIONS_FAILURE: 'NP_GET_ALL_CRYPTO_TRANSACTIONS_FAILURE',
+
+  NP_INITIATE_CRYPTO_TRANSACTION: 'NP_INITIATE_CRYPTO_TRANSACTION',
+
+  NP_GET_CRYPTO_TRANSACTION_BY_ID: 'NP_GET_CRYPTO_TRANSACTION_BY_ID',
+  NP_GET_CRYPTO_TRANSACTION_BY_ID_SUCCESS: 'NP_GET_CRYPTO_TRANSACTION_BY_ID_SUCCESS',
+  NP_GET_CRYPTO_TRANSACTION_BY_ID_FAILURE: 'NP_GET_CRYPTO_TRANSACTION_BY_ID_FAILURE',
+
+  NP_GET_CRYPTO_TRANSACTION_BY_CLIENT_ID: 'NP_GET_CRYPTO_TRANSACTION_BY_CLIENT_ID',
+  NP_GET_CRYPTO_TRANSACTION_BY_CLIENT_ID_SUCCESS: 'NP_GET_CRYPTO_TRANSACTION_BY_CLIENT_ID_SUCCESS',
+  NP_GET_CRYPTO_TRANSACTION_BY_CLIENT_ID_FAILURE: 'NP_GET_CRYPTO_TRANSACTION_BY_CLIENT_ID_FAILURE',
+
+  NP_SELECTED_LIST_CRYPTO_TRANSACTION: 'NP_SELECTED_LIST_CRYPTO_TRANSACTION',
+
+  NP_UPDATE_CRYPTO_TRANSACTION: 'NP_UPDATE_CRYPTO_TRANSACTION',
+  NP_UPDATE_CRYPTO_TRANSACTION_SUCCESS: 'NP_UPDATE_CRYPTO_TRANSACTION_SUCCESS',
+  NP_UPDATE_CRYPTO_TRANSACTION_FAILURE: 'NP_UPDATE_CRYPTO_TRANSACTION_FAILURE',
+
+  NP_CANCEL_CRYPTO_TRANSACTION: 'NP_CANCEL_CRYPTO_TRANSACTION',
+  NP_CANCEL_CRYPTO_TRANSACTION_SUCCESS: 'NP_CANCEL_CRYPTO_TRANSACTION_SUCCESS',
+  NP_CANCEL_CRYPTO_TRANSACTION_FAILURE: 'NP_CANCEL_CRYPTO_TRANSACTION_FAILURE',
+
+  NP_DELETE_CRYPTO_TRANSACTION: 'NP_DELETE_CRYPTO_TRANSACTION',
+  NP_DELETE_CRYPTO_TRANSACTION_SUCCESS: 'NP_DELETE_CRYPTO_TRANSACTION_SUCCESS',
+  NP_DELETE_CRYPTO_TRANSACTION_FAILURE: 'NP_DELETE_CRYPTO_TRANSACTION_FAILURE',
+
+  NP_BULK_DELETE_CRYPTO_TRANSACTION: 'NP_BULK_DELETE_CRYPTO_TRANSACTION',
+  NP_BULK_DELETE_CRYPTO_TRANSACTION_SUCCESS: 'NP_BULK_DELETE_CRYPTO_TRANSACTION_SUCCESS',
+  NP_BULK_DELETE_CRYPTO_TRANSACTION_FAILURE: 'NP_BULK_DELETE_CRYPTO_TRANSACTION_FAILURE',
+
+  NP_CREATE_CRYPTO_TRANSACTION: 'NP_CREATE_CRYPTO_TRANSACTION',
+  NP_CREATE_CRYPTO_TRANSACTION_SUCCESS: 'NP_CREATE_CRYPTO_TRANSACTION_SUCCESS',
+  NP_CREATE_CRYPTO_TRANSACTION_FAILURE: 'NP_CREATE_CRYPTO_TRANSACTION_FAILURE',
+
+  NP_UPDATE_CRYPTO_SELECTED_BENEFICIARY: 'NP_UPDATE_CRYPTO_SELECTED_BENEFICIARY',
+  NP_UPDATE_CRYPTO_SELECTED_BENEFICIARY_SUCCESS: 'NP_UPDATE_CRYPTO_SELECTED_BENEFICIARY_SUCCESS',
+  NP_UPDATE_CRYPTO_SELECTED_BENEFICIARY_FAILURE: 'NP_UPDATE_CRYPTO_SELECTED_BENEFICIARY_FAILURE',
+
+  NP_UPDATE_CRYPTO_SELECTED_VENDOR: 'NP_UPDATE_CRYPTO_SELECTED_VENDOR',
+  NP_UPDATE_CRYPTO_SELECTED_VENDOR_SUCCESS: 'NP_UPDATE_CRYPTO_SELECTED_VENDOR_SUCCESS',
+  NP_UPDATE_CRYPTO_SELECTED_VENDOR_FAILURE: 'NP_UPDATE_CRYPTO_SELECTED_VENDOR_FAILURE',
+
+  NP_CONFIRM_CRYPTO_ACCOUNT_REQUESTED_DATE: 'NP_CONFIRM_CRYPTO_ACCOUNT_REQUESTED_DATE',
+  NP_CONFIRM_CRYPTO_ACCOUNT_REQUESTED_DATE_SUCCESS:
+    'NP_CONFIRM_CRYPTO_ACCOUNT_REQUESTED_DATE_SUCCESS',
+  NP_CONFIRM_CRYPTO_ACCOUNT_REQUESTED_DATE_FAILURE:
+    'NP_CONFIRM_CRYPTO_ACCOUNT_REQUESTED_DATE_FAILURE',
+
+  NP_CONFIRM_CRYPTO_ACCOUNT_RECEIVED_DATE: 'NP_CONFIRM_CRYPTO_ACCOUNT_RECEIVED_DATE',
+  NP_CONFIRM_CRYPTO_ACCOUNT_RECEIVED_DATE_SUCCESS:
+    'NP_CONFIRM_CRYPTO_ACCOUNT_RECEIVED_DATE_SUCCESS',
+  NP_CONFIRM_CRYPTO_ACCOUNT_RECEIVED_DATE_FAILURE:
+    'NP_CONFIRM_CRYPTO_ACCOUNT_RECEIVED_DATE_FAILURE',
+
+  NP_ENTERED_CRYPTO_RECEIVED_AMOUNT: 'NP_ENTERED_CRYPTO_RECEIVED_AMOUNT',
+  NP_SELECTED_RECEIVED_AMOUNT_CONFIRMATION_DATE_CRYPTO:
+    'NP_SELECTED_RECEIVED_AMOUNT_CONFIRMATION_DATE_CRYPTO',
+
+  NP_UPDATE_CRYPTO_TRANSACTION_AMOUNT: 'NP_UPDATE_CRYPTO_TRANSACTION_AMOUNT',
+  NP_UPDATE_CRYPTO_TRANSACTION_AMOUNT_SUCCESS: 'NP_UPDATE_CRYPTO_TRANSACTION_AMOUNT_SUCCESS',
+  NP_UPDATE_CRYPTO_TRANSACTION_AMOUNT_FAILURE: 'NP_UPDATE_CRYPTO_TRANSACTION_AMOUNT_FAILURE',
+
+  NP_CONFIRM_RECEIVED_CRYPTO_AMOUNT: 'NP_CONFIRM_RECEIVED_CRYPTO_AMOUNT',
+  NP_CONFIRM_RECEIVED_CRYPTO_AMOUNT_SUCCESS: 'NP_CONFIRM_RECEIVED_CRYPTO_AMOUNT_SUCCESS',
+  NP_CONFIRM_RECEIVED_CRYPTO_AMOUNT_FAILURE: 'NP_CONFIRM_RECEIVED_CRYPTO_AMOUNT_FAILURE',
+
+  NP_CONFIRM_CRYPTO_REMITED_FUNDS: 'NP_CONFIRM_CRYPTO_REMITED_FUNDS',
+  NP_CONFIRM_CRYPTO_REMITED_FUNDS_SUCCESS: 'NP_CONFIRM_CRYPTO_REMITED_FUNDS_SUCCESS',
+  NP_CONFIRM_CRYPTO_REMITED_FUNDS_FAILURE: 'NP_CONFIRM_CRYPTO_REMITED_FUNDS_FAILURE',
+
+  NP_UPDATE_CRYPTO_VENDOR_DETAILS: 'NP_UPDATE_CRYPTO_VENDOR_DETAILS',
+
+  NP_GET_CRYPTO_BUY_RATE: 'NP_GET_CRYPTO_BUY_RATE',
+  NP_GET_CRYPTO_BUY_RATE_SUCCESS: 'NP_GET_CRYPTO_BUY_RATE_SUCCESS',
+  NP_GET_CRYPTO_BUY_RATE_FAILURE: 'NP_GET_CRYPTO_BUY_RATE_FAILURE',
+
+  NP_GET_FX_BASE_RATE_BY_CRYPTO_VENDOR: 'NP_GET_FX_BASE_RATE_BY_CRYPTO_VENDOR',
+  NP_GET_FX_BASE_RATE_BY_CRYPTO_VENDOR_SUCCESS: 'NP_GET_FX_BASE_RATE_BY_CRYPTO_VENDOR_SUCCESS',
+  NP_GET_FX_BASE_RATE_BY_CRYPTO_VENDOR_FAILURE: 'NP_GET_FX_BASE_RATE_BY_CRYPTO_VENDOR_FAILURE',
+
+  NP_UPDATE_CRYPTO_TRANSACTION_VALUES: 'NP_UPDATE_CRYPTO_TRANSACTION_VALUES',
+  NP_UPDATE_CRYPTO_TRANSACTION_VALUES_SUCCESS: 'NP_UPDATE_CRYPTO_TRANSACTION_VALUES_SUCCESS',
+  NP_UPDATE_CRYPTO_TRANSACTION_VALUES_FAILURE: 'NP_UPDATE_CRYPTO_TRANSACTION_VALUES_FAILURE',
+
+  NP_CREATE_CRYPTO_TXN_FEES: 'NP_CREATE_CRYPTO_TXN_FEES',
+  NP_CREATE_CRYPTO_TXN_FEES_SUCCESS: 'NP_CREATE_CRYPTO_TXN_FEES_SUCCESS',
+  NP_CREATE_CRYPTO_TXN_FEES_FAILURE: 'NP_CREATE_CRYPTO_TXN_FEES_FAILURE',
+
+  NP_GET_CRYTXN_BY_CRYTXN_ID: 'NP_GET_CRYTXN_BY_CRYTXN_ID',
+  NP_GET_CRYTXN_BY_CRYTXN_ID_SUCCESS: 'NP_GET_CRYTXN_BY_CRYTXN_ID_SUCCESS',
+  NP_GET_CRYTXN_BY_CRYTXN_ID_FAILURE: 'NP_GET_CRYTXN_BY_CRYTXN_ID_FAILURE',
+
+  NP_GET_CRYTXN_RATE_BY_ID: 'NP_GET_CRYTXN_RATE_BY_ID',
+  NP_GET_CRYTXN_RATE_BY_ID_SUCCESS: 'NP_GET_CRYTXN_RATE_BY_ID_SUCCESS',
+  NP_GET_CRYTXN_RATE_BY_ID_FAILURE: 'NP_GET_CRYTXN_RATE_BY_ID_FAILURE',
+
+  NP_CREATE_CRYPTO_TXN_RATES: 'NP_CREATE_CRYPTO_TXN_RATES',
+  NP_CREATE_CRYPTO_TXN_RATES_SUCCESS: 'NP_CREATE_CRYPTO_TXN_RATES_SUCCESS',
+  NP_CREATE_CRYPTO_TXN_RATES_FAILURE: 'NP_CREATE_CRYPTO_TXN_RATES_FAILURE',
+
+  NP_CREATE_REMITTANCE_SLIP_SUCCESS_OTC: 'NP_CREATE_REMITTANCE_SLIP_SUCCESS_OTC',
+  NP_CREATE_REMITTANCE_SLIP_FAILURE_OTC: 'NP_CREATE_REMITTANCE_SLIP_FAILURE_OTC',
+
+  NP_CREATE_REMITTANCE_SLIP_SUCCESS_LIQUIDATE: 'NP_CREATE_REMITTANCE_SLIP_SUCCESS_LIQUIDATE',
+  NP_CREATE_REMITTANCE_SLIP_FAILURE_LIQUIDATE: 'NP_CREATE_REMITTANCE_SLIP_FAILURE_LIQUIDATE',
+
+  NP_CREATE_REMITTANCE_SLIP_SUCCESS_CWALLET: 'NP_CREATE_REMITTANCE_SLIP_SUCCESS_CWALLET',
+  NP_CREATE_REMITTANCE_SLIP_FAILURE_CWALLET: 'NP_CREATE_REMITTANCE_SLIP_FAILURE_CWALLET',
+
+  NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_LIQUIDATE:
+    'NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_LIQUIDATE',
+  NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_SUCCESS_LIQUIDATE:
+    'NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_SUCCESS_LIQUIDATE',
+  NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_FAILURE_LIQUIDATE:
+    'NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_FAILURE_LIQUIDATE',
+
+  NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_CWALLET: 'NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_CWALLET',
+  NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_SUCCESS_CWALLET:
+    'NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_SUCCESS_CWALLET',
+  NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_FAILURE_CWALLET:
+    'NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_FAILURE_CWALLET',
+
+  NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_OTC: 'NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_OTC',
+  NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_SUCCESS_OTC:
+    'NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_SUCCESS_OTC',
+  NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_FAILURE_OTC:
+    'NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_FAILURE_OTC',
+
+  // local accounts
+  NP_UPDATE_LOCAL_ACCOUNTS_TO_CRYPTO_TRANSACTION: 'NP_UPDATE_LOCAL_ACCOUNTS_TO_CRYPTO_TRANSACTION',
+  NP_UPDATE_LOCAL_ACCOUNTS_TO_CRYPTO_TRANSACTION_SUCCESS:
+    'NP_UPDATE_LOCAL_ACCOUNTS_TO_CRYPTO_TRANSACTION_SUCCESS',
+  NP_UPDATE_LOCAL_ACCOUNTS_TO_CRYPTO_TRANSACTION_FAILURE:
+    'NP_UPDATE_LOCAL_ACCOUNTS_TO_CRYPTO_TRANSACTION_FAILURE',
+
+  NP_GET_ALL_BANK_ACCOUNTS_BY_CRYPTO_VENDOR: 'NP_GET_ALL_BANK_ACCOUNTS_BY_CRYPTO_VENDOR',
+  NP_GET_ALL_BANK_ACCOUNTS_BY_CRYPTO_VENDOR_SUCCESS:
+    'NP_GET_ALL_BANK_ACCOUNTS_BY_CRYPTO_VENDOR_SUCCESS',
+  NP_GET_ALL_BANK_ACCOUNTS_BY_CRYPTO_VENDOR_FAILURE:
+    'NP_GET_ALL_BANK_ACCOUNTS_BY_CRYPTO_VENDOR_FAILURE',
+
+  NP_UPDATE_CRYPTO_TXN_SOURCE_CURRENCY: 'NP_UPDATE_CRYPTO_TXN_SOURCE_CURRENCY',
+  NP_UPDATE_CRYPTO_TXN_SOURCE_AMOUNT: 'NP_UPDATE_CRYPTO_TXN_SOURCE_AMOUNT',
+  NP_UPDATE_CRYPTO_TXN_SOURCE_DETAILS: 'NP_UPDATE_CRYPTO_TXN_SOURCE_DETAILS',
+
+  NP_HANDLE_PAGINATION: 'NP_HANDLE_PAGINATION',
+
+  NP_UPDATE_SENDER_ADDRESS: 'NP_UPDATE_SENDER_ADDRESS',
+  NP_UPDATE_SENDER_ADDRESS_SUCCESS: 'NP_UPDATE_SENDER_ADDRESS_SUCCESS',
+  NP_UPDATE_SENDER_ADDRESS_FAILURE: 'NP_UPDATE_SENDER_ADDRESS_FAILURE',
+
+  NP_CREATE_CRYPTO_MANUAL_FEES: 'NP_CREATE_CRYPTO_MANUAL_FEES',
+  NP_CREATE_CRYPTO_MANUAL_FEES_SUCCESS: 'NP_CREATE_CRYPTO_MANUAL_FEES_SUCCESS',
+  NP_CREATE_CRYPTO_MANUAL_FEES_FAILURE: 'NP_CREATE_CRYPTO_MANUAL_FEES_FAILURE',
+
+  NP_CREATE_CRYPTO_MANUAL_RATE: 'NP_CREATE_CRYPTO_MANUAL_RATE',
+  NP_CREATE_CRYPTO_MANUAL_RATE_SUCCESS: 'NP_CREATE_CRYPTO_MANUAL_RATE_SUCCESS',
+  NP_CREATE_CRYPTO_MANUAL_RATE_FAILURE: 'NP_CREATE_CRYPTO_MANUAL_RATE_FAILURE',
+
+  NP_UPDATE_RECEIVER_HASH: 'NP_UPDATE_RECEIVER_HASH',
+  NP_UPDATE_RECEIVER_HASH_SUCCESS: 'NP_UPDATE_RECEIVER_HASH_SUCCESS',
+  NP_UPDATE_RECEIVER_HASH_FAILURE: 'NP_UPDATE_RECEIVER_HASH_FAILURE',
+
+  NP_UPDATE_CRYPTO_RATE: 'NP_UPDATE_CRYPTO_RATE',
+  NP_UPDATE_CRYPTO_RATE_SUCCESS: 'NP_UPDATE_CRYPTO_RATE_SUCCESS',
+  NP_UPDATE_CRYPTO_RATE_FAILURE: 'NP_UPDATE_CRYPTO_RATE_FAILURE',
+
+  NP_UPDATE_CRYPTO_FEES: 'NP_UPDATE_CRYPTO_FEES',
+  NP_UPDATE_CRYPTO_FEES_SUCCESS: 'NP_UPDATE_CRYPTO_FEES_SUCCESS',
+  NP_UPDATE_CRYPTO_FEES_FAILURE: 'NP_UPDATE_CRYPTO_FEES_FAILURE',
+
+  NP_DELETE_CRYPTO_FEES: 'NP_DELETE_CRYPTO_FEES',
+  NP_DELETE_CRYPTO_FEES_SUCCESS: 'NP_DELETE_CRYPTO_FEES_SUCCESS',
+  NP_DELETE_CRYPTO_FEES_FAILURE: 'NP_DELETE_CRYPTO_FEES_FAILURE',
+
+  NP_DELETE_CRYPTO_RATE: 'NP_DELETE_CRYPTO_RATE',
+  NP_DELETE_CRYPTO_RATE_SUCCESS: 'NP_DELETE_CRYPTO_RATE_SUCCESS',
+  NP_DELETE_CRYPTO_RATE_FAILURE: 'NP_DELETE_CRYPTO_RATE_FAILURE',
+
+  NP_HANDLE_CRYPTO_TRANSACTION_FEE_CALCULATION: 'NP_HANDLE_CRYPTO_TRANSACTION_FEE_CALCULATION',
+  NP_HANDLE_CRYPTO_TRANSACTION_FEE_CALCULATION_SUCCESS:
+    'NP_HANDLE_CRYPTO_TRANSACTION_FEE_CALCULATION_SUCCESS',
+  NP_HANDLE_CRYPTO_TRANSACTION_FEE_CALCULATION_FAILURE:
+    'NP_HANDLE_CRYPTO_TRANSACTION_FEE_CALCULATION_FAILURE',
+
+  NP_ENTERED_AMOUNT_SOLD_IN_CRYPTO: 'NP_ENTERED_AMOUNT_SOLD_IN_CRYPTO',
+}
+export default actions
+
+export const handleTxnFeeCalculation = (value, token) => {
+  return {
+    type: actions.NP_HANDLE_TXN_FEE_CALCULATION,
+    value,
+    token,
+  }
+}
+
+export const handlePagination = value => {
+  return {
+    type: actions.NP_HANDLE_TXN_PAGINATION,
+    value,
+  }
+}
+
+export const getAllTransactions = (value, token) => {
+  return {
+    type: actions.NP_GET_ALL_TRANSACTIONS,
+    value,
+    token,
+  }
+}
+
+export const initiateNewTransaction = () => {
+  return {
+    type: actions.NP_INITIATE_TRANSACTION,
+  }
+}
+
+export const getTransactionsByClientId = (value, token) => {
+  return {
+    type: actions.NP_GET_TRANSACTIONS_BY_CLIENT_ID,
+    value,
+    token,
+  }
+}
+
+export const selectedTransaction = value => {
+  return {
+    type: actions.NP_SELECTED_LIST_TRANSACTION,
+    value,
+  }
+}
+
+export const changeEditTxnMode = value => {
+  return {
+    type: actions.NP_CHANGE_EDIT_TXN_MODE,
+    value,
+  }
+}
+
+export const editTransaction = (value, token) => {
+  return {
+    type: actions.NP_UPDATE_TRANSACTION,
+    value,
+    token,
+  }
+}
+
+export const deleteTransaction = (value, token) => {
+  return {
+    type: actions.NP_DELETE_TRANSACTION,
+    value,
+    token,
+  }
+}
+
+export const cancelTransaction = (value, token) => {
+  return {
+    type: actions.NP_CANCEL_TRANSACTION,
+    value,
+    token,
+  }
+}
+
+export const bulkDeleteTransaction = (value, token) => {
+  return {
+    type: actions.NP_BULK_DELETE_TRANSACTION,
+    value,
+    token,
+  }
+}
+
+// create Txn
+
+export const selectedVendor = value => {
+  return {
+    type: actions.NP_SELECTED_VENDOR,
+    value,
+  }
+}
+
+export const getBeneficiaryByVendorId = value => {
+  return {
+    type: actions.NP_GET_BENEFICIARY_BY_VENDOR_ID,
+    value,
+  }
+}
+
+export const removeVendor = () => {
+  return {
+    type: actions.NP_REMOVE_VENDOR,
+  }
+}
+
+export const updateBeneficiary = value => {
+  return {
+    type: actions.NP_UPDATE_BENEFICIARY,
+    value,
+  }
+}
+
+export const removeBeneficiary = () => {
+  return {
+    type: actions.NP_REMOVE_BENEFICIARY,
+  }
+}
+
+export const updateDepositCurrency = value => {
+  return {
+    type: actions.NP_UPDATE_DEPOSIT_CURRENCY,
+    value,
+  }
+}
+
+export const updateDepositAmount = value => {
+  return {
+    type: actions.NP_UPDATE_DEPOSIT_AMOUNT,
+    value,
+  }
+}
+
+export const createTransaction = (value, token) => {
+  return {
+    type: actions.NP_CREATE_TRANSACTION,
+    value,
+    token,
+  }
+}
+
+export const getTransactionById = (value, token) => {
+  return {
+    type: actions.NP_GET_TRANSACTIONS_BY_ID,
+    value,
+    token,
+  }
+}
+
+export const updateSelectedBeneficiary = (value, token) => {
+  return {
+    type: actions.NP_UPDATE_SELECTED_BENEFICIARY,
+    value,
+    token,
+  }
+}
+
+export const updateSelectedVendor = (value, token) => {
+  return {
+    type: actions.NP_UPDATE_SELECTED_VENDOR,
+    value,
+    token,
+  }
+}
+
+export const selectedAccountRequestedDate = (value, token) => {
+  return {
+    type: actions.NP_SELECTED_ACCOUNT_REQUESTED_DATE,
+    value,
+    token,
+  }
+}
+
+export const selectedAccountReceivedDate = (value, token) => {
+  return {
+    type: actions.NP_SELECTED_ACCOUNT_RECEIVED_DATE,
+    value,
+    token,
+  }
+}
+
+export const confirmAccountRequestedDate = (value, token) => {
+  return {
+    type: actions.NP_CONFIRM_ACCOUNT_REQUESTED_DATE,
+    value,
+    token,
+  }
+}
+
+export const confirmAccountReceivedDate = (value, token) => {
+  return {
+    type: actions.NP_CONFIRM_ACCOUNT_RECEIVED_DATE,
+    value,
+    token,
+  }
+}
+
+export const enteredReceivedAmount = value => {
+  return {
+    type: actions.NP_ENTERED_RECEIVED_AMOUNT,
+    value,
+  }
+}
+
+export const updateTransactionAmount = (value, token) => {
+  return {
+    type: actions.NP_UPDATE_TRANSACTION_AMOUNT,
+    value,
+    token,
+  }
+}
+
+export const selectReceivedAmountConfirmationDate = value => {
+  return {
+    type: actions.NP_SELECTED_RECEIVED_AMOUNT_CONFIRMATION_DATE,
+    value,
+  }
+}
+
+export const confirmReceivedAmountConfirmation = (value, token) => {
+  return {
+    type: actions.NP_CONFIRM_RECEIVED_AMOUNT,
+    value,
+    token,
+  }
+}
+
+export const enteredRemittedAmount = value => {
+  return {
+    type: actions.NP_ENTERED_REMITTED_AMOUNT,
+    value,
+  }
+}
+
+export const selectRemittedAmountConfirmDate = value => {
+  return {
+    type: actions.NP_SELECTED_REMITED_AMOUNT_CONFIRMATION_DATE,
+    value,
+  }
+}
+
+export const confirmRemittedFunds = (value, token) => {
+  return {
+    type: actions.NP_CONFIRM_REMITED_FUNDS,
+    value,
+    token,
+  }
+}
+
+export const updateVendorDetails = value => {
+  return {
+    type: actions.NP_UPDATE_VENDOR_DETAILS,
+    value,
+  }
+}
+
+export const getCalculatedRate = (value, token) => {
+  return {
+    type: actions.NP_GET_BUY_RATE,
+    value,
+    token,
+  }
+}
+
+export const changeDateRate = value => {
+  return {
+    type: actions.NP_CHANGE_DAY_RATE,
+    value,
+  }
+}
+
+export const updateDateRate = value => {
+  return {
+    type: actions.NP_UPDATE_DAY_RATE,
+    value,
+  }
+}
+
+export const changeInverseRate = value => {
+  return {
+    type: actions.NP_CHANGE_INVERSE_RATE,
+    value,
+  }
+}
+
+export const checkApplyPrecision = value => {
+  return {
+    type: actions.NP_CHECK_PRECISION,
+    value,
+  }
+}
+
+export const updatePrecision = value => {
+  return {
+    type: actions.NP_UPDATE_PRECISION,
+    value,
+  }
+}
+
+export const enteredNewActualRate = value => {
+  return {
+    type: actions.NP_ENTERED_NEW_RATE,
+    value,
+  }
+}
+
+export const getFxBaseRateByVendor = (value, token) => {
+  return {
+    type: actions.NP_GET_FX_BASE_RATE_BY_VENDOR,
+    value,
+    token,
+  }
+}
+
+export const updateTransactionValues = (value, txnId, token) => {
+  return {
+    type: actions.NP_UPDATE_TRANSACTION_VALUES,
+    value,
+    txnId,
+    token,
+  }
+}
+
+export const getTxnFeesByTxnId = (value, token) => {
+  return {
+    type: actions.NP_GET_TXN_FEES_BY_TXN_ID,
+    value,
+    token,
+  }
+}
+
+export const getTxnRatesByTxnId = (value, token) => {
+  return {
+    type: actions.NP_GET_TXN_RATES_BY_TXN_ID,
+    value,
+    token,
+  }
+}
+
+export const createTxnFee = (value, token) => {
+  return {
+    type: actions.NP_CREATE_TXN_FEES,
+    value,
+    token,
+  }
+}
+
+export const createTxnRates = (value, token) => {
+  return {
+    type: actions.NP_CREATE_TXN_RATES,
+    value,
+    token,
+  }
+}
+
+export const getDepositSlipsByTransactionIdAccountsOnly = (value, token) => {
+  return {
+    type: actions.NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_ACCOUNTS_ONLY,
+    value,
+    token,
+  }
+}
+
+export const getDepositSlipsByTransactionIdSwap = (value, token) => {
+  return {
+    type: actions.NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_SWAP,
+    value,
+    token,
+  }
+}
+
+export const getDepositSlipsByTransactionIdFX = (value, token) => {
+  return {
+    type: actions.NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_FX,
+    value,
+    token,
+  }
+}
+
+// local deposits
+
+// export const getAllAndUpdateBankAccounts = value => {
+//   return {
+//     type: actions.NP_UPDATE_BANK_ACCOUNTS_ON_VENDOR,
+//     value
+//   }
+// }
+
+export const selectedLocalAccounts = (values, accountNames) => {
+  return {
+    type: actions.NP_SELECTED_BANK_ACCOUNTS,
+    values,
+    accountNames,
+  }
+}
+
+export const updateLocalAmount = value => {
+  return {
+    type: actions.NP_UPDATE_LOCAL_AMOUNT,
+    value,
+  }
+}
+
+export const deleteSelectedAccount = payload => {
+  return {
+    type: actions.NP_DELETE_SELECTED_ACCOUNT,
+    payload,
+  }
+}
+
+export const updateLocalAccountsToTransaction = (id, values, token) => {
+  return {
+    type: actions.NP_UPDATE_LOCAL_ACCOUNTS_TO_TRANSACTION,
+    id,
+    values,
+    token,
+  }
+}
+
+export const updateLocalAccountsToTrade = (id, values, token) => {
+  return {
+    type: actions.NP_UPDATE_LOCAL_ACCOUNTS_TO_TRADE,
+    id,
+    values,
+    token,
+  }
+}
+
+export const updateBankAccounts = (values, token) => {
+  return {
+    type: actions.NP_UPDATE_LOCAL_BANK_ACCOUNTS,
+    values,
+    token,
+  }
+}
+
+export const getBankAccountByvendorId = (id, token) => {
+  return {
+    type: actions.NP_GET_ALL_BANK_ACCOUNTS_BY_VENDOR,
+    id,
+    token,
+  }
+}
+
+export const updateTxnSourceCurrency = value => {
+  return {
+    type: actions.NP_UPDATE_SWAP_TXN_SOURCE_CURRENCY,
+    value,
+  }
+}
+
+export const updateTxnSourceAmount = value => {
+  return {
+    type: actions.NP_UPDATE_SWAP_TXN_SOURCE_AMOUNT,
+    value,
+  }
+}
+
+export const updateSwapTxnSourceDetails = value => {
+  return {
+    type: actions.NP_UPDATE_SWAP_TXN_SOURCE_DETAILS,
+    value,
+  }
+}
+
+export const enteredAmountSold = value => {
+  return {
+    type: actions.NP_ENTERED_AMOUNT_SOLD,
+    value,
+  }
+}
+
+export const deleteRemittanceSlipAccountsOnly = (id, token) => {
+  return {
+    type: actions.NP_DELETE_REMITTANCE_SLIP_ACCOUNTS_ONLY,
+    id,
+    token,
+  }
+}
+
+export const deleteRemittanceSlipSwap = (id, token) => {
+  return {
+    type: actions.NP_DELETE_REMITTANCE_SLIP_SWAP,
+    id,
+    token,
+  }
+}
+
+export const deleteRemittanceSlipFX = (id, token) => {
+  return {
+    type: actions.NP_DELETE_REMITTANCE_SLIP_FX,
+    id,
+    token,
+  }
+}
+
+// crypto
+
+export const handleCryptoTxnFeeCalculation = (value, token) => {
+  return {
+    type: actions.NP_HANDLE_CRYPTO_TRANSACTION_FEE_CALCULATION,
+    value,
+    token,
+  }
+}
+
+export const modeChange = mode => {
+  return {
+    type: actions.NP_CHANGE_MODE_OPERATION,
+    mode,
+  }
+}
+
+export const changeRouteType = value => {
+  return {
+    type: actions.NP_UPDATE_ROUTE_TYPE,
+    value,
+  }
+}
+
+export const getBankAccountByVendorId = (id, token) => {
+  return {
+    type: actions.NP_FETCH_BANK_ACCOUNTS,
+    id,
+    token,
+  }
+}
+
+export const getAllCryptoTransactions = (value, token) => {
+  return {
+    type: actions.NP_GET_ALL_CRYPTO_TRANSACTIONS,
+    value,
+    token,
+  }
+}
+
+export const initiateNewCryptoTransaction = () => {
+  return {
+    type: actions.NP_INITIATE_CRYPTO_TRANSACTION,
+  }
+}
+
+export const getCryptoTransactionsByClientId = (value, token) => {
+  return {
+    type: actions.NP_GET_CRYPTO_TRANSACTION_BY_CLIENT_ID,
+    value,
+    token,
+  }
+}
+
+export const selectedCryptoTransaction = value => {
+  return {
+    type: actions.NP_SELECTED_LIST_CRYPTO_TRANSACTION,
+    value,
+  }
+}
+
+export const editCryptoTransaction = (value, token) => {
+  return {
+    type: actions.NP_UPDATE_CRYPTO_TRANSACTION,
+    value,
+    token,
+  }
+}
+
+export const deleteCryptoTransaction = (value, token) => {
+  return {
+    type: actions.NP_DELETE_CRYPTO_TRANSACTION,
+    value,
+    token,
+  }
+}
+
+export const cancelCryptoTransaction = (value, token) => {
+  return {
+    type: actions.NP_CANCEL_CRYPTO_TRANSACTION,
+    value,
+    token,
+  }
+}
+
+export const bulkDeleteCryptoTransaction = (value, token) => {
+  return {
+    type: actions.NP_BULK_DELETE_CRYPTO_TRANSACTION,
+    value,
+    token,
+  }
+}
+
+// create Txn
+
+export const updateCryptoBeneficiary = (value, token) => {
+  return {
+    type: actions.NP_UPDATE_CRYPTO_SELECTED_BENEFICIARY,
+    value,
+    token,
+  }
+}
+
+export const createCryptoTransaction = (value, token) => {
+  return {
+    type: actions.NP_CREATE_CRYPTO_TRANSACTION,
+    value,
+    token,
+  }
+}
+
+export const getCryptoTransactionById = (value, token) => {
+  return {
+    type: actions.NP_GET_CRYPTO_TRANSACTION_BY_ID,
+    value,
+    token,
+  }
+}
+
+export const updateSelectedCryptoBeneficiary = (value, token) => {
+  return {
+    type: actions.NP_UPDATE_CRYPTO_SELECTED_BENEFICIARY,
+    value,
+    token,
+  }
+}
+
+export const updateSelectedCryptoVendor = (value, token) => {
+  return {
+    type: actions.NP_UPDATE_CRYPTO_SELECTED_VENDOR,
+    value,
+    token,
+  }
+}
+
+export const confirmCryptoAccountRequestedDate = (value, token) => {
+  return {
+    type: actions.NP_CONFIRM_CRYPTO_ACCOUNT_REQUESTED_DATE,
+    value,
+    token,
+  }
+}
+
+export const confirmCryptoAccountReceivedDate = (value, token) => {
+  return {
+    type: actions.NP_CONFIRM_CRYPTO_ACCOUNT_RECEIVED_DATE,
+    value,
+    token,
+  }
+}
+
+export const enteredCryptoReceivedAmount = value => {
+  return {
+    type: actions.NP_ENTERED_CRYPTO_RECEIVED_AMOUNT,
+    value,
+  }
+}
+
+export const updateCryptoTransactionAmount = (value, token) => {
+  return {
+    type: actions.NP_UPDATE_CRYPTO_TRANSACTION_AMOUNT,
+    value,
+    token,
+  }
+}
+
+export const selectReceivedAmountConfirmationDateCrypto = value => {
+  return {
+    type: actions.NP_SELECTED_RECEIVED_AMOUNT_CONFIRMATION_DATE_CRYPTO,
+    value,
+  }
+}
+
+export const confirmReceivedCryptoAmountConfirmation = (value, token) => {
+  return {
+    type: actions.NP_CONFIRM_RECEIVED_CRYPTO_AMOUNT,
+    value,
+    token,
+  }
+}
+
+export const confirmCryptoRemittedFunds = (value, token) => {
+  return {
+    type: actions.NP_CONFIRM_CRYPTO_REMITED_FUNDS,
+    value,
+    token,
+  }
+}
+
+export const updateCryptoVendorDetails = value => {
+  return {
+    type: actions.NP_UPDATE_CRYPTO_VENDOR_DETAILS,
+    value,
+  }
+}
+
+export const getCalculatedCryptoRate = (value, token) => {
+  return {
+    type: actions.NP_GET_CRYPTO_BUY_RATE,
+    value,
+    token,
+  }
+}
+
+export const getFxBaseRateByCryptoVendor = (value, token) => {
+  return {
+    type: actions.NP_GET_FX_BASE_RATE_BY_CRYPTO_VENDOR,
+    value,
+    token,
+  }
+}
+
+export const updateCryptoTransactionValues = (value, txnId, token) => {
+  return {
+    type: actions.NP_UPDATE_CRYPTO_TRANSACTION_VALUES,
+    value,
+    txnId,
+    token,
+  }
+}
+
+export const getTxnFeesByCryptoTxnId = (value, token) => {
+  return {
+    type: actions.NP_GET_CRYTXN_BY_ID,
+    value,
+    token,
+  }
+}
+
+export const getTxnRatesByCryptoTxnId = (value, token) => {
+  return {
+    type: actions.NP_GET_CRYTXN_RATE_BY_ID,
+    value,
+    token,
+  }
+}
+
+export const createCryptoTxnFee = (value, token) => {
+  return {
+    type: actions.NP_CREATE_CRYPTO_TXN_FEES,
+    value,
+    token,
+  }
+}
+
+export const createCryptoTxnRates = (value, token) => {
+  return {
+    type: actions.NP_CREATE_CRYPTO_TXN_RATES,
+    value,
+    token,
+  }
+}
+
+export const getDepositSlipsByTransactionIdOTC = (value, token) => {
+  return {
+    type: actions.NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_OTC,
+    value,
+    token,
+  }
+}
+
+export const getDepositSlipsByTransactionIdLequidate = (value, token) => {
+  return {
+    type: actions.NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_LIQUIDATE,
+    value,
+    token,
+  }
+}
+
+export const getDepositSlipsByTransactionIdCWallet = (value, token) => {
+  return {
+    type: actions.NP_GET_DEPOSIT_SLIPS_BY_TRANSACTION_ID_CWALLET,
+    value,
+    token,
+  }
+}
+
+// local deposits
+
+// export const getAllAndUpdateBankAccounts = value => {
+//   return {
+//     type: actions.NP_UPDATE_BANK_ACCOUNTS_ON_VENDOR,
+//     value
+//   }
+// }
+
+export const updateLocalAccountsToCryptoTransaction = (id, values, token) => {
+  return {
+    type: actions.NP_UPDATE_LOCAL_ACCOUNTS_TO_CRYPTO_TRANSACTION,
+    id,
+    values,
+    token,
+  }
+}
+
+export const getBankAccountByCryptovendorId = (values, token) => {
+  return {
+    type: actions.NP_GET_ALL_BANK_ACCOUNTS_BY_CRYPTO_VENDOR,
+    values,
+    token,
+  }
+}
+
+export const updateCryptoTxnSourceCurrency = value => {
+  return {
+    type: actions.NP_UPDATE_CRYPTO_TXN_SOURCE_CURRENCY,
+    value,
+  }
+}
+
+export const updateCryptoTxnSourceAmount = value => {
+  return {
+    type: actions.NP_UPDATE_CRYPTO_TXN_SOURCE_AMOUNT,
+    value,
+  }
+}
+
+export const updateCryptoTxnSourceDetails = value => {
+  return {
+    type: actions.NP_UPDATE_CRYPTO_TXN_SOURCE_DETAILS,
+    value,
+  }
+}
+
+export const enteredAmountSoldInCrypto = value => {
+  return {
+    type: actions.NP_ENTERED_AMOUNT_SOLD_IN_CRYPTO,
+    value,
+  }
+}
+
+export const updateReceiverAddress = (value, token) => {
+  return {
+    type: actions.NP_UPDATE_SENDER_ADDRESS,
+    value,
+    token,
+  }
+}
+
+export const updateReceiverHash = (value, token) => {
+  return {
+    type: actions.NP_UPDATE_RECEIVER_HASH,
+    value,
+    token,
+  }
+}
+
+export const createManualRate = (value, token) => {
+  return {
+    type: actions.NP_CREATE_CRYPTO_MANUAL_RATE,
+    value,
+    token,
+  }
+}
+
+export const createManualFees = (value, token) => {
+  return {
+    type: actions.NP_CREATE_CRYPTO_MANUAL_FEES,
+    value,
+    token,
+  }
+}
+
+export const updateCryptoRate = (value, tradeId, token) => {
+  return {
+    type: actions.NP_UPDATE_CRYPTO_RATE,
+    value,
+    tradeId,
+    token,
+  }
+}
+
+export const updateCryptoFees = (value, tradeId, token) => {
+  return {
+    type: actions.NP_UPDATE_CRYPTO_FEES,
+    value,
+    tradeId,
+    token,
+  }
+}
+
+export const deleteCryptoFees = (values, token) => {
+  return {
+    type: actions.NP_DELETE_CRYPTO_FEES,
+    values,
+    token,
+  }
+}
+
+export const deleteCryptoRates = (values, token) => {
+  return {
+    type: actions.NP_DELETE_CRYPTO_RATE,
+    values,
+    token,
+  }
+}

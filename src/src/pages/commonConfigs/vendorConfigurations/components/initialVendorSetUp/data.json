@@ -1,0 +1,79 @@
+{
+    "offeredServices" : [
+        { "id" :0,
+            "label" : "Payments",
+            "value" : "payments"
+        },
+        {
+            "id" :1,
+            "label" : "Foreign Exchange",
+            "value" : "foreignExchange"
+        },
+
+        {
+            "id" :2,
+            "label" : "Local Accounts",
+            "value" : "localAccounts"
+        }
+    ],
+    "kycStatus" : [
+        { "id" :0,
+            "label" : "New",
+            "value" : "new"
+        },
+        {
+            "id" :1,
+            "label" : "Pending Review",
+            "value" : "pending_review"
+        },
+
+        {
+            "id" :2,
+            "label" : "Pending Renewal",
+            "value" : "pending_renewal"
+        },
+        {
+            "id" :3,
+            "label" : "Passed",
+            "value" : "passed"
+        },
+
+        {
+            "id" :4,
+            "label" : "Failed",
+            "value" : "failed"
+        }
+    ],
+    "boolenValues" : [
+        {
+            "id" :1,
+            "label" : "Yes",
+            "value" : "yes"
+        },
+        {
+            "id" :2,
+            "label" : "No",
+            "value" : "no"
+        }
+    ],
+
+    "disallowedIndustries" : [
+        {
+            "id" :1,
+            "label" : "FX",
+            "value" : "forex"
+        },
+        {
+            "id" :2,
+            "label" : "Gambling",
+            "value" : "gambling"
+        },
+        {
+            "id" :1,
+            "label" : "Other",
+            "value" : "other"
+        }
+        
+    ]
+
+}

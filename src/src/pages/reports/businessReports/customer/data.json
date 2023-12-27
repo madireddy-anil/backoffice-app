@@ -1,0 +1,106 @@
+{
+    "initialColumns": [
+      {
+        "value": "tradeReference",
+        "label": "Trade Number"
+      },
+      {
+        "value": "dateAndTimeOfRequest",
+        "label": "Date and Time of Request"
+      },
+      {
+        "value": "customerName",
+        "label": "Customer Name"
+      },
+      {
+        "value": "depositCurrency",
+        "label": "Deposit Currency"
+      },
+      {
+        "value": "depositAmount",
+        "label": "Deposit Amount"
+      },
+      {
+        "value": "dateAndTimeLocalAccountsProvided",
+        "label": "Date and Time Local Accounts Provided"
+      },
+      {
+        "value": "destinationCurrency",
+        "label": "Remittance Currency"
+      },
+      {
+        "value": "remittedAmountDestinationCurrency",
+        "label": "Remitted Amount"
+      },
+      {
+        "value": "pcRateApplied",
+        "label": "PC Spread"
+      },
+      {
+        "value": "timeTakenToMakeTransferInDays",
+        "label": "Business Day To Make Transfer"
+      },
+      {
+        "value": "tradeStatus",
+        "label": "Trade Status"
+      }
+    ],
+    "allColumns": [
+      {
+          "value": "tradeReference",
+          "label": "Trade Number"
+      },
+      {
+        "value": "dateAndTimeOfRequest",
+        "label": "Date and Time of Request"
+      },
+      {
+        "value": "customerName",
+        "label": "Customer Name"
+      },
+      {
+        "value": "depositCurrency",
+        "label": "Deposit Currency"
+      },
+      {
+        "value": "depositAmount",
+        "label": "Deposit Amount"
+      },
+      {
+        "value": "dateAndTimeLocalAccountsProvided",
+        "label": "Date and Time Local Accounts Provided"
+      },
+      {
+        "value": "depositConfirmedByClientAt",
+        "label": "Date and Time Deposit Confirmed"
+      },
+      {
+        "value": "dateAndTimeSwappedFundsRemitted",
+        "label": "Date and Time Swapped Funds Remitted"
+      },
+      {
+        "value": "destinationCurrency",
+        "label": "Remittance Currency"
+      },
+      {
+        "value": "remittedAmountDestinationCurrency",
+        "label": "Remitted Amount"
+      },
+      {
+        "value": "dateAndTimeFundsRemittedToClientAccount",
+        "label": "Date and Time Funds Remitted To Client"
+      },
+      {
+        "value": "pcRateApplied",
+        "label": "PC Spread"
+      },
+      {
+        "value": "timeTakenToMakeTransferInDays",
+        "label": "Business Day To Make Transfer"
+      },
+      {
+        "value": "tradeStatus",
+        "label": "Trade Status"
+      }
+    ]
+  }

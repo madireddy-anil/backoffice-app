@@ -1,0 +1,16 @@
+{
+    "uploadOptions" : [
+        {
+            "id" : 0,
+            "value" : "balanceStatements",
+            "label" : "Balance Statements"
+
+        },
+        {
+            "id" : 0,
+            "value" : "transactionStatements",
+            "label" : "Transaction Statements"
+
+        }
+    ]
+}

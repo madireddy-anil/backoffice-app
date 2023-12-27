@@ -1,0 +1,54 @@
+{
+  "initialColumns": [
+    {
+      "value": "year",
+      "label": "Year"
+    },
+    {
+      "value": "month",
+      "label": "Month"
+    },
+    {
+      "value": "depositCurrency",
+      "label": "Deposit Currency"
+    },
+    {
+      "value": "depositAmountLocal",
+      "label": "Deposit Amount Local"
+    },
+    {
+      "value": "numberOfTrades",
+      "label": "Number of Trades"
+    },
+    {
+      "value": "tat",
+      "label": "TAT"
+    }
+  ],
+  "allColumns": [
+    {
+      "value": "year",
+      "label": "Year"
+    },
+    {
+      "value": "month",
+      "label": "Month"
+    },
+    {
+      "value": "depositCurrency",
+      "label": "Deposit Currency"
+    },
+    {
+      "value": "depositAmountLocal",
+      "label": "Deposit Amount Local"
+    },
+    {
+      "value": "numberOfTrades",
+      "label": "Number of Trades"
+    },
+    {
+      "value": "tat",
+      "label": "TAT"
+    }
+  ]
+}

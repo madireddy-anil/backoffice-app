@@ -1,0 +1,17 @@
+@import 'assets/styles/mixins.scss';
+.editIcon {
+  margin-left: 2px;
+  font-size: '15px';
+  color: #498df3;
+}
+
+.deleteIcon {
+  margin-left: -20px;
+  font-size: '10px';
+  color: red;
+}
+
+.actionBtns {
+  text-align: right;
+  margin-top: -21px;
+}

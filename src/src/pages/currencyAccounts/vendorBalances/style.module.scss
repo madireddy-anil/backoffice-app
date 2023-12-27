@@ -1,0 +1,113 @@
+@import 'assets/styles/mixins.scss';
+
+.headerBlock {
+  height: 63px;
+  background-color: #313343;
+  border: 1px solid grey;
+  margin-bottom: -17px;
+  margin-top: -16px;
+  // border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.filterIcon {
+  color: $white;
+  margin-left: 13px;
+  margin-top: 23px;
+  font-size: 18px;
+}
+.selectDropDown {
+  margin-top: 15px !important;
+  margin-left: -47px !important;
+}
+.moreIcon {
+  font-size: 25px;
+  color: #fff;
+  margin-top: 19px;
+  margin-right: 18px;
+  float: right;
+}
+.mainCard {
+  border-radius: 13px;
+  border-left: 1px;
+  border-right: 1px;
+  border-bottom: 1px;
+  border-top: 1px;
+}
+.tableBlock {
+  thead[class*='ant-table-thead'] th {
+    background-color: #313343 !important;
+    color: white;
+    font-weight: 500;
+    // border-color: #000;
+    text-align: center;
+  }
+}
+.totalPageBlock {
+  margin-top: 16px;
+}
+.paginationTab {
+  float: right;
+  margin-top: 8px;
+  margin-bottom: 17px;
+}
+.modaltitle {
+  font-weight: 700;
+  margin-left: -17px;
+  color: #313343;
+}
+.searchInput {
+  margin-left: -13px;
+  margin-top: -5px;
+  margin-bottom: -5px;
+  width: 150px;
+}
+.modalBlock {
+  width: 25% !important;
+}
+.listDiv {
+  height: 250px;
+  overflow: auto;
+}
+.listBlock {
+  margin-top: -18px;
+}
+.listItem {
+  border-bottom: none !important;
+}
+.modalTitle {
+  font-weight: 400;
+}
+.subTitle {
+  margin-top: -11px;
+}
+.selectCloseBtn {
+  margin-top: -8px;
+  margin-left: -12px;
+}
+@media (max-width: $sm-max-width) {
+  .selectDropDown {
+    margin-left: 10px;
+  }
+  .tagBlcok {
+    margin-left: 10px;
+  }
+  .paginationTab {
+    margin-top: 15px;
+  }
+}
+@media (max-width: $sm-max-width) {
+  .modalBlock {
+    width: 100% !important;
+  }
+  .searchInput {
+    margin-left: -2px;
+    margin-top: 4px;
+    margin-bottom: -5px;
+    width: 100%;
+  }
+
+  .refreshIcon {
+    margin-right: 16px;
+  }
+}

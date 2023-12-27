@@ -1,0 +1,54 @@
+{
+
+    "tradeTieringMethods" : [
+        {
+            "value": "monthly_value",
+            "label":"Monthly Buy Amount  "
+        },
+        {
+            "value": "monthly_volume",
+            "label":"Monthly Trade Volume"
+        },
+        {
+            "value": "single_value",
+            "label":"Single Buy Amount"
+        }
+    ],
+    "tradeMontlyValue": [
+        "tradesTieringMethod",
+        "monthly.fromMonthlyBuyAmount",
+        "monthly.maxMonthlyBuyAmount",
+        "spread",
+        "markup",
+        "isFinalTier",
+        "tradesTieringActive",
+        "actions"
+      ],
+      "tradeMontlyVolume": [
+        "tradesTieringMethod",
+        "monthly.fromNumberOfMonthlyTrades",
+        "monthly.maxNumberOfMonthlyTrades",
+        "spread",
+        "markup",
+        "isFinalTier",
+        "tradesTieringActive",
+        "actions"
+      ],
+      "tradeSingleValue": [
+        "tradesTieringMethod",
+        "single.fromValueOfSingleBuyAmount",
+        "single.maxValueOfSingleBuyAmount",
+        "spread",
+        "markup",
+        "isFinalTier",
+        "tradesTieringActive",
+        "actions"
+      ],
+
+      "nonTieringTradeList": [
+        "spread",
+        "markup",
+        "actions"
+      ]
+    
+}

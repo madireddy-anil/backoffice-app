@@ -1,0 +1,28 @@
+@import 'assets/styles/mixins.scss';
+
+.card {
+  padding: 0.15rem 2.3rem 0.53rem;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.chart {
+  height: 100%;
+  width: 120px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.amount {
+  font-size: 22px;
+  color: $black;
+  // margin-bottom: rem(-10);
+}
+
+.title {
+  color: $text;
+  text-transform: uppercase;
+  font-weight: bold;
+}

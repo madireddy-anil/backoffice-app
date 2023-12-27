@@ -1,0 +1,10 @@
+@import 'assets/styles/mixins.scss';
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchBox {
+  margin-bottom: 20px;
+}

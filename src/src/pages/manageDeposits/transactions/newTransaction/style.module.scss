@@ -1,0 +1,61 @@
+@import 'assets/styles/mixins.scss';
+.processSection {
+  padding: 2px;
+}
+.prgressContent {
+  padding: 10px 0;
+}
+.flex {
+  display: flex;
+}
+.mt1 {
+  margin-top: 1px;
+}
+
+.singleInput {
+  width: 60% !important;
+}
+.srcCcyLayout {
+  width: 150px !important;
+}
+.srcAmntLayout {
+  width: 300px !important;
+}
+
+.flexSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+}
+.listCard {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 7px;
+  transition: all 1s;
+}
+.listCard:hover {
+  box-shadow: 1px 1px 10px #eee;
+  padding: 10px;
+  border-radius: 7px;
+  transition: all 1s;
+}
+
+@media only screen and (max-width: 967px) {
+  .singleInput {
+    width: 100% !important;
+  }
+  .srcCcyLayout {
+    width: 100px !important;
+  }
+  .srcAmntLayout {
+    width: 220px !important;
+  }
+}
+
+@media only screen and (min-width: 968px) and (max-width: 1024px) {
+  .singleInput {
+    width: 60% !important;
+  }
+  .srcAmntLayout {
+    width: 340px !important;
+  }
+}

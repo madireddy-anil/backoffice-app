@@ -1,0 +1,70 @@
+{
+  "industryType": [
+    {
+      "id": 0,
+      "value": "forex",
+      "label": "Forex / CFDs"
+    },
+    {
+      "id": 1,
+      "value": "gambling",
+      "label": "Gaming / Gambling"
+    },
+    {
+      "id": 2,
+      "value": "other",
+      "label": "Other"
+    }
+  ],
+  "forexList" : [
+    {
+      "id": 0,
+      "label": "Broker",
+      "value": "broker"
+    },
+    {
+      "id": 1,
+      "label": "Platform service / Provider",
+      "value": "platform_service"
+    },
+    {
+      "id": 2,
+      "label": "Other",
+      "value": "other"
+    }
+  ],
+  "gamingList" : [
+    {
+      "id": 0,
+      "label": "Operator",
+      "value": "operator"
+    },
+    {
+      "id": 1,
+      "label": "Platform service / Provider",
+      "value": "platform_service"
+    },
+    {
+      "id": 2,
+      "label": "Other",
+      "value": "other"
+    }
+  ],
+  "tierList": [
+    {
+      "id": 0,
+      "value": "tier1",
+      "label": "Tier 1"
+    },
+    {
+      "id": 1,
+      "value": "tier2",
+      "label": "Tier 2"
+    },
+    {
+      "id": 2,
+      "value": "tier3",
+      "label": "Tier 3"
+    }
+  ]
+}

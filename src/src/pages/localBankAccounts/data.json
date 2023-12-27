@@ -1,0 +1,163 @@
+{
+  "localBankAccountMapper": [
+    {
+      "fieldName": "nameOnAccount",
+      "labelName": "Name On Account",
+      "inputType": "input",
+      "required": true
+    },
+    {
+      "fieldName": "accountNumber",
+      "labelName": "Account Number",
+      "inputType": "input",
+      "required": true
+    },
+    {
+      "fieldName": "accountCurrency",
+      "labelName": "Account Currency",
+      "inputType": "select",
+      "required": true
+    },
+    {
+      "fieldName": "bankName",
+      "labelName": "Bank Name",
+      "inputType": "input"
+    },
+    {
+      "fieldName": "bankCode",
+      "labelName": "Bank Code",
+      "inputType": "input"
+    },
+    {
+      "fieldName": "bankCity",
+      "labelName": "Bank City",
+      "inputType": "input"
+    },
+    {
+      "fieldName": "bankProvince",
+      "labelName": "Bank Province",
+      "inputType": "input"
+    },
+    {
+      "fieldName": "bankCountry",
+      "labelName": "Bank Country",
+      "inputType": "select"
+    },
+    {
+      "fieldName": "bankAddress",
+      "labelName": "Bank Address",
+      "inputType": "input"
+    },
+    {
+      "fieldName": "minAmount",
+      "labelName": "Minimum Amount",
+      "inputType": "input"
+    },
+    {
+      "fieldName": "maxAmount",
+      "labelName": "Maximum Amount",
+      "inputType": "input",
+      "required": true
+    },
+    {
+      "fieldName": "balanceAmount",
+      "labelName": "Balance Amount",
+      "inputType": "input"
+    },
+    {
+      "fieldName": "localAccountType",
+      "labelName": "Local Account Type",
+      "inputType": "select",
+      "required": true
+    },
+    {
+      "fieldName": "accountType",
+      "labelName": "Account Type",
+      "inputType": "select",
+      "required": true
+    },
+    {
+      "fieldName": "accountStatus",
+      "labelName": "Account Status",
+      "inputType": "select"
+    }
+  ],
+  "countryCurrencyFields": [
+    {
+      "id": "0",
+      "currency": "CNY",
+      "country": "China"
+    },
+    {
+      "id": "2",
+      "currency": "THB",
+      "country": "Thailand"
+    },
+    {
+      "id": "3",
+      "currency": "MYR",
+      "country": "Malaysia"
+    },
+    {
+      "id": "4",
+      "currency": "IDR",
+      "country": "Indonesia"
+    },
+    {
+      "id": "5",
+      "currency": "VND",
+      "country": "Vietnam"
+    },
+    {
+      "id": "6",
+      "currency": "GBP",
+      "country": "United Kingdom"
+    },
+    {
+      "id": "7",
+      "currency": "USD",
+      "country": "United States"
+    }
+  ],
+  "localAccountTypesOptions": [
+    {
+      "id": "0",
+      "label": "PERSONAL",
+      "value": "personal"
+    },
+    {
+      "id": "2",
+      "label": "CORPORATE",
+      "value": "corporate"
+    }
+  ],
+  "accountType": [
+    {
+      "id": 1,
+      "value": "dedicated",
+      "label": "DEDICATED"
+    },
+    {
+      "id": 2,
+      "value": "pooled",
+      "label": "POOLED"
+    }
+  ],
+  "accountStatus": [
+    {
+      "id": 1,
+      "value": "blocked",
+      "label": "BLOCKED"
+    },
+    {
+      "id": 2,
+      "value": "expired",
+      "label": "EXPIRED"
+    },
+    {
+      "id": 3,
+      "value": "available",
+      "label": "AVAILABLE"
+    }
+  ]
+}

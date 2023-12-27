@@ -1,0 +1,244 @@
+const actions = {
+  GET_INTRODUCERS: 'GET_INTRODUCERS',
+  GET_INTRODUCERS_SUCCESS: 'GET_INTRODUCERS_SUCCESS',
+  GET_INTRODUCERS_FAILURE: 'GET_INTRODUCERS_FAILURE',
+
+  GET_MERCHANTS: 'GET_MERCHANTS',
+  GET_MERCHANTS_SUCCESS: 'GET_MERCHANTS_SUCCESS',
+  GET_MERCHANTS_FAILURE: 'GET_MERCHANTS_FAILURE',
+
+  GET_CLIENTS: 'GET_CLIENTS',
+  GET_CLIENTS_SUCCESS: 'GET_CLIENTS_SUCCESS',
+  GET_CLIENTS_FAILURE: 'GET_CLIENTS_FAILURE',
+
+  GET_CLIENTS_BY_KYC_STATUS_PASS: 'GET_CLIENTS_BY_KYC_STATUS_PASS',
+  GET_CLIENTS_BY_KYC_STATUS_PASS_SUCCESS: 'GET_CLIENTS_BY_KYC_STATUS_PASS_SUCCESS',
+  GET_CLIENTS_BY_KYC_STATUS_PASS_FAILURE: 'GET_CLIENTS_BY_KYC_STATUS_PASS_FAILURE',
+
+  GET_INTRODUCERS_CLIENTS: 'GET_INTRODUCERS_CLIENTS',
+  GET_INTRODUCERS_CLIENTS_SUCCESS: 'GET_INTRODUCERS_CLIENTS_SUCCESS',
+  GET_INTRODUCERS_CLIENTS_FAILURE: 'GET_INTRODUCERS_CLIENTS_FAILURE',
+
+  GET_MERCHANTS_CLIENTS: 'GET_MERCHANTS_CLIENTS',
+  GET_MERCHANTS_CLIENTS_SUCCESS: 'GET_MERCHANTS_CLIENTS_SUCCESS',
+  GET_MERCHANTS_CLIENTS_FAILURE: 'GET_MERCHANTS_CLIENTS_FAILURE',
+
+  GET_RC_CURRENCIES: 'GET_RC_CURRENCIES',
+  GET_RC_CURRENCIES_SUCCESS: 'GET_RC_CURRENCIES_SUCCESS',
+  GET_RC_CURRENCIES_FAILURE: 'GET_RC_CURRENCIES_FAILURE',
+
+  GET_CURRENCIES: 'GET_CURRENCIES',
+  GET_CURRENCIES_SUCCESS: 'GET_CURRENCIES_SUCCESS',
+  GET_CURRENCIES_FAILURE: 'GET_CURRENCIES_FAILURE',
+
+  GET_COUNTRIES: 'GET_COUNTRIES',
+  GET_COUNTRIES_SUCCESS: 'GET_COUNTRIES_SUCCESS',
+  GET_COUNTRIES_FAILURE: 'GET_COUNTRIES_FAILURE',
+
+  GET_ALL_BENEFICIARIES: 'GET_ALL_BENEFICIARIES',
+  GET_ALL_BENEFICIARIES_SUCCESS: 'GET_ALL_BENEFICIARIES_SUCCESS',
+  GET_ALL_BENEFICIARIES_FAILURE: 'GET_ALL_BENEFICIARIES_FAILURE',
+
+  GET_VENDORS: 'GET_VENDORS',
+  GET_VENDORS_SUCCESS: 'GET_VENDORS_SUCCESS',
+  GET_VENDORS_FAILURE: 'GET_VENDORS_FAILURE',
+
+  GET_CURRENCIES_BY_ACCOUNT_ID: 'GET_CURRENCIES_BY_ACCOUNT_ID',
+  GET_CURRENCIES_BY_ACCOUNT_ID_SUCCESS: 'GET_CURRENCIES_BY_ACCOUNT_ID_SUCCESS',
+  GET_CURRENCIES_BY_ACCOUNT_ID_FAILURE: 'GET_CURRENCIES_BY_ACCOUNT_ID_FAILURE',
+
+  UPDATE_BENEFICIARIES_BASED_ON_CURRENCY: 'UPDATE_BENEFICIARIES_BASED_ON_CURRENCY',
+
+  GET_ALL_STREAM_CHANNELS: 'GET_ALL_STREAM_CHANNELS',
+  GET_ALL_STREAM_CHANNELS_SUCCESS: 'GET_ALL_STREAM_CHANNELS_SUCCESS',
+  GET_ALL_STREAM_CHANNELS_FAILURE: 'GET_ALL_STREAM_CHANNELS_FAILURE',
+
+  GET_ALL_CRYPTO_BENEFICIARIES: 'GET_ALL_CRYPTO_BENEFICIARIES',
+  GET_ALL_CRYPTO_BENEFICIARIES_SUCCESS: 'GET_ALL_CRYPTO_BENEFICIARIES_SUCCESS',
+  GET_ALL_CRYPTO_BENEFICIARIES_FAILURE: 'GET_ALL_CRYPTO_BENEFICIARIES_FAILURE',
+
+  UPDATE_VENDOR_FOR_ROUTE_ENGINE: 'UPDATE_VENDOR_FOR_ROUTE_ENGINE',
+  UPDATE_ROUTE_NAME: 'UPDATE_ROUTE_NAME',
+
+  GET_CURRENCY_PAIRS: 'GET_CURRENCY_PAIRS',
+  GET_CURRENCY_PAIRS_SUCCESS: 'GET_CURRENCY_PAIRS_SUCCESS',
+  GET_CURRENCY_PAIRS_FAILURE: 'GET_CURRENCY_PAIRS_FAILURE',
+
+  GET_NEW_VENDORS_LIST: 'GET_NEW_VENDORS_LIST',
+  GET_NEW_VENDORS_LIST_SUCCESS: 'GET_NEW_VENDORS_LIST_SUCCESS',
+  GET_NEW_VENDORS_LIST_FAILURE: 'GET_NEW_VENDORS_LIST_FAILURE',
+
+  GET_COMPANIES_LIST: 'GET_COMPANIES_LIST',
+  GET_COMPANIES_LIST_SUCCESS: 'GET_COMPANIES_LIST_SUCCESS',
+  GET_COMPANIES_LIST_FAILURE: 'GET_COMPANIES_LIST_FAILURE',
+
+  GET_PRODUCTS: 'GET_PRODUCTS',
+  GET_PRODUCTS_SUCCESS: 'GET_PRODUCTS_SUCCESS',
+  GET_PRODUCTS_FAILURE: 'GET_PRODUCTS_FAILURE',
+
+  GET_BRANDS: 'GET_BRANDS',
+  GET_BRANDS_SUCCESS: 'GET_BRANDS_SUCCESS',
+  GET_BRANDS_FAILURE: 'GET_BRANDS_FAILURE',
+
+  GET_ALL_ENTITIES: 'GET_ALL_ENTITIES',
+  GET_ALL_ENTITIES_SUCCESS: 'GET_ALL_ENTITIES_SUCCESS',
+  GET_ALL_ENTITIES_FAILURE: 'GET_ALL_ENTITIES_FAILURE',
+}
+export default actions
+
+export const getClientsByKycStatusPass = token => {
+  return {
+    type: actions.GET_CLIENTS_BY_KYC_STATUS_PASS,
+    token,
+  }
+}
+
+export const updateRouteName = value => {
+  return {
+    type: actions.UPDATE_ROUTE_NAME,
+    value,
+  }
+}
+
+export const updateVendor = value => {
+  return {
+    type: actions.UPDATE_VENDOR_FOR_ROUTE_ENGINE,
+    value,
+  }
+}
+
+export const getIntroducers = token => {
+  return {
+    type: actions.GET_INTRODUCERS,
+    token,
+  }
+}
+
+export const getMerchants = token => {
+  return {
+    type: actions.GET_MERCHANTS,
+    token,
+  }
+}
+
+export const getClients = token => {
+  return {
+    type: actions.GET_CLIENTS,
+    token,
+  }
+}
+
+export const getIntroducerClients = (value, token) => {
+  return {
+    type: actions.GET_INTRODUCERS_CLIENTS,
+    value,
+    token,
+  }
+}
+
+export const getMerchantClients = (value, token) => {
+  return {
+    type: actions.GET_MERCHANTS_CLIENTS,
+    value,
+    token,
+  }
+}
+
+export const getAllCurrencies = token => {
+  return {
+    type: actions.GET_CURRENCIES,
+    token,
+  }
+}
+
+export const getAllCountries = token => {
+  return {
+    type: actions.GET_COUNTRIES,
+    token,
+  }
+}
+
+export const getCurrenciesByAccountId = (accountId, token) => {
+  return {
+    type: actions.GET_CURRENCIES_BY_ACCOUNT_ID,
+    accountId,
+    token,
+  }
+}
+
+export const getBeneficiaries = token => {
+  return {
+    type: actions.GET_ALL_BENEFICIARIES,
+    token,
+  }
+}
+
+export const getVendors = token => {
+  return {
+    type: actions.GET_VENDORS,
+    token,
+  }
+}
+
+export const updateBeneficiariesBasedOnCurrency = value => {
+  return {
+    type: actions.UPDATE_BENEFICIARIES_BASED_ON_CURRENCY,
+    value,
+  }
+}
+
+export const getAllStreamChannels = token => {
+  return {
+    type: actions.GET_ALL_STREAM_CHANNELS,
+    token,
+  }
+}
+
+export const getCryptoBeneficiaries = token => {
+  return {
+    type: actions.GET_ALL_CRYPTO_BENEFICIARIES,
+    token,
+  }
+}
+
+export const getAllCurrencyPairs = token => {
+  return {
+    type: actions.GET_CURRENCY_PAIRS,
+    token,
+  }
+}
+
+export const getVendorsList = token => {
+  return {
+    type: actions.GET_NEW_VENDORS_LIST,
+    token,
+  }
+}
+
+export const getCompaniesList = token => {
+  return {
+    type: actions.GET_COMPANIES_LIST,
+    token,
+  }
+}
+
+export const getProducts = token => {
+  return {
+    type: actions.GET_PRODUCTS,
+    token,
+  }
+}
+
+export const getBrands = token => {
+  return {
+    type: actions.GET_BRANDS,
+    token,
+  }
+}
+
+export const getEntities = token => {
+  return {
+    type: actions.GET_ALL_ENTITIES,
+    token,
+  }
+}

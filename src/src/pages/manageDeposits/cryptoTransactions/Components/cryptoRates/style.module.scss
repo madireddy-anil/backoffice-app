@@ -1,0 +1,48 @@
+@import 'assets/styles/mixins.scss';
+.processSection {
+  padding: 2px;
+}
+.prgressContent {
+  padding: 10px 0;
+}
+.flex {
+  display: flex;
+}
+.mt1 {
+  margin-top: 1px;
+}
+
+.singleInput {
+  width: 60% !important;
+}
+
+.flexSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+}
+.listCard {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 7px;
+  transition: all 1s;
+}
+.listCard:hover {
+  box-shadow: 1px 1px 10px #eee;
+  padding: 10px;
+  border-radius: 7px;
+  transition: all 1s;
+}
+
+:global {
+  .rates-card {
+    border: 1px solid #a8c6fa;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  .rate-options {
+    padding: 0 15px;
+  }
+  .rate-content {
+    padding: 10px 15px;
+  }
+}

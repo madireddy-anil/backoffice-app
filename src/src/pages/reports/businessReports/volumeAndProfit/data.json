@@ -1,0 +1,74 @@
+{
+  "initialColumns": [
+    {
+      "value": "customerName",
+      "label": "Customer Name"
+    },
+    {
+      "value": "tradeRequestedDate",
+      "label": "Date Of Initiate"
+    },
+    {
+      "value": "dateOfDeposit",
+      "label": "Date Of Deposit"
+    },
+    {
+      "value": "depositCurrency",
+      "label": "Deposit Currency"
+    },
+    {
+      "value": "depositAmount",
+      "label": "Deposit Amount"
+    },
+    {
+      "value": "pcSpread",
+      "label": "PC Spread"
+    }
+  ],
+  "allColumns": [
+    {
+      "value": "tradeNumber",
+      "label": "Trade Number"
+    },
+    {
+      "value": "customerName",
+      "label": "Customer Name"
+    },
+    {
+      "value": "tradeRequestedDate",
+      "label": "Date Of Initiate"
+    },
+    {
+      "value": "dateOfDeposit",
+      "label": "Date Of Deposit"
+    },
+    {
+      "value": "depositCurrency",
+      "label": "Deposit Currency"
+    },
+    {
+      "value": "depositAmount",
+      "label": "Deposit Amount"
+    },
+    {
+      "value": "depositAmountinUSD",
+      "label": "Deposit Amount In USD"
+    },
+    {
+      "value": "settlementCurrency",
+      "label": "Settlement Currency"
+    },
+    {
+      "value": "settlementAmount",
+      "label": "Settlement Amount"
+    },
+    {
+      "value": "pcSpread",
+      "label": "PC Spread"
+    },
+    {
+      "value": "tradeStatus",
+      "label": "Trade Status"
+    }
+  ]
+}

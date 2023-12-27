@@ -1,0 +1,21 @@
+.onBoardingWrapper {
+  background: #f4f5f8;
+  margin: 0 -26px;
+  .ant-tabs-nav-container {
+    background-color: #fff;
+  }
+  .ant-tabs-nav-container-scrolling {
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+  .ant-tabs-nav .ant-tabs-tab {
+    color: #888a9d;
+    font-size: 14px;
+  }
+  .ant-tabs-nav .ant-tabs-tab:active {
+    color: #0190fe !important;
+  }
+  .ant-collapse-content-active {
+    background-color: #fff !important;
+  }
+}

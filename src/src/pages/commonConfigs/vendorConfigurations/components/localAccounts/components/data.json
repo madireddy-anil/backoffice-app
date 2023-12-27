@@ -1,0 +1,15 @@
+{   
+    
+    "feeType" : [
+        {
+            "id" :1,
+            "label" : "Percentage",
+            "value" : "percentage"
+        },
+        {
+            "id" :2,
+            "label" : "Flat",
+            "value" : "flat"
+        }
+    ]
+}

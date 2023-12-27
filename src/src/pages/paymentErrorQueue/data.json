@@ -1,0 +1,93 @@
+{
+    "dataFiltes":[
+        {    "id" : 1,
+            "label" : 0,
+            "value" : 0
+          },
+        {
+          "id" : 2,
+      "label" : 1,
+      "value" : 1
+    },
+    { "id" : 3,
+        "label" : 2,
+        "value" : 2
+      },
+      {
+        "id" : 4,
+        "label" : 3,
+        "value" : 3
+      },
+      {
+        "id" : 5,
+        "label" : 4,
+        "value" : 4
+      },
+      {
+        "id" : 6,
+        "label" : "5-10",
+        "value" : "5 above"
+      },
+      {
+        "id" : 7,
+        "label" : "11+",
+        "value" : "11 above"
+      }
+],
+
+"queueStatus" : [
+  {
+    "id" : 1,
+        "label" : "Awaiting Review",
+        "value" : "awaitingReview"
+  },
+  {
+    "id" : 1,
+        "label" : "Rejected",
+        "value" : "rejected"
+  }
+],
+
+"exception" : [
+  {
+    "id" : 1,
+        "label" : "Possible Duplicate",
+        "value" : "E1"
+  },
+  {
+    "id" : 1,
+        "label" : "Screening Rejected",
+        "value" : "C1"
+  }
+],
+"processFlow" : [
+  {
+      "value": "outbound_credit_transfer_client_external",
+      "label":"Outbound Credit Transfer Client External"
+  },
+  {
+      "value": "outbound_credit_transfer_client_internal",
+      "label":"Outbound Credit Transfer Client Internal"
+  },
+  {
+      "value": "inbound_credit_transfer_client_external",
+      "label":"Inbound Credit Transfer Client External"
+  },
+  {
+      "value": "inbound_credit_transfer_client_internal",
+      "label":"Inbound Credit Transfer Client Internal"
+  },
+  {
+      "value": "manual_credit_adjustment",
+      "label":"Manual Credit Adjustment"
+  },
+  {
+      "value": "manual_debit_adjustment",
+      "label":"Manual Debit Adjustment"
+  },
+  {
+      "value": "outbound_return_payment",
+      "label":"Outbound Return Payment"
+  }
+]
+}

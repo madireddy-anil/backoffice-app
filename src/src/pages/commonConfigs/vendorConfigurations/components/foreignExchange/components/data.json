@@ -1,0 +1,117 @@
+{
+
+   
+    "daysList" : [
+        {
+            "value": "monday",
+            "label":"Monday"
+        },
+        {
+            "value": "tuesday",
+            "label":"Tuesday"
+        },
+        {
+            "value": "wednesday",
+            "label":"Wednesday"
+        },
+        {
+            "value": "thursday",
+            "label":"Thursday"
+        },
+        {
+            "value": "friday",
+            "label":"Friday"
+        },
+        {
+            "value": "saturday",
+            "label":"Saturday"
+        },
+        {
+            "value": "sunday",
+            "label":"Sunday"
+        }
+    ],
+   
+    "boolenValues" : [
+        {
+            "id" :1,
+            "label" : "Yes",
+            "value" : "yes"
+        },
+        {
+            "id" :2,
+            "label" : "No",
+            "value" : "no"
+        }
+    ],
+    "quoteMethod" : [
+        {
+            "id" :1,
+            "label" : "Direct",
+            "value" : "direct"
+        },
+        {
+            "id" :2,
+            "label" : "InDirect",
+            "value" : "indirect"
+        }
+    ],
+    "rateType" : [
+        {
+            "id" :1,
+            "label" : "Rate of Day",
+            "value" : "rate_of_day"
+        },
+        {
+            "id" :2,
+            "label" : "Live",
+            "value" : "live"
+        },
+        {
+            "id" :3,
+            "label" : "Rental",
+            "value" : "rental"
+        }
+    ],
+    "tenorsList" : [
+        {
+            "id" :1,
+            "label" : "Spot",
+            "value" : "spot"
+        },
+        {
+            "id" :2,
+            "label" : "Today",
+            "value" : "today"
+        },
+        {
+            "id" :3,
+            "label" : "Tomorrow",
+            "value" : "tomorrow"
+        }
+    ],
+    "vendorIndexList" : [
+        {
+            "id" :1,
+            "label" : "XE",
+            "value" : "xe"
+        },
+        {
+            "id" :2,
+            "label" : "BOC",
+            "value" : "boc"
+        },
+        {
+            "id" :3,
+            "label" : "HOUBI",
+            "value" : "houbi"
+        },
+        {
+            "id" :4,
+            "label" : "SBOP",
+            "value" : "sbop"
+        }
+    ]
+
+
+}

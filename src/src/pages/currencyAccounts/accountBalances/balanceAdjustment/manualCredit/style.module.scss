@@ -1,0 +1,50 @@
+@import 'assets/styles/mixins.scss';
+
+:global {
+  .ant-tag {
+    font-size: 14px;
+    text-align: center !important;
+  }
+  .ant-steps-vertical > .ant-steps-item > .ant-steps-item-container > .ant-steps-item-tail::after {
+    width: 1px;
+    margin-left: 4px !important;
+    height: 95% !important;
+    border-left: 1px dashed #313343 !important;
+    margin-top: 4px !important;
+  }
+  .ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-tail::after {
+    background-color: white !important;
+  }
+}
+
+.stepBody {
+  margin-top: 17px !important;
+  margin-left: 2px;
+}
+.btnNext {
+  background-color: #75a9f9;
+  color: #fff;
+  width: 9rem;
+  height: 2.7rem;
+}
+
+.btnCANCEL {
+  width: 9rem;
+  height: 2.7rem;
+  background-color: #fff;
+  color: $black-lighten-more;
+  margin-right: 20px;
+  margin-bottom: 2rem;
+}
+.inputbox {
+  padding: 19px;
+  border: 1px solid #a8c6fa;
+  border-radius: 4px;
+}
+
+.modalHeader {
+  margin-left: -25px;
+  margin-right: -24px;
+  margin-top: -24px;
+  margin-bottom: -25px;
+}

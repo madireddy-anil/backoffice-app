@@ -1,0 +1,15 @@
+$heading-color: #313343;
+$link-color: #145ed0;
+$font-size-secondary: 15px;
+
+.panel__header {
+  color: $heading-color;
+  font-size: 14px;
+  margin-left: 3%;
+}
+
+@media (max-width: 568px) {
+  .panel__header {
+    width: 60%;
+  }
+}

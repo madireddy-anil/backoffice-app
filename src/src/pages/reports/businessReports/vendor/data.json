@@ -1,0 +1,210 @@
+{
+    "initialColumns": [
+      {
+        "value": "dateAndTimeOfRequest",
+        "label": "Date of Initiation"
+      },
+      {
+        "value": "dateOfDeposit",
+        "label": "Date of Deposit"
+      },
+      {
+        "value": "customerName",
+        "label": "Customer Name"
+      },
+      {
+        "value": "depositCurrency",
+        "label": "Deposit Currency"
+      },
+      {
+        "value": "depositAmountLocal",
+        "label": "Deposit Amount Local"
+      },
+      {
+        "value": "depositAmountInUSD",
+        "label": "Deposit Amount (in USD)"
+      },
+      {
+        "value": "customerSellRate",
+        "label": "Customer Sell Rate Vs XE.com"
+      },
+      {
+        "value": "accountsOnlyProviderName",
+        "label": "Rental Account Provider Name"
+      },
+      {
+        "value": "accountsOnlyCostInUSD",
+        "label": "Rental Account Cost In USD"
+      },
+      {
+        "value": "swapProviderName",
+        "label": "Swap Provider Name"
+      },
+      {
+        "value": "swapBuyRatewithXERate",
+        "label": "% of Buy Rate With XE - Swap"
+      },
+      {
+        "value": "swapCostInUSD",
+        "label": "Swap Cost in USD"
+      },
+      {
+        "value": "otcProviderName",
+        "label": "OTC Provider Name"
+      },
+      {
+        "value": "otcBuyRatewithXERate",
+        "label": "% of Buy Rate With XE - OTC"
+      },
+      {
+        "value": "otcCostInUSD",
+        "label": "OTC Cost in USD"
+      },
+      {
+        "value": "cryptoWalletProviderName",
+        "label": "Crypto Wallet Provider Name"
+      },
+      {
+        "value": "liquidateProviderName",
+        "label": "Liquidate Provider Name"
+      },
+      {
+        "value": "liquidateBuyRatewithXERate",
+        "label": "% of Buy Rate with XE - Liquidate"
+      },
+      {
+        "value": "liquidateCostInUSD",
+        "label": "Liquidate Cost in USD"
+      },
+      {
+        "value": "fxProviderName",
+        "label": "Fx Provider Name"
+      },
+      {
+        "value": "fxBuyRatewithXERate",
+        "label": "% of Buy Rate with XE - Fx"
+      },
+      {
+        "value": "fxCostInUSD",
+        "label": "Fx Cost in USD"
+      },
+      {
+        "value": "settlementCurrency",
+        "label":"Settlement Currency"
+      },
+      {
+        "value": "settlementAmount",
+        "label": "Settlement Amount"
+      },
+      {
+        "value": "tradeStatus",
+        "label": "Trade Status"
+      }
+    ],
+    "allColumns": [
+      {
+        "value": "tradeReference",
+        "label": "Trade Number"
+      },
+      {
+        "value": "dateAndTimeOfRequest",
+        "label": "Date of Initiation"
+      },
+      {
+        "value": "dateOfDeposit",
+        "label": "Date of Deposit"
+      },
+      {
+        "value": "customerName",
+        "label": "Customer Name"
+      },
+      {
+        "value": "depositCurrency",
+        "label": "Deposit Currency"
+      },
+      {
+        "value": "depositAmountLocal",
+        "label": "Deposit Amount Local"
+      },
+      {
+        "value": "depositAmountInUSD",
+        "label": "Deposit Amount (in USD)"
+      },
+      {
+        "value": "customerSellRate",
+        "label": "Customer Sell Rate Vs XE.com"
+      },
+      {
+        "value": "accountsOnlyProviderName",
+        "label": "Rental Account Provider Name"
+      },
+      {
+        "value": "accountsOnlyCostInUSD",
+        "label": "Rental Account Cost In USD"
+      },
+      {
+        "value": "swapProviderName",
+        "label": "Swap Provider Name"
+      },
+      {
+        "value": "swapBuyRatewithXERate",
+        "label": "% of Buy Rate With XE - Swap"
+      },
+      {
+        "value": "swapCostInUSD",
+        "label": "Swap Cost in USD"
+      },
+      {
+        "value": "otcProviderName",
+        "label": "OTC Provider Name"
+      },
+      {
+        "value": "otcBuyRatewithXERate",
+        "label": "% of Buy Rate With XE - OTC"
+      },
+      {
+        "value": "otcCostInUSD",
+        "label": "OTC Cost in USD"
+      },
+      {
+        "value": "cryptoWalletProviderName",
+        "label": "Crypto Wallet Provider Name"
+      },
+      {
+        "value": "liquidateProviderName",
+        "label": "Liquidate Provider Name"
+      },
+      {
+        "value": "liquidateBuyRatewithXERate",
+        "label": "% of Buy Rate with XE - Liquidate"
+      },
+      {
+        "value": "liquidateCostInUSD",
+        "label": "Liquidate Cost in USD"
+      },
+      {
+        "value": "fxProviderName",
+        "label": "Fx Provider Name"
+      },
+      {
+        "value": "fxBuyRatewithXERate",
+        "label": "% of Buy Rate with XE - Fx"
+      },
+      {
+        "value": "fxCostInUSD",
+        "label": "Fx Cost in USD"
+      },
+      {
+        "value": "settlementCurrency",
+        "label":"Settlement Currency"
+      },
+      {
+        "value": "settlementAmount",
+        "label": "Settlement Amount"
+      },
+      {
+        "value": "tradeStatus",
+        "label": "Trade Status"
+      }
+    ]
+  }

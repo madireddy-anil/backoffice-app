@@ -1,0 +1,39 @@
+@import 'assets/styles/mixins.scss';
+
+:global {
+  .ant-divider-vertical.ant-divider-dashed {
+    border-width: 0 0 0 3px !important;
+  }
+}
+.divider {
+  margin-left: 3px;
+  margin-top: 10px;
+}
+.inputbox {
+  padding: 10px;
+  border: 1px solid #a8c6fa;
+  border-radius: 4px;
+  width: 90%;
+  font-size: 13px;
+}
+.listCard {
+  border: 1px solid #a8c6fa;
+  padding: 10px;
+  border-radius: 7px;
+  transition: all 1s;
+  width: 90%;
+}
+.addSubText {
+  margin-top: -20px;
+  margin-bottom: -2px;
+}
+.addressBlock {
+  display: flex;
+}
+.textVerifyBlock {
+  text-align: right;
+  margin-right: 51px;
+  color: #0190fe;
+  margin-bottom: -25px;
+  font-weight: 500;
+}

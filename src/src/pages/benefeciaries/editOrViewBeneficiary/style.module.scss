@@ -1,0 +1,14 @@
+@import 'assets/styles/mixins.scss';
+@import '../addBeneficiary/style.module.scss';
+
+.activeBeneTypeCard {
+  pointer-events: none;
+}
+.beneTypeCard {
+  pointer-events: none;
+}
+
+.beneTitle {
+  font-size: 21px;
+  margin-bottom: 25px;
+}

@@ -1,0 +1,59 @@
+{
+    "debitCredit" : [
+        {
+     "label" : "Credit",
+     "value" : "credit"
+        },
+        {
+            "label" : "Debit",
+            "value" : "debit"
+               }
+    ],
+    "accountNumber" : [
+        {
+     "label" : "Creditor Account",
+     "value" : "creditorAccount"
+        },
+        {
+            "label" : "Debtor Account",
+            "value" : "debtorAccount"
+               }
+    ],
+    "amountList" : [
+        {
+     "label" : "Credit Amount",
+     "value" : "creditAmount"
+        },
+        {
+            "label" : "Debit Amount",
+            "value" : "debitAmount"
+               }
+    ],
+    "currencyList" : [
+        {
+     "label" : "Credit Currency",
+     "value" : "creditCurrency"
+        },
+        {
+            "label" : "Debit Currency",
+            "value" : "debitCurrency"
+               }
+    ],
+    "balanceIdList" : [
+        {
+     "label" : "Vendor Balance Id",
+     "value" : "vendorBalanceId"
+        },
+        {
+            "label" : "Client Balance Id",
+            "value" : "clientBalanceId"
+               }
+    ],
+    "referenceList" : [
+      {
+   "label" : "UETR",
+   "value" : "uetr"
+      }
+     
+  ]
+}

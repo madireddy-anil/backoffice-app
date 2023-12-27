@@ -1,0 +1,77 @@
+{
+    "accountTypes" : [
+        {
+            "id" : "1",
+            "value":"client",
+            "label" : "Client"
+       },
+       {
+        "id" : "2",
+        "value":"pl",
+        "label" : "PL"
+   },
+   {
+    "id" : "3",
+    "value":"vendor_client",
+    "label" : "Vendor Client"
+},
+{
+    "id" : "4",
+    "value":"vendor_pl",
+    "label" : "Vendor PL"
+}
+    ],
+    "boolenValues" : [
+        {
+            "id" :1,
+            "label" : "Yes",
+            "value" : "yes"
+        },
+        {
+            "id" :2,
+            "label" : "No",
+            "value" : "no"
+        }
+    ],
+    "products":[
+        {
+            "id" :1,
+            "label" : "Currency Accounts",
+            "value" : "currencyAccounts"
+        },
+        {
+            "id" :2,
+            "label" : "Restricted Currencies",
+            "value" : "restrictedCurrencies"
+        },
+        {
+            "id" :3,
+            "label" : "Crypto Merchant Processing",
+            "value" : "cryptoMerchantProcessing"
+        },
+        {
+            "id" :4,
+            "label" : "Fiat Merchant Processing",
+            "value" : "fiatMerchantProcessing"
+        }
+
+    ],
+    "brands":[
+        {
+            "id" :1,
+            "label" : "Pay Construct",
+            "value" : "payConstruct"
+        },
+        {
+            "id" :2,
+            "label" : "Paymero",
+            "value" : "paymero"
+        },
+        {
+            "id" :3,
+            "label" : "Coin Flow",
+            "value" : "CoinFlow"
+        }
+
+    ]
+}

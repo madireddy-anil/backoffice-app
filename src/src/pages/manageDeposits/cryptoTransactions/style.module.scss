@@ -1,0 +1,32 @@
+@import 'assets/styles/mixins.scss';
+.timelineCard {
+  padding: 20px;
+  height: calc(100vh - 160px);
+  overflow-y: scroll;
+  border-right: 1px solid #a8c6fa;
+}
+.timelineCard::-webkit-scrollbar {
+  width: 2px;
+}
+
+.timelineCard::-webkit-scrollbar-thumb {
+  background: #313343;
+}
+.liveChatCard {
+  height: calc(100vh - 119px);
+  overflow-y: scroll;
+}
+.liveChatCard::-webkit-scrollbar {
+  width: 0;
+}
+
+:global {
+  .ant-table-pagination.ant-pagination {
+    float: none !important;
+    display: flex;
+    justify-content: flex-end;
+    li:first-child {
+      margin-right: auto;
+    }
+  }
+}

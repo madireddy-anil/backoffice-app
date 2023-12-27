@@ -1,0 +1,9 @@
+@import 'assets/styles/mixins.scss';
+@import '../addBeneficiary/style.module.scss';
+
+.activeBeneTypeCard {
+  pointer-events: none;
+}
+.beneTypeCard {
+  pointer-events: none;
+}

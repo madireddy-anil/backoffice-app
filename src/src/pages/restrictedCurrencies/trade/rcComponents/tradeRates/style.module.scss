@@ -1,0 +1,14 @@
+@import 'assets/styles/mixins.scss';
+:global {
+  .rates-card {
+    border: 1px solid #a8c6fa;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  .rate-options {
+    padding: 0 15px;
+  }
+  .rate-content {
+    padding: 10px 15px;
+  }
+}

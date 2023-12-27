@@ -1,0 +1,48 @@
+@import 'assets/styles/mixins.scss';
+
+.modalistCard {
+  border: 1px solid #a8c6fa;
+  padding: 10px;
+  border-radius: 7px;
+  transition: all 1s;
+  width: 46%;
+}
+.modalCardScroll {
+  max-height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.modalCardScroll::-webkit-scrollbar {
+  width: 2px;
+}
+.modalCardScroll::-webkit-scrollbar-thumb {
+  background: #313343;
+}
+.formModalBox {
+  margin-right: 11px;
+}
+.inputbox {
+  padding: 10px;
+  border: 1px solid #a8c6fa;
+  border-radius: 4px;
+  width: 90%;
+}
+.inputBox {
+  border: 1px solid #a8c6fa;
+  border-radius: 4px;
+}
+.btnCheckoutSAVE {
+  background-color: #75a9f9;
+  color: #fff;
+}
+.cstmSelectInput {
+  font-size: 13px;
+  font-family: 'Nunito Sans', sans-serif;
+  border-radius: 4px;
+  border: 1px solid #a8c6fa;
+  :global {
+    .ant-select-selection {
+      border: none;
+    }
+  }
+}

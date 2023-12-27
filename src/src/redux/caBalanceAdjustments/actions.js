@@ -1,0 +1,164 @@
+const actions = {
+  INITIATE_MANUAL_CREDIT: 'INITIATE_MANUAL_CREDIT',
+  INITIATE_MANUAL_CREDIT_SUCCESS: 'INITIATE_MANUAL_CREDIT_SUCCESS',
+  INITIATE_MANUAL_CREDIT_FAILURE: 'INITIATE_MANUAL_CREDIT_FAILURE',
+
+  INITIATE_MANUAL_DEBIT: 'INITIATE_MANUAL_DEBIT',
+  INITIATE_MANUAL_DEBIT_SUCCESS: 'INITIATE_MANUAL_DEBIT_SUCCESS',
+  INITIATE_MANUAL_DEBIT_FAILURE: 'INITIATE_MANUAL_DEBIT_FAILURE',
+
+  // Vendor BA (remove)
+
+  INITIATE_VENDOR_MANUAL_CREDIT: 'INITIATE_VENDOR_MANUAL_CREDIT',
+  INITIATE_VENDOR_MANUAL_CREDIT_SUCCESS: 'INITIATE_VENDOR_MANUAL_CREDIT_SUCCESS',
+  INITIATE_VENDOR_MANUAL_CREDIT_FAILURE: 'INITIATE_VENDOR_MANUAL_CREDIT_FAILURE',
+
+  INITIATE_VENDOR_MANUAL_DEBIT: 'INITIATE_VENDOR_MANUAL_DEBIT',
+  INITIATE_VENDOR_MANUAL_DEBIT_SUCCESS: 'INITIATE_VENDOR_MANUAL_DEBIT_SUCCESS',
+  INITIATE_VENDOR_MANUAL_DEBIT_FAILURE: 'INITIATE_VENDOR_MANUAL_DEBIT_FAILURE',
+
+  // vendor client
+
+  INITIATE_VENDOR_CLIENT_MANUAL_CREDIT: 'INITIATE_VENDOR_CLIENT_MANUAL_CREDIT',
+  INITIATE_VENDOR_CLIENT_MANUAL_CREDIT_SUCCESS: 'INITIATE_VENDOR_CLIENT_MANUAL_CREDIT_SUCCESS',
+  INITIATE_VENDOR_CLIENT_MANUAL_CREDIT_FAILURE: 'INITIATE_VENDOR_CLIENT_MANUAL_CREDIT_FAILURE',
+
+  INITIATE_VENDOR_CLIENT_MANUAL_DEBIT: 'INITIATE_VENDOR_CLIENT_MANUAL_DEBIT',
+  INITIATE_VENDOR_CLIENT_MANUAL_DEBIT_SUCCESS: 'INITIATE_VENDOR_CLIENT_MANUAL_DEBIT_SUCCESS',
+  INITIATE_VENDOR_CLIENT_MANUAL_DEBIT_FAILURE: 'INITIATE_VENDOR_CLIENT_MANUAL_DEBITT_FAILURE',
+  // vendor Pl
+
+  INITIATE_VENDOR_PL_MANUAL_CREDIT: 'INITIATE_VENDOR_PL_MANUAL_CREDIT',
+  INITIATE_VENDOR_PL_MANUAL_CREDIT_SUCCESS: 'INITIATE_VENDOR_PL_MANUAL_CREDIT_SUCCESS',
+  INITIATE_VENDOR_PL_MANUAL_CREDIT_FAILURE: 'INITIATE_VENDOR_PL_MANUAL_CREDIT_FAILURE',
+
+  INITIATE_VENDOR_PL_MANUAL_DEBIT: 'INITIATE_VENDOR_PL_MANUAL_DEBIT',
+  INITIATE_VENDOR_PL_MANUAL_DEBIT_SUCCESS: 'INITIATE_VENDOR_PL_MANUAL_DEBIT_SUCCESS',
+  INITIATE_VENDOR_PL_MANUAL_DEBIT_FAILURE: 'INITIATE_VENDOR_PL_MANUAL_DEBIT_FAILURE',
+
+  // P&L
+  INITIATE_PL_MANUAL_CREDIT: 'INITIATE_PL_MANUAL_CREDIT',
+  INITIATE_PL_MANUAL_CREDIT_SUCCESS: 'INITIATE_PL_MANUAL_CREDIT_SUCCESS',
+  INITIATE_PL_MANUAL_CREDIT_FAILURE: 'INITIATE_PL_MANUAL_CREDIT_FAILURE',
+
+  INITIATE_PL_MANUAL_DEBIT: 'INITIATE_PL_MANUAL_DEBIT',
+  INITIATE_PL_MANUAL_DEBIT_SUCCESS: 'INITIATE_PL_MANUAL_DEBIT_SUCCESS',
+  INITIATE_PL_MANUAL_DEBIT_FAILURE: 'INITIATE_PL_MANUAL_DEBIT_FAILURE',
+
+  INITIATE_CRYPTO_PAYMENT: 'INITIATE_CRYPTO_PAYMENT',
+  INITIATE_CRYPTO_PAYMENT_SUCCESS: 'INITIATE_CRYPTO_PAYMENT_SUCCESS',
+  INITIATE_CRYPTO_PAYMENT_FAILURE: 'INITIATE_CRYPTO_PAYMENT_FAILURE',
+
+  UPDATE_ADJUSTMENT_ERROR_LIST: 'UPDATE_ADJUSTMENT_ERROR_LIST',
+}
+export default actions
+
+export const initiateManualCredit = (id, value, token) => {
+  return {
+    type: actions.INITIATE_MANUAL_CREDIT,
+    id,
+    value,
+    token,
+  }
+}
+
+export const initiateManualDebit = (id, value, token) => {
+  return {
+    type: actions.INITIATE_MANUAL_DEBIT,
+    id,
+    value,
+    token,
+  }
+}
+
+// remove
+
+export const initiateVendorManualCredit = (value, token) => {
+  return {
+    type: actions.INITIATE_VENDOR_MANUAL_CREDIT,
+    value,
+    token,
+  }
+}
+
+export const initiateVendorManualDebit = (value, token) => {
+  return {
+    type: actions.INITIATE_VENDOR_MANUAL_DEBIT,
+    value,
+    token,
+  }
+}
+// new
+// vendor client
+
+export const initiateVendorClientManualCredit = (id, value, token) => {
+  return {
+    type: actions.INITIATE_VENDOR_CLIENT_MANUAL_CREDIT,
+    id,
+    value,
+    token,
+  }
+}
+
+export const initiateVendorClientManualDebit = (id, value, token) => {
+  return {
+    type: actions.INITIATE_VENDOR_CLIENT_MANUAL_DEBIT,
+    id,
+    value,
+    token,
+  }
+}
+
+// vendor pl
+
+export const initiateVendorPLManualCredit = (id, value, token) => {
+  return {
+    type: actions.INITIATE_VENDOR_PL_MANUAL_CREDIT,
+    id,
+    value,
+    token,
+  }
+}
+
+export const initiateVendorPLManualDebit = (id, value, token) => {
+  return {
+    type: actions.INITIATE_VENDOR_PL_MANUAL_DEBIT,
+    id,
+    value,
+    token,
+  }
+}
+
+export const initiatePandLManualCredit = (id, value, token) => {
+  return {
+    type: actions.INITIATE_PL_MANUAL_CREDIT,
+    id,
+    value,
+    token,
+  }
+}
+
+export const initiatePandLManualDebit = (id, value, token) => {
+  return {
+    type: actions.INITIATE_PL_MANUAL_DEBIT,
+    id,
+    value,
+    token,
+  }
+}
+
+export const initiateCryptoPayment = (id, value, token) => {
+  return {
+    type: actions.INITIATE_CRYPTO_PAYMENT,
+    id,
+    value,
+    token,
+  }
+}
+
+export const updateAdjustmentErrorList = value => {
+  return {
+    type: actions.UPDATE_ADJUSTMENT_ERROR_LIST,
+    value,
+  }
+}

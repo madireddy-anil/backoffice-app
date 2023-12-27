@@ -1,0 +1,103 @@
+{
+    "processFlow" : [
+        {
+            "value": "outbound_credit_transfer_client_external",
+            "label":"Outbound Credit Transfer Client External"
+        },
+        {
+            "value": "outbound_credit_transfer_client_internal",
+            "label":"Outbound Credit Transfer Client Internal"
+        },
+        {
+            "value": "inbound_credit_transfer_client_external",
+            "label":"Inbound Credit Transfer Client External"
+        },
+        {
+            "value": "inbound_credit_transfer_client-_nternal",
+            "label":"Inbound Credit Transfer Client Internal"
+        },
+        {
+            "value": "manual_credit_adjustment",
+            "label":"Manual Credit Adjustment"
+        },
+        {
+            "value": "manual_debit_adjustment",
+            "label":"Manual Debit Adjustment"
+        }
+    ],
+"settlementChannel" : [
+    {
+        "value": "clearBank",
+        "label":"Clear Bank"
+    },
+    {
+        "value": "ABN_AMRO",
+        "label":"ABN_AMRO"
+    },
+    {
+        "value": "NA",
+        "label":"NA"
+    }
+],
+
+"clearBankAccountType" : [
+    {
+        "value": "client",
+        "label":"Client"
+    },
+    {
+        "value": "pl",
+        "label":"P&L"
+    },
+    {
+        "value": "external",
+        "label":"External"
+    }
+],
+"amaroAccountType" : [
+    {
+        "value": "client",
+        "label":"Client"
+    },
+    {
+        "value": "external",
+        "label":"External"
+    }
+],
+"nAAccountType" : [
+    {
+        "value": "client",
+        "label":"Client"
+    },
+    {
+        "value": "pl",
+        "label":"P&L"
+    },
+    {
+        "value": "external",
+        "label":"External"
+    },
+    {
+        "value": "vendor_client",
+        "label":"Vendor Client"
+    },
+    {
+        "value": "vendor_pl",
+        "label":"Vendor P&L"
+    },
+    {
+        "value": "NA",
+        "label":"NA"
+    }
+],
+"liftingAmount" : [
+    {
+        "value": "yes",
+        "label":"Yes"
+    },
+    {
+        "value": "no",
+        "label":"No"
+    }
+]
+}
